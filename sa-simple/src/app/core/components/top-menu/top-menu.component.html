@@ -4,31 +4,8 @@
     <span class="logo-spacer"></span>
     <span>Słoneczny Apartament</span>
     <span class="menu-spacer"></span>
+    <button mat-button (click)="navigateToHomepage()">Strona Główna</button>
+    <button mat-button (click)="navigateToObjects()">Obiekty</button>
     <button mat-button>O nas</button>
   </mat-toolbar-row>
 </mat-toolbar>
-
-<mat-grid-list cols="2" rowHeight="2:1" gutterSize="0.25rem">
-  <mat-grid-tile>
-    <button
-      mat-raised-button
-      color="primary"
-      routerLink="/oswiecim"
-      class="full-width-button"
-    >
-      <mat-icon>dashboard</mat-icon>
-      Oświęcim
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button
-      mat-raised-button
-      color="accent"
-      routerLink="/libiaz"
-      class="full-width-button"
-    >
-      <mat-icon>dashboard</mat-icon>
-      Libiąż
-    </button>
-  </mat-grid-tile>
-</mat-grid-list>
