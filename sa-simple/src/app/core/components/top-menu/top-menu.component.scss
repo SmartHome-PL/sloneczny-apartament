@@ -5,3 +5,14 @@
 .menu-spacer {
   flex: 1 1 auto;
 }
+
+.sub-toolbar-osw {
+  border-top: 1px solid rgb(255, 255, 255, 10%);
+  height: 0rem;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.sub-toolbar-osw.expanded {
+  height: 2.5rem;
+}

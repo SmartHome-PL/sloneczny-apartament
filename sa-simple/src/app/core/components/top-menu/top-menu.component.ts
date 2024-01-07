@@ -7,13 +7,11 @@ import { Router } from '@angular/router';
   styleUrl: './top-menu.component.scss',
 })
 export class TopMenuComponent {
+  isSubToolbarOswExpanded = false;
+
   constructor(private router: Router) {}
 
-  navigateToHomepage() {
-    this.router.navigate(['/']);
-  }
-
-  navigateToObjects() {
-    this.router.navigate(['/objects']);
+  toggleSubToolbar() {
+    this.isSubToolbarOswExpanded = !this.isSubToolbarOswExpanded;
   }
 }
