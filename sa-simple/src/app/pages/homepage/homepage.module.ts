@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ObjectListComponent } from './components/object-list/object-list.component';
-import { MainRoutingModule } from './main-routing.module';
+import { HomepageRoutingModule } from './homepage-routing.module';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -10,10 +10,10 @@ import { MatButtonModule } from '@angular/material/button';
   declarations: [ObjectListComponent],
   imports: [
     CommonModule,
-    MainRoutingModule,
+    HomepageRoutingModule,
     MatGridListModule,
     MatIconModule,
     MatButtonModule,
   ],
 })
-export class MainModule {}
+export class HomepageModule {}

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PlaceOswModule } from './place-osw/place-osw.module';
-import { MainModule } from './main/main.module';
-import { PlaceLbnModule } from './place-lbn/place-lbn.module';
+import { OswPageModule } from './osw-page/osw-page.module';
+import { HomepageModule } from './homepage/homepage.module';
+import { LbnPageModule } from './lbn-page/lbn-page.module';
 import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
@@ -10,9 +10,9 @@ import { PagesRoutingModule } from './pages-routing.module';
   imports: [
     CommonModule,
     PagesRoutingModule,
-    PlaceOswModule,
-    MainModule,
-    PlaceLbnModule,
+    OswPageModule,
+    HomepageModule,
+    LbnPageModule,
   ],
 })
 export class PagesModule {}
