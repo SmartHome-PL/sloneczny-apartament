@@ -33,4 +33,8 @@ export class TopMenuComponent {
       this.timeoutRef = null;
     }
   }
+
+  redirectToOswCheckIn() {
+    this.router.navigate(['/osw/check-in']);
+  }
 }

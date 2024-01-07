@@ -18,8 +18,9 @@
     [class.expanded]="isSubToolbarOswExpanded"
     (mouseenter)="keepSubToolbarOpen()"
     (mouseleave)="closeSubToolbarWithDelay()"
+    (click)="redirectToOswCheckIn()"
   >
     <span class="menu-spacer"></span>
-    X
+    <button mat-button class="toolbar-button">Zameldowanie</button>
   </mat-toolbar-row>
 </mat-toolbar>

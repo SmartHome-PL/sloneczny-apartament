@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./homepage/homepage.module').then((m) => m.HomepageModule),
   },
+  {
+    path: 'osw',
+    loadChildren: () =>
+      import('./osw-page/osw-page.module').then((m) => m.OswPageModule),
+  },
 ];
 
 @NgModule({
