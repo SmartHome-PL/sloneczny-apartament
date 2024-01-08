@@ -24,3 +24,9 @@
     <button mat-button class="toolbar-button">Zameldowanie</button>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<ul>
+  <li *ngFor="let item of menuItems">
+    <a href="{{ item.link }}">{{ item.title }}</a>
+  </li>
+</ul>
