@@ -5,28 +5,11 @@
     <span>Słoneczny Apartament</span>
     <span class="menu-spacer"></span>
     <button
+      *ngFor="let menuItem of menuItems"
       mat-button
       class="toolbar-button"
-      (mouseenter)="openSubToolbar()"
-      (mouseleave)="closeSubToolbarWithDelay()"
     >
-      Oświęcim
+      {{ menuItem.title }}
     </button>
   </mat-toolbar-row>
-  <mat-toolbar-row
-    class="sub-toolbar-osw"
-    [class.expanded]="isSubToolbarOswExpanded"
-    (mouseenter)="keepSubToolbarOpen()"
-    (mouseleave)="closeSubToolbarWithDelay()"
-    (click)="redirectToOswCheckIn()"
-  >
-    <span class="menu-spacer"></span>
-    <button mat-button class="toolbar-button">Zameldowanie</button>
-  </mat-toolbar-row>
 </mat-toolbar>
-
-<ul>
-  <li *ngFor="let item of menuItems">
-    <a href="{{ item.link }}">{{ item.title }}</a>
-  </li>
-</ul>

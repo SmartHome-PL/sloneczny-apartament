@@ -26,28 +26,6 @@ export class TopMenuComponent implements OnInit {
     });
   }
 
-  openSubToolbar() {
-    if (this.timeoutRef) {
-      clearTimeout(this.timeoutRef);
-      this.timeoutRef = null;
-    }
-
-    this.isSubToolbarOswExpanded = true;
-  }
-
-  closeSubToolbarWithDelay() {
-    this.timeoutRef = setTimeout(() => {
-      this.isSubToolbarOswExpanded = false;
-    }, 300);
-  }
-
-  keepSubToolbarOpen() {
-    if (this.timeoutRef) {
-      clearTimeout(this.timeoutRef);
-      this.timeoutRef = null;
-    }
-  }
-
   redirectToOswCheckIn() {
     this.router.navigate(['/osw/check-in']);
   }
