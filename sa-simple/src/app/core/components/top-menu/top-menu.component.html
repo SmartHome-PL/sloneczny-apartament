@@ -4,12 +4,14 @@
     <span class="logo-spacer"></span>
     <span>Słoneczny Apartament</span>
     <span class="menu-spacer"></span>
-    <button
-      *ngFor="let menuItem of menuItems"
-      mat-button
-      class="toolbar-button"
-    >
-      {{ menuItem.title }}
-    </button>
+    <ng-container>
+      <button
+        *ngFor="let menuItem of menuItems"
+        mat-button
+        class="toolbar-button"
+      >
+        {{ menuItem.title }}
+      </button>
+    </ng-container>
   </mat-toolbar-row>
 </mat-toolbar>
