@@ -12,6 +12,7 @@ import {
 })
 export class OswPageComponent {
   menuItems: MenuItem[] = [];
+  gridColumns: number = 4;
   constructor(
     private router: Router,
     private oswMenuItemsService: OswMenuItemsService
