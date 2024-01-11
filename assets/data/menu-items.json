@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Libiaz",
+    "link": "/lbn",
+    "submenu": [
+      {
+        "title": "Check-In",
+        "link": "/check-in"
+      }
+    ]
+  },
+  {
+    "title": "Oswiecim",
+    "link": "/osw",
+    "submenu": [
+      {
+        "title": "Check-In",
+        "link": "/check-in"
+      }
+    ]
+  }
+]
