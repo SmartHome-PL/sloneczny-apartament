@@ -4,9 +4,17 @@ import { CheckInComponent } from './components/check-in/check-in.component';
 import { OswPageRoutingModule } from './osw-page-routing.module';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { OswPageComponent } from './osw-page.component';
 
 @NgModule({
-  declarations: [CheckInComponent],
-  imports: [CommonModule, OswPageRoutingModule, MatCardModule, MatButtonModule],
+  declarations: [CheckInComponent, OswPageComponent],
+  imports: [
+    CommonModule,
+    OswPageRoutingModule,
+    MatCardModule,
+    MatButtonModule,
+    MatGridListModule,
+  ],
 })
 export class OswPageModule {}
