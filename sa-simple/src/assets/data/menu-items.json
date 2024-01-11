@@ -13,10 +13,9 @@
     "title": "Oswiecim",
     "link": "/osw",
     "submenu": [
-      {
-        "title": "Check-In",
-        "link": "/check-in"
-      }
+      { "title": "Location", "link": "/location" },
+      { "title": "Check-In", "link": "/check-in" },
+      { "title": "Check-Out", "link": "/check-out" }
     ]
   }
 ]

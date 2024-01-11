@@ -5,9 +5,14 @@
     <span>Słoneczny Apartament</span>
     <span class="menu-spacer"></span>
     <ng-container *ngFor="let menuItem of menuItems">
-      <button mat-button class="toolbar-button">
+      <button mat-button class="toolbar-button" [matMenuTriggerFor]="menu">
         {{ menuItem.title }}
       </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let menuSubItem of menuItem.submenu">
+          {{ menuSubItem.title }}
+        </button>
+      </mat-menu>
     </ng-container>
   </mat-toolbar-row>
 </mat-toolbar>

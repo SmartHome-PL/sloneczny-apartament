@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 export interface MenuItem {
   title: string;
   link: string;
-  submenu: MenuItem;
+  submenu: MenuItem[];
 }
 
 @Injectable({
