@@ -9,9 +9,14 @@
         {{ menuItem.title }}
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item *ngFor="let menuSubItem of menuItem.submenu">
-          {{ menuSubItem.title }}
-        </button>
+        <ng-container *ngFor="let menuSubItem of menuItem.submenu">
+          <button
+            mat-menu-item
+            (click)="redirectTo(menuItem.path, menuSubItem.path)"
+          >
+            {{ menuSubItem.title }}
+          </button></ng-container
+        >
       </mat-menu>
     </ng-container>
   </mat-toolbar-row>

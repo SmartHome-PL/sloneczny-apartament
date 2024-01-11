@@ -1,21 +1,24 @@
 [
   {
     "title": "Libiaz",
-    "link": "/lbn",
+    "path": "/lbn",
     "submenu": [
-      {
-        "title": "Check-In",
-        "link": "/check-in"
-      }
+      { "title": "Location", "path": "/location" },
+      { "title": "Check-In", "path": "/check-in" },
+      { "title": "Services", "path": "/services" },
+      { "title": "Trash", "path": "/trash" },
+      { "title": "Check-Out", "path": "/check-out" }
     ]
   },
   {
     "title": "Oswiecim",
-    "link": "/osw",
+    "path": "/osw",
     "submenu": [
-      { "title": "Location", "link": "/location" },
-      { "title": "Check-In", "link": "/check-in" },
-      { "title": "Check-Out", "link": "/check-out" }
+      { "title": "Location", "path": "/location" },
+      { "title": "Check-In", "path": "/check-in" },
+      { "title": "Services", "path": "/services" },
+      { "title": "Trash", "path": "/trash" },
+      { "title": "Check-Out", "path": "/check-out" }
     ]
   }
 ]

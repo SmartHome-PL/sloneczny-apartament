@@ -49,7 +49,7 @@ export class TopMenuComponent implements OnInit {
     this.lastScrollTop = currentScrollPos;
   }
 
-  redirectToOswCheckIn() {
-    this.router.navigate(['/osw/check-in']);
+  redirectTo(primaryPath: string, secondaryPath: string) {
+    this.router.navigate([primaryPath + secondaryPath]);
   }
 }
