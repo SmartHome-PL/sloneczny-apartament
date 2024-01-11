@@ -5,13 +5,14 @@ import { Observable } from 'rxjs';
 export interface MenuItem {
   title: string;
   path: string;
+  icon: string;
 }
 
 @Injectable({
   providedIn: 'root',
 })
-export class TopMenuItemsService {
-  private menuItemsUrl = 'assets/data/top-menu-items.json';
+export class OswMenuItemsService {
+  private menuItemsUrl = 'assets/data/osw-menu-items.json';
 
   constructor(private http: HttpClient) {}
 

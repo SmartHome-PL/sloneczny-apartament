@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { OswPageComponent } from './osw-page.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [CheckInComponent, OswPageComponent],
@@ -15,6 +16,7 @@ import { OswPageComponent } from './osw-page.component';
     MatCardModule,
     MatButtonModule,
     MatGridListModule,
+    MatIconModule,
   ],
 })
 export class OswPageModule {}

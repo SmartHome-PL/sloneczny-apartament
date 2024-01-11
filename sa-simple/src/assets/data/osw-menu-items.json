@@ -1,0 +1,10 @@
+[
+  { "title": "Location", "path": "/osw/location", "icon": "place" },
+  { "title": "Check-In", "path": "/osw/check-in", "icon": "group_add" },
+  { "title": "Services", "path": "/osw/services", "icon": "movie_filter" },
+  { "title": "Check-Out", "path": "/osw/check-out", "icon": "clear" },
+  { "title": "Rules", "path": "/osw/rules", "icon": "smoke_free" },
+  { "title": "Trash", "path": "/osw/trash", "icon": "delete" },
+  { "title": "Transport", "path": "/osw/transport", "icon": "airport_shuttle" },
+  { "title": "Tickets", "path": "/osw/tickets", "icon": "confirmation_number" }
+]

@@ -18,8 +18,6 @@ export class TopMenuComponent implements OnInit {
   lastScrollTop = 0;
   scrollDownStart = 0;
 
-  private toolbarVisible = false;
-
   constructor(
     private router: Router,
     private topMenuItemsService: TopMenuItemsService
