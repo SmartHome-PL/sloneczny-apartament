@@ -49,7 +49,7 @@ export class TopMenuComponent implements OnInit {
     this.lastScrollTop = currentScrollPos;
   }
 
-  redirectTo(primaryPath: string, secondaryPath: string) {
-    this.router.navigate([primaryPath + secondaryPath]);
+  naviageTo(path: string) {
+    this.router.navigate([path]);
   }
 }

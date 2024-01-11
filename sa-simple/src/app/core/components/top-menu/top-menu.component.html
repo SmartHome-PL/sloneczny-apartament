@@ -5,19 +5,13 @@
     <span>Słoneczny Apartament</span>
     <span class="menu-spacer"></span>
     <ng-container *ngFor="let menuItem of menuItems">
-      <button mat-button class="toolbar-button" [matMenuTriggerFor]="menu">
+      <button
+        mat-button
+        class="toolbar-button"
+        (click)="naviageTo(menuItem.path)"
+      >
         {{ menuItem.title }}
       </button>
-      <mat-menu #menu="matMenu">
-        <ng-container *ngFor="let menuSubItem of menuItem.submenu">
-          <button
-            mat-menu-item
-            (click)="redirectTo(menuItem.path, menuSubItem.path)"
-          >
-            {{ menuSubItem.title }}
-          </button></ng-container
-        >
-      </mat-menu>
     </ng-container>
   </mat-toolbar-row>
 </mat-toolbar>

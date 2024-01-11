@@ -1,24 +1,10 @@
 [
   {
     "title": "Libiaz",
-    "path": "/lbn",
-    "submenu": [
-      { "title": "Location", "path": "/location" },
-      { "title": "Check-In", "path": "/check-in" },
-      { "title": "Services", "path": "/services" },
-      { "title": "Trash", "path": "/trash" },
-      { "title": "Check-Out", "path": "/check-out" }
-    ]
+    "path": "/lbn"
   },
   {
     "title": "Oswiecim",
-    "path": "/osw",
-    "submenu": [
-      { "title": "Location", "path": "/location" },
-      { "title": "Check-In", "path": "/check-in" },
-      { "title": "Services", "path": "/services" },
-      { "title": "Trash", "path": "/trash" },
-      { "title": "Check-Out", "path": "/check-out" }
-    ]
+    "path": "/osw"
   }
 ]
