@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import {
   MenuItem,
@@ -14,6 +14,7 @@ export class TopMenuComponent implements OnInit {
   isSubToolbarOswExpanded = false;
   timeoutRef: any = null;
   menuItems: MenuItem[] = [];
+  lastScrollTop = 0;
 
   constructor(
     private router: Router,
@@ -24,6 +25,24 @@ export class TopMenuComponent implements OnInit {
     this.topMenuItemsService.getMenuItems().subscribe((items) => {
       this.menuItems = items;
     });
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    let currentScrollPos = window.scrollY;
+    let toolbar = document.querySelector('.toolbar') as HTMLElement;
+
+    if (toolbar) {
+      if (currentScrollPos > this.lastScrollTop && currentScrollPos > 256) {
+        // Scroll Down
+        toolbar.style.top = '-64px'; // Wysokość twojego mat-toolbar
+      } else {
+        // Scroll Up
+        toolbar.style.top = '0';
+      }
+    }
+
+    this.lastScrollTop = currentScrollPos;
   }
 
   redirectToOswCheckIn() {
