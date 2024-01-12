@@ -1,24 +1,12 @@
 <mat-grid-list cols="2" rowHeight="2:1" gutterSize="0.25rem">
-  <mat-grid-tile>
+  <mat-grid-tile *ngFor="let menuItem of menuItems">
     <button
       mat-raised-button
-      color="primary"
-      routerLink="/oswiecim"
       class="full-width-button"
+      (click)="naviageTo(menuItem.path)"
     >
-      <mat-icon>dashboard</mat-icon>
-      Oświęcim
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button
-      mat-raised-button
-      color="accent"
-      routerLink="/libiaz"
-      class="full-width-button"
-    >
-      <mat-icon>dashboard</mat-icon>
-      Libiąż
+      <mat-icon>{{ menuItem.icon }}</mat-icon>
+      {{ menuItem.title }}
     </button>
   </mat-grid-tile>
 </mat-grid-list>
