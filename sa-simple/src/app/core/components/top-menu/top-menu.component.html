@@ -10,10 +10,9 @@
         class="toolbar-button"
         (click)="naviageTo(menuItem.path)"
       >
-        {{ menuItem.title }}
+        {{ menuItem.title | translate }}
       </button>
     </ng-container>
-    {{ "test" | translate }}
   </mat-toolbar-row> </mat-toolbar
 >AS
 <div class="toolbar-placeholder"></div>
