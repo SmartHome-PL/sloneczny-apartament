@@ -5,11 +5,13 @@ import { HomepageRoutingModule } from './homepage-routing.module';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [ObjectListComponent],
   imports: [
     CommonModule,
+    SharedModule,
     HomepageRoutingModule,
     MatGridListModule,
     MatIconModule,

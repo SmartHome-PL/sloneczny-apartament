@@ -7,11 +7,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { OswPageComponent } from './osw-page.component';
 import { MatIconModule } from '@angular/material/icon';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [CheckInComponent, OswPageComponent],
   imports: [
     CommonModule,
+    SharedModule,
     OswPageRoutingModule,
     MatCardModule,
     MatButtonModule,

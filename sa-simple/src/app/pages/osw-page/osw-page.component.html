@@ -1,8 +1,1 @@
-<mat-grid-list [cols]="gridColumns" rowHeight="2:1" gutterSize="0.25rem">
-  <mat-grid-tile *ngFor="let menuItem of menuItems"
-    ><button mat-raised-button class="menu-buttons">
-      {{ menuItem.title }}
-      <mat-icon>{{ menuItem.icon }}</mat-icon>
-    </button></mat-grid-tile
-  >
-</mat-grid-list>
+<app-grid-menu [menuItems]="menuItems"></app-grid-menu>

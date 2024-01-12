@@ -22,8 +22,4 @@ export class ObjectListComponent {
       this.menuItems = items;
     });
   }
-
-  naviageTo(path: string) {
-    this.router.navigate([path]);
-  }
 }
