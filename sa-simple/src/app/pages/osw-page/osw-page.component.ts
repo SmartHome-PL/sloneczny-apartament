@@ -1,9 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import {
-  MenuItem,
-  OswMenuItemsService,
-} from './services/osw-menu-item.service';
+import { OswMenuItemsService } from './services/osw-menu-item.service';
+import { MenuItem } from '../../shared/models/menuItem.model';
 
 @Component({
   selector: 'app-osw-page',

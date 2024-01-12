@@ -1,9 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import {
-  MenuItem,
-  TopMenuItemsService,
-} from '../../services/top-menu-items/top-menu-items.service';
+import { TopMenuItemsService } from '../../services/top-menu-items/top-menu-items.service';
+import { MenuItem } from '../../../shared/models/menuItem.model';
 
 @Component({
   selector: 'app-top-menu',

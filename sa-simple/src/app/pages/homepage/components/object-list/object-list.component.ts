@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import {
-  HomeObjectMenuItemsService,
-  MenuItem,
-} from '../../services/home-object-menu-items.service';
+import { HomeObjectMenuItemsService } from '../../services/home-object-menu-items.service';
+import { MenuItem } from '../../../../shared/models/menuItem.model';
 
 @Component({
   selector: 'app-object-list',

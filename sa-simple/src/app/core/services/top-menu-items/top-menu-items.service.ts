@@ -1,11 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
-export interface MenuItem {
-  title: string;
-  path: string;
-}
+import { MenuItem } from '../../../shared/models/menuItem.model';
 
 @Injectable({
   providedIn: 'root',

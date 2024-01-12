@@ -1,6 +1,6 @@
 import { Component, HostListener, Input } from '@angular/core';
-import { MenuItem } from '../../../pages/osw-page/services/osw-menu-item.service';
 import { Router } from '@angular/router';
+import { MenuItem } from '../../models/menuItem.model';
 
 @Component({
   selector: 'app-grid-menu',
