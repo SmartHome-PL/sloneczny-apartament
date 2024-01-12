@@ -5,7 +5,7 @@
       class="menu-buttons"
       (click)="naviageTo(menuItem.path)"
     >
-      {{ menuItem.title }}
+      {{ menuItem.title | translate }}
       <mat-icon>{{ menuItem.icon }}</mat-icon>
     </button></mat-grid-tile
   >

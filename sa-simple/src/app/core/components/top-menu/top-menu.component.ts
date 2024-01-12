@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { TopMenuItemsService } from '../../services/top-menu-items/top-menu-items.service';
 import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from '../../services/language-service/language.service';
 
 @Component({
   selector: 'app-top-menu',
@@ -20,13 +21,18 @@ export class TopMenuComponent implements OnInit {
   constructor(
     private router: Router,
     private topMenuItemsService: TopMenuItemsService,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private languageService: LanguageService
   ) {
     translate.setDefaultLang('en');
     translate.use('en');
   }
 
   ngOnInit(): void {
+    const language = this.languageService.getLanguage();
+    if (language) {
+      this.translate.use(language);
+    }
     this.topMenuItemsService.getMenuItems().subscribe((items) => {
       this.menuItems = items;
     });
@@ -55,6 +61,7 @@ export class TopMenuComponent implements OnInit {
   }
 
   switchLanguage(language: string) {
+    this.languageService.setLanguage(language);
     this.translate.use(language);
   }
 

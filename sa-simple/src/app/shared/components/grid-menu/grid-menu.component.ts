@@ -1,4 +1,4 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuItem } from '../../models/menuItem.model';
 
@@ -7,14 +7,22 @@ import { MenuItem } from '../../models/menuItem.model';
   templateUrl: './grid-menu.component.html',
   styleUrl: './grid-menu.component.scss',
 })
-export class GridMenuComponent {
+export class GridMenuComponent implements OnInit {
   @Input() menuItems: MenuItem[] = [];
-  gridColumns = 4;
+  gridColumns = 2;
 
   constructor(private router: Router) {}
 
+  ngOnInit() {
+    this.setGridColumns();
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize(event?: Event) {
+    this.setGridColumns();
+  }
+
+  private setGridColumns() {
     if (typeof window !== 'undefined') {
       const width = window.innerWidth;
 
