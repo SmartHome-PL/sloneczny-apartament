@@ -13,6 +13,13 @@
         {{ menuItem.title | translate }}
       </button>
     </ng-container>
-  </mat-toolbar-row> </mat-toolbar
->AS
+    <button mat-button [matMenuTriggerFor]="menu" class="toolbar-button">
+      {{ getLanguage() }}
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="switchLanguage('en')">🇬🇧</button>
+      <button mat-menu-item (click)="switchLanguage('pl')">🇵🇱</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
 <div class="toolbar-placeholder"></div>

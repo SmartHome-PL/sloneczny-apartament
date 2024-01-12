@@ -53,4 +53,13 @@ export class TopMenuComponent implements OnInit {
   naviageTo(path: string) {
     this.router.navigate([path]);
   }
+
+  switchLanguage(language: string) {
+    this.translate.use(language);
+  }
+
+  getLanguage() {
+    if (this.translate.currentLang === 'en') return '🇬🇧';
+    else return '🇵🇱';
+  }
 }
