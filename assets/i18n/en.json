@@ -1,3 +1,41 @@
 {
-  "core.menu.options.objects.label": "Objects"
+    "core": {
+        "menu": {
+            "options": {
+                "objects": {
+                    "label": "Objects"
+                }
+            }
+        }
+    },
+    "obj": {
+        "menu": {
+            "options": {
+                "amenities": {
+                    "label": "Amenities"
+                },
+                "check-in": {
+                    "label": "Check-In"
+                },
+                "check-out": {
+                    "label": "Check-Out"
+                },
+                "location": {
+                    "label": "Location"
+                },
+                "rules": {
+                    "label": "Rules"
+                },
+                "tickets": {
+                    "label": "Tickets"
+                },
+                "transport": {
+                    "label": "Transport"
+                },
+                "trash": {
+                    "label": "Trash"
+                }
+            }
+        }
+    }
 }

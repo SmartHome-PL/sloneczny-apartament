@@ -1,10 +1,42 @@
 [
-  { "title": "Location", "path": "/osw/location", "icon": "place" },
-  { "title": "Check-In", "path": "/osw/check-in", "icon": "group_add" },
-  { "title": "Services", "path": "/osw/services", "icon": "movie_filter" },
-  { "title": "Check-Out", "path": "/osw/check-out", "icon": "clear" },
-  { "title": "Rules", "path": "/osw/rules", "icon": "smoke_free" },
-  { "title": "Trash", "path": "/osw/trash", "icon": "delete" },
-  { "title": "Transport", "path": "/osw/transport", "icon": "airport_shuttle" },
-  { "title": "Tickets", "path": "/osw/tickets", "icon": "confirmation_number" }
+  {
+    "title": "obj.menu.options.location.label",
+    "path": "/osw/location",
+    "icon": "place"
+  },
+  {
+    "title": "obj.menu.options.check-in.label",
+    "path": "/osw/check-in",
+    "icon": "group_add"
+  },
+  {
+    "title": "obj.menu.options.amenities.label",
+    "path": "/osw/amenities",
+    "icon": "movie_filter"
+  },
+  {
+    "title": "obj.menu.options.check-out.label",
+    "path": "/osw/check-out",
+    "icon": "clear"
+  },
+  {
+    "title": "obj.menu.options.rules.label",
+    "path": "/osw/rules",
+    "icon": "smoke_free"
+  },
+  {
+    "title": "obj.menu.options.trash.label",
+    "path": "/osw/trash",
+    "icon": "delete"
+  },
+  {
+    "title": "obj.menu.options.transport.label",
+    "path": "/osw/transport",
+    "icon": "airport_shuttle"
+  },
+  {
+    "title": "obj.menu.options.tickets.label",
+    "path": "/osw/tickets",
+    "icon": "confirmation_number"
+  }
 ]
