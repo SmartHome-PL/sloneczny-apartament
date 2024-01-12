@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { TopMenuItemsService } from '../../services/top-menu-items/top-menu-items.service';
 import { MenuItem } from '../../../shared/models/menuItem.model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-top-menu',
@@ -18,8 +19,12 @@ export class TopMenuComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private topMenuItemsService: TopMenuItemsService
-  ) {}
+    private topMenuItemsService: TopMenuItemsService,
+    private translate: TranslateService
+  ) {
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
 
   ngOnInit(): void {
     this.topMenuItemsService.getMenuItems().subscribe((items) => {
