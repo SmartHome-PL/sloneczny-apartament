@@ -29,10 +29,6 @@ export class TopMenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const language = this.languageService.getLanguage();
-    if (language) {
-      this.translate.use(language);
-    }
     this.topMenuItemsService.getMenuItems().subscribe((items) => {
       this.menuItems = items;
     });
