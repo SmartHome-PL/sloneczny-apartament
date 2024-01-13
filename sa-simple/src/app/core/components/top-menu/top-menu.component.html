@@ -4,22 +4,27 @@
     <span class="logo-spacer"></span>
     <span>Słoneczny Apartament</span>
     <span class="menu-spacer"></span>
-    <ng-container *ngFor="let menuItem of menuItems">
-      <button
-        mat-button
-        class="toolbar-button"
-        (click)="naviageTo(menuItem.path)"
-      >
-        {{ menuItem.title | translate }}
+    <ng-container *ngIf="!isMobile"
+      ><ng-container *ngFor="let menuItem of menuItems">
+        <button
+          mat-button
+          class="toolbar-button"
+          (click)="naviageTo(menuItem.path)"
+        >
+          {{ menuItem.title | translate }}
+        </button>
+      </ng-container>
+      <button mat-button [matMenuTriggerFor]="menu" class="toolbar-button">
+        {{ getLanguage() }}
       </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="switchLanguage('en')">🇬🇧 English</button>
+        <button mat-menu-item (click)="switchLanguage('pl')">🇵🇱 Polski</button>
+      </mat-menu>
     </ng-container>
-    <button mat-button [matMenuTriggerFor]="menu" class="toolbar-button">
-      {{ getLanguage() }}
+    <button mat-button class="toolbar-button" *ngIf="isMobile">
+      <mat-icon class="toolbar-button-icon">menu</mat-icon>
     </button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="switchLanguage('en')">🇬🇧 English</button>
-      <button mat-menu-item (click)="switchLanguage('pl')">🇵🇱 Polski</button>
-    </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="toolbar-placeholder"></div>

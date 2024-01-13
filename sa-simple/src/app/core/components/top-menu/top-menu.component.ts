@@ -14,6 +14,7 @@ export class TopMenuComponent implements OnInit {
   isSubToolbarOswExpanded = false;
   timeoutRef: any = null;
   menuItems: MenuItem[] = [];
+  isMobile: boolean = true;
 
   lastScrollTop = 0;
   scrollDownStart = 0;
@@ -29,6 +30,7 @@ export class TopMenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.setIsMobile();
     this.topMenuItemsService.getMenuItems().subscribe((items) => {
       this.menuItems = items;
     });
@@ -50,6 +52,23 @@ export class TopMenuComponent implements OnInit {
     }
 
     this.lastScrollTop = currentScrollPos;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event?: Event) {
+    this.setIsMobile();
+  }
+
+  private setIsMobile() {
+    if (typeof window !== 'undefined') {
+      const width = window.innerWidth;
+
+      if (width > 800) {
+        this.isMobile = false;
+      } else {
+        this.isMobile = true;
+      }
+    }
   }
 
   naviageTo(path: string) {
