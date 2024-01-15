@@ -4,8 +4,8 @@
     <span class="logo-spacer"></span>
     <span>Słoneczny Apartament</span>
     <span class="menu-spacer"></span>
-    <ng-container *ngIf="!isMobile"
-      ><ng-container *ngFor="let menuItem of menuItems">
+    <ng-container *ngIf="!isMobile">
+      <ng-container *ngFor="let menuItem of menuItems">
         <button
           mat-button
           class="toolbar-button"
@@ -22,9 +22,31 @@
         <button mat-menu-item (click)="switchLanguage('pl')">🇵🇱 Polski</button>
       </mat-menu>
     </ng-container>
-    <button mat-button class="toolbar-button" *ngIf="isMobile">
-      <mat-icon class="toolbar-button-icon">menu</mat-icon>
+    <button
+      mat-button
+      class="toolbar-button"
+      *ngIf="isMobile"
+      (click)="toggleSideMenu()"
+    >
+      <mat-icon *ngIf="!isSideMenuOpen" class="toolbar-button-icon"
+        >menu</mat-icon
+      >
+      <mat-icon *ngIf="isSideMenuOpen" class="toolbar-button-icon"
+        >close</mat-icon
+      >
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="toolbar-placeholder"></div>
+<div class="side-menu" [ngClass]="{ open: isSideMenuOpen }">
+  <button mat-button [matMenuTriggerFor]="menu">{{ getLanguage() }}</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="switchLanguage('en')">🇬🇧 English</button>
+    <button mat-menu-item (click)="switchLanguage('pl')">🇵🇱 Polski</button>
+  </mat-menu>
+  <ng-container *ngFor="let menuItem of menuItems">
+    <button mat-button (click)="naviageTo(menuItem.path)">
+      {{ menuItem.title | translate }}
+    </button>
+  </ng-container>
+</div>

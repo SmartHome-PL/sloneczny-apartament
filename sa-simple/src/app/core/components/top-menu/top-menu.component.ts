@@ -11,10 +11,9 @@ import { LanguageService } from '../../services/language-service/language.servic
   styleUrl: './top-menu.component.scss',
 })
 export class TopMenuComponent implements OnInit {
-  isSubToolbarOswExpanded = false;
-  timeoutRef: any = null;
   menuItems: MenuItem[] = [];
   isMobile: boolean = true;
+  isSideMenuOpen: boolean = false;
 
   lastScrollTop = 0;
   scrollDownStart = 0;
@@ -69,6 +68,10 @@ export class TopMenuComponent implements OnInit {
         this.isMobile = true;
       }
     }
+  }
+
+  toggleSideMenu() {
+    this.isSideMenuOpen = !this.isSideMenuOpen;
   }
 
   naviageTo(path: string) {

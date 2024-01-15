@@ -3,12 +3,18 @@
 }
 
 .toolbar {
+  height: 4rem !important;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   transition: top 0.3s;
   z-index: 1000;
+}
+@media (max-width: 599px) {
+  .toolbar {
+    padding-top: 0.25rem; /* zmniejszony margines/padding dla mniejszych ekranów */
+  }
 }
 
 .logo-spacer {
@@ -44,11 +50,18 @@
   padding-left: 0.25rem;
 }
 
-.mat-mdc-menu-item .mat-icon-no-color,
-.mat-mdc-menu-item .mat-mdc-menu-submenu-icon {
-  display: none !important;
+.side-menu {
+  width: 16rem; /* Szerokość menu */
+  position: fixed;
+  right: 0;
+  top: calc(-100vh + 4rem); /* Początkowe położenie poza ekranem */
+  height: 100vh;
+  background-color: rgb(33, 33, 33);
+  z-index: 100;
+  overflow-x: hidden;
+  transition: 0.5s; /* Czas trwania animacji */
 }
 
-.mat-mdc-menu-submenu-icon {
-  display: none !important;
+.open {
+  top: 4rem; /* Położenie po wysunięciu */
 }
