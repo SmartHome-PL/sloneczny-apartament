@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { TopMenuItemsService } from '../../services/top-menu-items/top-menu-items.service';
+import { JsonLoaderService } from '../../../shared/services/json-loader/json-loader.service';
 import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language-service/language.service';
@@ -20,7 +20,7 @@ export class TopMenuComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private topMenuItemsService: TopMenuItemsService,
+    private jsonLoaderService: JsonLoaderService,
     private translate: TranslateService,
     private languageService: LanguageService
   ) {
@@ -30,9 +30,11 @@ export class TopMenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.setIsMobile();
-    this.topMenuItemsService.getMenuItems().subscribe((items) => {
-      this.menuItems = items;
-    });
+    this.jsonLoaderService
+      .loadData<MenuItem[]>('assets/data/top-menu-items.json')
+      .subscribe((items) => {
+        this.menuItems = items;
+      });
   }
 
   @HostListener('window:scroll', ['$event'])
