@@ -51,9 +51,9 @@
 }
 
 .side-menu {
-  width: 12rem;
+  width: 13rem;
   position: fixed;
-  right: -12rem;
+  right: -13rem;
   top: 4rem;
   height: 100vh;
   background-color: rgb(50, 50, 50);
@@ -62,12 +62,14 @@
   transition: 0.5s;
 
   .language-button {
+    margin: 0.25rem 0rem 0rem 0.25rem;
     width: 4rem;
     height: 4rem;
   }
 
   .button {
-    width: 100%;
+    margin: 0.25rem;
+    width: calc(100% - 0.5rem);
     height: 4rem;
   }
 }
