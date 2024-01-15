@@ -74,12 +74,21 @@ export class TopMenuComponent implements OnInit {
     this.isSideMenuOpen = !this.isSideMenuOpen;
   }
 
+  openSideMenu() {
+    this.isSideMenuOpen = true;
+  }
+
+  closeSideMenu() {
+    this.isSideMenuOpen = false;
+  }
+
   naviageTo(path: string) {
-    this.toggleSideMenu();
+    this.closeSideMenu();
     this.router.navigate([path]);
   }
 
   switchLanguage(language: string) {
+    this.closeSideMenu();
     this.languageService.setLanguage(language);
     this.translate.use(language);
   }
