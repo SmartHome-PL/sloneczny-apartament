@@ -53,15 +53,15 @@
 .side-menu {
   width: 16rem; /* Szerokość menu */
   position: fixed;
-  right: 0;
-  top: calc(-100vh + 4rem); /* Początkowe położenie poza ekranem */
+  right: -16rem;
+  top: 4rem; /* Początkowe położenie poza ekranem */
   height: 100vh;
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(50, 50, 50);
   z-index: 100;
   overflow-x: hidden;
   transition: 0.5s; /* Czas trwania animacji */
 }
 
 .open {
-  top: 4rem; /* Położenie po wysunięciu */
+  right: 0; /* Położenie po wysunięciu */
 }
