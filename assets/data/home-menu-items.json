@@ -1,4 +1,12 @@
 [
-  { "title": "Libiaz", "path": "/lbn", "icon": "place" },
-  { "title": "Oswiecim", "path": "/osw", "icon": "place" }
+  {
+    "title": "Libiąż",
+    "path": "/lbn",
+    "icon": "place"
+  },
+  {
+    "title": "Oświęcim",
+    "path": "/osw",
+    "icon": "place"
+  }
 ]
