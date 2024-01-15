@@ -10,7 +10,7 @@
           {{ menuItem.title | translate }}
         </button>
       </ng-container>
-      <button mat-button [matMenuTriggerFor]="menu" class="toolbar-button">
+      <button mat-button [matMenuTriggerFor]="menu">
         {{ getLanguage() }}
       </button>
       <mat-menu #menu="matMenu">
