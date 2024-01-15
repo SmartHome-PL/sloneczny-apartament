@@ -1,6 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { OswMenuItemsService } from './services/osw-menu-item.service';
+import { JsonLoaderService } from '../../shared/services/json-loader/json-loader.service';
 import { MenuItem } from '../../shared/models/menuItem.model';
 
 @Component({
@@ -13,15 +13,17 @@ export class OswPageComponent {
   gridColumns: number = 4;
   constructor(
     private router: Router,
-    private oswMenuItemsService: OswMenuItemsService
+    private jsonLoaderService: JsonLoaderService
   ) {
     this.onResize();
   }
 
   ngOnInit(): void {
-    this.oswMenuItemsService.getMenuItems().subscribe((items) => {
-      this.menuItems = items;
-    });
+    this.jsonLoaderService
+      .loadData<MenuItem[]>('assets/data/osw-menu-items.json')
+      .subscribe((items: MenuItem[]) => {
+        this.menuItems = items;
+      });
   }
 
   @HostListener('window:resize', ['$event'])

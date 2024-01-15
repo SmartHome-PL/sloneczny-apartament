@@ -32,7 +32,7 @@ export class TopMenuComponent implements OnInit {
     this.setIsMobile();
     this.jsonLoaderService
       .loadData<MenuItem[]>('assets/data/top-menu-items.json')
-      .subscribe((items) => {
+      .subscribe((items: MenuItem[]) => {
         this.menuItems = items;
       });
   }

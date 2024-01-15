@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { HomeObjectMenuItemsService } from '../../services/home-object-menu-items.service';
+import { JsonLoaderService } from '../../../../shared/services/json-loader/json-loader.service';
 import { MenuItem } from '../../../../shared/models/menuItem.model';
 
 @Component({
@@ -12,12 +12,14 @@ export class ObjectListComponent {
   menuItems: MenuItem[] = [];
   constructor(
     private router: Router,
-    private homeObjectMenuItemsService: HomeObjectMenuItemsService
+    private jsonLoaderService: JsonLoaderService
   ) {}
 
   ngOnInit(): void {
-    this.homeObjectMenuItemsService.getMenuItems().subscribe((items) => {
-      this.menuItems = items;
-    });
+    this.jsonLoaderService
+      .loadData<MenuItem[]>('assets/data/home-menu-items.json')
+      .subscribe((items: MenuItem[]) => {
+        this.menuItems = items;
+      });
   }
 }
