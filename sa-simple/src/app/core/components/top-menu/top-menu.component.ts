@@ -75,6 +75,7 @@ export class TopMenuComponent implements OnInit {
   }
 
   naviageTo(path: string) {
+    this.toggleSideMenu();
     this.router.navigate([path]);
   }
 

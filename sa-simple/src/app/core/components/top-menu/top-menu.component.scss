@@ -51,15 +51,25 @@
 }
 
 .side-menu {
-  width: 16rem; /* Szerokość menu */
+  width: 12rem;
   position: fixed;
-  right: -16rem;
-  top: 4rem; /* Początkowe położenie poza ekranem */
+  right: -12rem;
+  top: 4rem;
   height: 100vh;
   background-color: rgb(50, 50, 50);
   z-index: 100;
   overflow-x: hidden;
-  transition: 0.5s; /* Czas trwania animacji */
+  transition: 0.5s;
+
+  .language-button {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .button {
+    width: 100%;
+    height: 4rem;
+  }
 }
 
 .open {
