@@ -2,7 +2,7 @@
   height: 4rem;
 }
 
-.toolbar {
+mat-toolbar {
   height: 4rem !important;
   position: fixed;
   top: 0;
@@ -10,44 +10,37 @@
   right: 0;
   transition: top 0.3s;
   z-index: 1000;
-}
-@media (max-width: 599px) {
-  .toolbar {
-    padding-top: 0.25rem; /* zmniejszony margines/padding dla mniejszych ekranów */
+
+  .logo-spacer {
+    flex: 0 1 1rem;
+  }
+
+  .menu-spacer {
+    flex: 1 1 auto;
+  }
+
+  button {
+    height: 100%;
+
+    mat-icon {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: scale(2);
+      padding-left: 0.25rem;
+    }
   }
 }
 
-.logo-spacer {
-  flex: 0 1 1rem;
-}
+@media (max-width: 599px) {
+  mat-toolbar {
+    padding-top: 0.25rem;
 
-.menu-spacer {
-  flex: 1 1 auto;
-}
-
-.sub-toolbar-osw {
-  border-top: 1px solid rgb(255, 255, 255, 15%);
-  height: 0rem;
-  overflow: hidden;
-  transition: height 0.3s ease-out;
-}
-
-.sub-toolbar-osw.expanded {
-  height: 2.5rem;
-}
-
-.toolbar-button {
-  height: 100%;
-}
-
-.toolbar-button-icon {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: scale(2);
-  padding-left: 0.25rem;
+    button {
+      height: calc(100% + 0.25rem);
+    }
+  }
 }
 
 .side-menu {
@@ -61,19 +54,19 @@
   overflow-x: hidden;
   transition: 0.5s;
 
-  .language-button {
+  button.language {
     margin: 0.25rem 0rem 0rem 0.25rem;
     width: 4rem;
     height: 4rem;
   }
 
-  .button {
+  button {
     margin: 0.25rem;
     width: calc(100% - 0.5rem);
     height: 4rem;
   }
 }
 
-.open {
-  right: 0; /* Położenie po wysunięciu */
+.side-menu.open {
+  right: 0;
 }
