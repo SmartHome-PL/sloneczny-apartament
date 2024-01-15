@@ -1,5 +1,12 @@
 mat-grid-list {
   margin: 0.25rem;
+  button {
+    font-size: 125%;
+
+    mat-icon {
+      font-size: 125%;
+    }
+  }
 }
 
 .menu-buttons {
