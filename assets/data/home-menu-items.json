@@ -2,11 +2,13 @@
   {
     "title": "Libiąż",
     "path": "/lbn",
-    "icon": "place"
+    "icon": "place",
+    "disabled": true
   },
   {
     "title": "Oświęcim",
     "path": "/osw",
-    "icon": "place"
+    "icon": "place",
+    "disabled": false
   }
 ]

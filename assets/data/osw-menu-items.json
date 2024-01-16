@@ -2,41 +2,49 @@
   {
     "title": "obj.menu.options.location.label",
     "path": "/osw/location",
-    "icon": "place"
+    "icon": "place",
+    "disabled": true
   },
   {
     "title": "obj.menu.options.check-in.label",
     "path": "/osw/check-in",
-    "icon": "group_add"
+    "icon": "group_add",
+    "disabled": false
   },
   {
     "title": "obj.menu.options.amenities.label",
     "path": "/osw/amenities",
-    "icon": "movie_filter"
+    "icon": "movie_filter",
+    "disabled": true
   },
   {
     "title": "obj.menu.options.check-out.label",
     "path": "/osw/check-out",
-    "icon": "clear"
+    "icon": "clear",
+    "disabled": true
   },
   {
     "title": "obj.menu.options.rules.label",
     "path": "/osw/rules",
-    "icon": "smoke_free"
+    "icon": "smoke_free",
+    "disabled": true
   },
   {
     "title": "obj.menu.options.trash.label",
     "path": "/osw/trash",
-    "icon": "delete"
+    "icon": "delete",
+    "disabled": true
   },
   {
     "title": "obj.menu.options.transport.label",
     "path": "/osw/transport",
-    "icon": "airport_shuttle"
+    "icon": "airport_shuttle",
+    "disabled": true
   },
   {
     "title": "obj.menu.options.tickets.label",
     "path": "/osw/tickets",
-    "icon": "confirmation_number"
+    "icon": "confirmation_number",
+    "disabled": true
   }
 ]
