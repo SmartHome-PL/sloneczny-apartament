@@ -8,9 +8,10 @@ import { MatMenuModule } from '@angular/material/menu';
 
 import { TranslateModule } from '@ngx-translate/core';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [TopMenuComponent, SideMenuComponent],
+  declarations: [TopMenuComponent, SideMenuComponent, FooterComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -19,6 +20,6 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
     MatMenuModule,
     TranslateModule,
   ],
-  exports: [TopMenuComponent, SideMenuComponent],
+  exports: [TopMenuComponent, SideMenuComponent, FooterComponent],
 })
 export class CoreModule {}

@@ -42,9 +42,9 @@ export class TopMenuComponent implements OnInit {
     let toolbar = document.querySelector('.toolbar') as HTMLElement;
 
     if (toolbar) {
-      if (currentScrollPos > this.lastScrollTop && currentScrollPos > 256) {
+      if (currentScrollPos > this.lastScrollTop && currentScrollPos > 64) {
         // Scroll Down
-        toolbar.style.top = '-64px'; // Wysokość twojego mat-toolbar
+        toolbar.style.top = '-4rem'; // Wysokość twojego mat-toolbar
       } else {
         // Scroll Up
         toolbar.style.top = '0';
