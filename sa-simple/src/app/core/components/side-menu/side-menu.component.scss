@@ -1,0 +1,27 @@
+.side-menu {
+  width: 13rem;
+  position: fixed;
+  right: -13rem;
+  top: 4rem;
+  height: 100vh;
+  background-color: rgb(50, 50, 50);
+  z-index: 100;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  button.language {
+    margin: 0.25rem 0rem 0rem 0.25rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  button {
+    margin: 0.25rem;
+    width: calc(100% - 0.5rem);
+    height: 4rem;
+  }
+}
+
+.side-menu.open {
+  right: 0;
+}

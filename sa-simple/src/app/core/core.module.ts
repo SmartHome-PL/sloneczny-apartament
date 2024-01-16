@@ -7,9 +7,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { TranslateModule } from '@ngx-translate/core';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
 
 @NgModule({
-  declarations: [TopMenuComponent],
+  declarations: [TopMenuComponent, SideMenuComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -18,6 +19,6 @@ import { TranslateModule } from '@ngx-translate/core';
     MatMenuModule,
     TranslateModule,
   ],
-  exports: [TopMenuComponent],
+  exports: [TopMenuComponent, SideMenuComponent],
 })
 export class CoreModule {}

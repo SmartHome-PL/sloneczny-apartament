@@ -1,0 +1,14 @@
+<div class="side-menu" [ngClass]="{ open: sideMenuService.isOpen$ | async }">
+  <button mat-raised-button class="language" [matMenuTriggerFor]="menu">
+    {{ getLanguage() }}
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="switchLanguage('en')">🇬🇧 English</button>
+    <button mat-menu-item (click)="switchLanguage('pl')">🇵🇱 Polski</button>
+  </mat-menu>
+  <ng-container *ngFor="let menuItem of menuItems">
+    <button mat-raised-button (click)="naviageTo(menuItem.path)">
+      {{ menuItem.title | translate }}
+    </button>
+  </ng-container>
+</div>

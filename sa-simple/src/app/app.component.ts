@@ -15,6 +15,7 @@ export class AppComponent {
     private languageService: LanguageService
   ) {
     translate.setDefaultLang('en');
+    translate.use('en');
 
     const language = this.languageService.getLanguage();
     if (language) {

@@ -4,6 +4,7 @@ import { JsonLoaderService } from '../../../shared/services/json-loader/json-loa
 import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language-service/language.service';
+import { SideMenuService } from '../side-menu/side-menu.service';
 
 @Component({
   selector: 'app-top-menu',
@@ -22,11 +23,9 @@ export class TopMenuComponent implements OnInit {
     private router: Router,
     private jsonLoaderService: JsonLoaderService,
     private translate: TranslateService,
-    private languageService: LanguageService
-  ) {
-    translate.setDefaultLang('en');
-    translate.use('en');
-  }
+    private languageService: LanguageService,
+    public sideMenuService: SideMenuService
+  ) {}
 
   ngOnInit(): void {
     this.setIsMobile();
@@ -73,24 +72,14 @@ export class TopMenuComponent implements OnInit {
   }
 
   toggleSideMenu() {
-    this.isSideMenuOpen = !this.isSideMenuOpen;
-  }
-
-  openSideMenu() {
-    this.isSideMenuOpen = true;
-  }
-
-  closeSideMenu() {
-    this.isSideMenuOpen = false;
+    this.sideMenuService.toggle();
   }
 
   naviageTo(path: string) {
-    this.closeSideMenu();
     this.router.navigate([path]);
   }
 
   switchLanguage(language: string) {
-    this.closeSideMenu();
     this.languageService.setLanguage(language);
     this.translate.use(language);
   }
