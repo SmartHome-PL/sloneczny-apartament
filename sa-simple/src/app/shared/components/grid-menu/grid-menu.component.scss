@@ -5,6 +5,16 @@
   gap: 0.25rem;
 }
 
+/* Zapytanie medialne dla mniejszych ekranów, np. telefonów */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(
+      2,
+      minmax(6rem, 1fr)
+    ); /* Dla ekranów mniejszych niż 600px, użyj 2 kolumn */
+  }
+}
+
 .grid-item {
   aspect-ratio: 2 / 1;
   display: flex;
