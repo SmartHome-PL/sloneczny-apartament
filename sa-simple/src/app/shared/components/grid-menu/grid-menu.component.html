@@ -1,8 +1,9 @@
 <div class="grid-container">
   <div class="grid-item" *ngFor="let menuItem of menuItems">
     <button
+      [disabled]="menuItem.disabled"
+      [color]="menuItem.disabled ? 'disabled' : 'enabled'"
       mat-raised-button
-      class="menu-buttons"
       (click)="navigateTo(menuItem.path)"
     >
       {{ menuItem.title | translate }}
