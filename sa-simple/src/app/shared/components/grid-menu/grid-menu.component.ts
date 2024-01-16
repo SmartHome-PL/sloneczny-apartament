@@ -36,7 +36,7 @@ export class GridMenuComponent implements OnInit {
     }
   }
 
-  naviageTo(path: string) {
+  navigateTo(path: string) {
     this.router.navigate([path]);
   }
 }

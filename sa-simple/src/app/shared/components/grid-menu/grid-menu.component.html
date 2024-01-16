@@ -1,12 +1,12 @@
-<mat-grid-list [cols]="gridColumns" rowHeight="2:1" gutterSize="0.25rem">
-  <mat-grid-tile *ngFor="let menuItem of menuItems"
-    ><button
+<div class="grid-container">
+  <div class="grid-item" *ngFor="let menuItem of menuItems">
+    <button
       mat-raised-button
       class="menu-buttons"
-      (click)="naviageTo(menuItem.path)"
+      (click)="navigateTo(menuItem.path)"
     >
       {{ menuItem.title | translate }}
       <mat-icon>{{ menuItem.icon }}</mat-icon>
-    </button></mat-grid-tile
-  >
-</mat-grid-list>
+    </button>
+  </div>
+</div>
