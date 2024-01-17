@@ -3,7 +3,7 @@
     "title": "obj.menu.options.directions.label",
     "path": "/osw/directions",
     "icon": "place",
-    "disabled": true
+    "disabled": false
   },
   {
     "title": "obj.menu.options.check-in.label",

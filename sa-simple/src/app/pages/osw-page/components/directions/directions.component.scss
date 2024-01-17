@@ -1,0 +1,65 @@
+mat-card {
+  max-width: 64rem;
+  margin: auto;
+  background-color: gray;
+
+  mat-card-header {
+    min-height: 4rem;
+
+    mat-card-title {
+      margin-left: 0.25rem;
+      h1 {
+        font-weight: 450;
+        color: gainsboro;
+        margin-bottom: -0.25rem;
+      }
+    }
+    mat-card-subtitle {
+      margin-left: 0.25rem;
+      margin-bottom: 1rem;
+
+      span {
+        color: gainsboro;
+      }
+    }
+  }
+
+  mat-card-content {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: gainsboro;
+    color: rgb(50, 50, 50);
+
+    .address-ident {
+      text-indent: 1rem;
+    }
+
+    mat-divider {
+      background-color: rgb(50, 50, 50);
+      margin-bottom: 0.75rem;
+    }
+
+    iframe {
+      border-radius: 0.25rem;
+    }
+  }
+
+  mat-card-actions {
+    margin: -0.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+    gap: 0.25rem;
+    button {
+      color: gainsboro;
+      height: 3rem;
+      width: 100%;
+    }
+  }
+
+  mat-icon {
+    scale: 2;
+    color: gainsboro;
+    margin-left: 0.75rem;
+    margin-top: 0.75rem;
+  }
+}
