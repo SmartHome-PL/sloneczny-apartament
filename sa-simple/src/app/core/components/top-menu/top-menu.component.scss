@@ -13,7 +13,7 @@ mat-toolbar {
   transition: top 0.3s;
   z-index: 1000;
   background-color: $primary-color;
-  color: $base-color;
+  color: $base-text-color;
 
   .logo-spacer {
     flex: 0 1 1rem;

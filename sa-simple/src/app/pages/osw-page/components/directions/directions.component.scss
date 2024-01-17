@@ -12,7 +12,7 @@ mat-card {
       margin-left: 0.25rem;
       h1 {
         font-weight: 450;
-        color: $base-color;
+        color: $base-text-color;
         margin-bottom: -0.25rem;
       }
     }
@@ -21,7 +21,7 @@ mat-card {
       margin-bottom: 1rem;
 
       span {
-        color: $base-color;
+        color: $base-text-color;
       }
     }
   }
@@ -53,7 +53,7 @@ mat-card {
     gap: 0.25rem;
     button {
       background-color: $action-color;
-      color: $base-color;
+      color: $base-text-color;
       height: 3rem;
       width: 100%;
     }
@@ -61,7 +61,7 @@ mat-card {
 
   mat-icon {
     scale: 2;
-    color: $base-color;
+    color: $base-text-color;
     margin-left: 0.75rem;
     margin-top: 0.75rem;
   }

@@ -1,16 +1,13 @@
+@import "../../../../assets/styles/colors.scss";
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
   gap: 0.25rem;
 }
 
-/* Zapytanie medialne dla mniejszych ekranów, np. telefonów */
 @media (max-width: 600px) {
   .grid-container {
-    grid-template-columns: repeat(
-      2,
-      minmax(6rem, 1fr)
-    ); /* Dla ekranów mniejszych niż 600px, użyj 2 kolumn */
+    grid-template-columns: repeat(2, minmax(6rem, 1fr));
   }
 }
 
@@ -27,9 +24,11 @@ button {
 }
 
 .mat-disabled {
-  background-color: gainsboro;
+  background-color: $action-text-color;
+  color: $base-color;
 }
 
 .mat-enabled {
-  background-color: dimgrey;
+  background-color: $action-color;
+  color: $base-color;
 }
