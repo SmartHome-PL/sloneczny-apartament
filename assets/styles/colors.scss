@@ -1,6 +1,7 @@
 $primary-color: rgb(66, 90, 88);
 $primary-lighten-color: lighten($primary-color, 20%);
-$primary-text-color: darken($primary-color, 20%);
+$primary-darken-color: darken($primary-color, 5%);
+$primary-text-color: darken($primary-color, 40%);
 $secondary-color: rgb(161, 192, 187);
 $base-color: rgb(255, 254, 238);
 $base-text-color: lighten($base-color, 20%);
