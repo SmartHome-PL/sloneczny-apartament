@@ -1,6 +1,6 @@
 mat-toolbar {
   width: 100%;
-  bottom: 0;
+  height: 4rem;
   z-index: 100; /* Aby upewnić się, że pasek narzędzi jest nad innymi elementami */
   font-size: 0.75rem;
   font-weight: 400;
@@ -13,4 +13,8 @@ mat-toolbar {
   .company-link {
     color: gray;
   }
+}
+
+.toolbar-placeholder {
+  height: 4rem;
 }
