@@ -13,6 +13,18 @@ mat-toolbar {
   .company-link {
     color: gray;
   }
+
+  @media (max-width: 599px) {
+    .app-version {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.25rem;
+
+      .split-text {
+        margin-top: -1rem;
+      }
+    }
+  }
 }
 
 .toolbar-placeholder {
