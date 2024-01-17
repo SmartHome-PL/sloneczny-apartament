@@ -1,17 +1,19 @@
+@import "../../../../assets/styles/colors";
 mat-toolbar {
   width: 100%;
   height: 4rem;
   z-index: 100; /* Aby upewnić się, że pasek narzędzi jest nad innymi elementami */
   font-size: 0.75rem;
   font-weight: 400;
-  color: gray;
+  background-color: $primary-color;
+  color: $base-color;
 
   .footer-spacer {
     flex: 1 1 auto;
   }
 
   .company-link {
-    color: gray;
+    color: $base-color;
   }
 
   @media (max-width: 599px) {

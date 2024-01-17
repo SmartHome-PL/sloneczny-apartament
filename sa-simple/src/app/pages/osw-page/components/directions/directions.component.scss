@@ -1,7 +1,9 @@
+@import "../../../../../assets/styles/colors.scss";
+
 mat-card {
   max-width: 64rem;
   margin: auto;
-  background-color: gray;
+  background-color: $primary-color;
 
   mat-card-header {
     min-height: 4rem;
@@ -10,7 +12,7 @@ mat-card {
       margin-left: 0.25rem;
       h1 {
         font-weight: 450;
-        color: gainsboro;
+        color: $base-color;
         margin-bottom: -0.25rem;
       }
     }
@@ -19,7 +21,7 @@ mat-card {
       margin-bottom: 1rem;
 
       span {
-        color: gainsboro;
+        color: $base-color;
       }
     }
   }
@@ -27,8 +29,8 @@ mat-card {
   mat-card-content {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    background-color: gainsboro;
-    color: rgb(50, 50, 50);
+    background-color: $secondary-color;
+    color: $primary-text-color;
 
     .address-ident {
       text-indent: 1rem;
@@ -50,7 +52,8 @@ mat-card {
     grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
     gap: 0.25rem;
     button {
-      color: gainsboro;
+      background-color: $action-color;
+      color: $base-color;
       height: 3rem;
       width: 100%;
     }
@@ -58,7 +61,7 @@ mat-card {
 
   mat-icon {
     scale: 2;
-    color: gainsboro;
+    color: $base-color;
     margin-left: 0.75rem;
     margin-top: 0.75rem;
   }
