@@ -5,7 +5,7 @@ mat-toolbar {
   z-index: 100; /* Aby upewnić się, że pasek narzędzi jest nad innymi elementami */
   font-size: 0.75rem;
   font-weight: 400;
-  background-color: $primary-color;
+  background-color: $primary-darken-color;
   color: $base-text-color;
 
   .footer-spacer {
