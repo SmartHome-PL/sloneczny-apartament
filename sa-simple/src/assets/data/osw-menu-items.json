@@ -1,7 +1,7 @@
 [
   {
-    "title": "obj.menu.options.location.label",
-    "path": "/osw/location",
+    "title": "obj.menu.options.directions.label",
+    "path": "/osw/directions",
     "icon": "place",
     "disabled": true
   },

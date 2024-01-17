@@ -8,9 +8,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { OswPageComponent } from './osw-page.component';
 import { MatIconModule } from '@angular/material/icon';
 import { SharedModule } from '../../shared/shared.module';
+import { DirectionsComponent } from './components/directions/directions.component';
 
 @NgModule({
-  declarations: [CheckInComponent, OswPageComponent],
+  declarations: [CheckInComponent, OswPageComponent, DirectionsComponent],
   imports: [
     CommonModule,
     SharedModule,

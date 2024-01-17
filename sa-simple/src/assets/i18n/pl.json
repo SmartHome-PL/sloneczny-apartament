@@ -1,41 +1,41 @@
 {
-    "core": {
-        "menu": {
-            "options": {
-                "objects": {
-                    "label": "Obiekty"
-                }
-            }
+  "core": {
+    "menu": {
+      "options": {
+        "objects": {
+          "label": "Obiekty"
         }
-    },
-    "obj": {
-        "menu": {
-            "options": {
-                "amenities": {
-                    "label": "Udogodnienia"
-                },
-                "check-in": {
-                    "label": "Zameldowanie"
-                },
-                "check-out": {
-                    "label": "Wymeldowanie"
-                },
-                "location": {
-                    "label": "Lokalizacja"
-                },
-                "rules": {
-                    "label": "Regulamin"
-                },
-                "tickets": {
-                    "label": "Bilety"
-                },
-                "transport": {
-                    "label": "Transport"
-                },
-                "trash": {
-                    "label": "Śmieci"
-                }
-            }
-        }
+      }
     }
+  },
+  "obj": {
+    "menu": {
+      "options": {
+        "amenities": {
+          "label": "Udogodnienia"
+        },
+        "check-in": {
+          "label": "Zameldowanie"
+        },
+        "check-out": {
+          "label": "Wymeldowanie"
+        },
+        "directions": {
+          "label": "Dojazd"
+        },
+        "rules": {
+          "label": "Regulamin"
+        },
+        "tickets": {
+          "label": "Bilety"
+        },
+        "transport": {
+          "label": "Transport"
+        },
+        "trash": {
+          "label": "Śmieci"
+        }
+      }
+    }
+  }
 }
