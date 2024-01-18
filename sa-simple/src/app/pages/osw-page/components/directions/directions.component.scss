@@ -1,0 +1,15 @@
+@import "../../../../../assets/styles/colors.scss";
+
+.address-ident {
+  text-indent: 1rem;
+}
+
+mat-divider {
+  background-color: $primary-darken-color;
+  margin-bottom: 0.75rem;
+}
+
+iframe {
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+}

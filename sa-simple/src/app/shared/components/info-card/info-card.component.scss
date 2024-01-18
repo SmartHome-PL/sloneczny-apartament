@@ -32,18 +32,7 @@ mat-card {
     background-color: $secondary-color;
     color: $primary-text-color;
 
-    .address-ident {
-      text-indent: 1rem;
-    }
-
-    mat-divider {
-      background-color: rgb(50, 50, 50);
-      margin-bottom: 0.75rem;
-    }
-
-    iframe {
-      border-radius: 0.25rem;
-    }
+    
   }
 
   mat-card-actions {
