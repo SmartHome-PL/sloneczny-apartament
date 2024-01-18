@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar>
+      <mat-icon>{{ infoCardData.titleBar.icon }}</mat-icon>
+    </div>
+    <mat-card-title
+      ><h1>
+        {{ infoCardData.titleBar.title | translate | uppercase }}
+      </h1></mat-card-title
+    >
+    <mat-card-subtitle>
+      <span>{{ infoCardData.titleBar.subtitle | translate }}</span>
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <ng-content></ng-content>
+  </mat-card-content>
+  <mat-card-actions>
+    <ng-container
+      *ngFor="let actionBarMenuItem of infoCardData.actionBarMenuItems"
+    >
+      <button mat-raised-button>
+        <mat-icon>{{ actionBarMenuItem.icon }}</mat-icon>
+        {{ actionBarMenuItem.title }}
+      </button>
+    </ng-container>
+  </mat-card-actions>
+</mat-card>

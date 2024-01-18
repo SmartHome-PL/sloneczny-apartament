@@ -5,16 +5,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { TranslateModule } from '@ngx-translate/core';
+import { InfoCardComponent } from './components/info-card/info-card.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
-  declarations: [GridMenuComponent],
+  declarations: [GridMenuComponent, InfoCardComponent],
   imports: [
     CommonModule,
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
     TranslateModule,
+    MatCardModule,
+    MatDividerModule,
   ],
-  exports: [GridMenuComponent],
+  exports: [GridMenuComponent, InfoCardComponent],
 })
 export class SharedModule {}
