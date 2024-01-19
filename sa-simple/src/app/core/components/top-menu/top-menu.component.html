@@ -24,8 +24,15 @@
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
-<div class="language-menu">
-  <button mat-raised-button (click)="switchLanguage('en')">🇬🇧</button>
-  <button mat-raised-button (click)="switchLanguage('pl')">🇵🇱</button>
+<div class="language-menu" *ngIf="!isMobile">
+  <button
+    [disabled]="languageMenuItem.disabled"
+    *ngFor="let languageMenuItem of languageMenuItems"
+    mat-raised-button
+    [color]="languageMenuItem.disabled ? 'disabled' : 'enabled'"
+    (click)="switchLanguage(languageMenuItem.path)"
+  >
+    {{ languageMenuItem.title }}
+  </button>
 </div>
 <div class="toolbar-placeholder"></div>

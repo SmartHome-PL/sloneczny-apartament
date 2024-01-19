@@ -21,6 +21,50 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class TopMenuComponent implements OnInit {
   menuItems: MenuItem[] = [];
+  languageMenuItems: MenuItem[] = [
+    {
+      title: '🇬🇧',
+      path: 'en',
+      icon: '',
+      disabled: false,
+    },
+    {
+      title: '🇵🇱',
+      path: 'pl',
+      icon: '',
+      disabled: false,
+    },
+    {
+      title: '🇪🇸',
+      path: 'es',
+      icon: '',
+      disabled: true,
+    },
+    {
+      title: '🇨🇿',
+      path: 'cs',
+      icon: '',
+      disabled: true,
+    },
+    {
+      title: '🇸🇰',
+      path: 'sl',
+      icon: '',
+      disabled: true,
+    },
+    {
+      title: '🇺🇦',
+      path: 'ua',
+      icon: '',
+      disabled: true,
+    },
+    {
+      title: '🇮🇹',
+      path: 'it',
+      icon: '',
+      disabled: true,
+    },
+  ];
   isMobile: boolean = true;
   isSideMenuOpen: boolean = false;
   isLanguageMenuOpen = false;
@@ -79,9 +123,8 @@ export class TopMenuComponent implements OnInit {
   onResize(event?: Event) {
     this.setIsMobile();
 
-    if (this.isLanguageMenuOpen) {
-      this.positionLanguageMenu();
-    }
+    this.isLanguageMenuOpen = false;
+    this.positionLanguageMenu();
   }
 
   @HostListener('document:click', ['$event'])
