@@ -1,41 +1,83 @@
 {
-  "core": {
-    "menu": {
-      "options": {
-        "objects": {
-          "label": "Obiekty"
+    "core": {
+        "menu": {
+            "options": {
+                "objects": {
+                    "label": "Obiekty"
+                }
+            }
         }
-      }
-    }
-  },
-  "obj": {
-    "menu": {
-      "options": {
-        "amenities": {
-          "label": "Udogodnienia"
+    },
+    "obj": {
+        "menu": {
+            "options": {
+                "amenities": {
+                    "label": "Udogodnienia"
+                },
+                "check-in": {
+                    "label": "Zameldowanie"
+                },
+                "check-out": {
+                    "label": "Wymeldowanie"
+                },
+                "contact": {
+                    "label": "Contact"
+                },
+                "directions": {
+                    "label": "Dojazd"
+                },
+                "rules": {
+                    "label": "Regulamin"
+                },
+                "tickets": {
+                    "label": "Bilety"
+                },
+                "transport": {
+                    "label": "Transport"
+                },
+                "trash": {
+                    "label": "Śmieci"
+                }
+            }
         },
-        "check-in": {
-          "label": "Zameldowanie"
-        },
-        "check-out": {
-          "label": "Wymeldowanie"
-        },
-        "directions": {
-          "label": "Dojazd"
-        },
-        "rules": {
-          "label": "Regulamin"
-        },
-        "tickets": {
-          "label": "Bilety"
-        },
-        "transport": {
-          "label": "Transport"
-        },
-        "trash": {
-          "label": "Śmieci"
+        "pages": {
+            "osw": {
+                "directions": {
+                    "content": {
+                        "additional-info": {
+                            "first": {
+                                "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
+                            },
+                            "second": {
+                                "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
+                            }
+                        },
+                        "address": {
+                            "intro": {
+                                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                            }
+                        },
+                        "map": {
+                            "intro": {
+                                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                    },
+                    "title": {
+                        "label": "Dojazd"
+                    }
+                }
+            }
         }
-      }
+    },
+    "shared": {
+        "address": {
+            "street": {
+                "label": "ul."
+            }
+        }
     }
-  }
 }
