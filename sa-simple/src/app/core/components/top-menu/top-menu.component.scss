@@ -75,3 +75,23 @@ mat-toolbar {
 .side-menu.open {
   right: 0;
 }
+
+.language-menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  max-width: 300px; /* Dla 3 kolumn, każda 100px szerokości */
+}
+
+button.mat-raised-button {
+  width: 100%;
+  box-sizing: border-box;
+}

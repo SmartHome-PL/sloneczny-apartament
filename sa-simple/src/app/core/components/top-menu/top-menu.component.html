@@ -10,13 +10,20 @@
           {{ menuItem.title | translate }}
         </button>
       </ng-container>
-      <button mat-button [matMenuTriggerFor]="menu">
+      <button
+        mat-button
+        [attr.aria-expanded]="isLanguageMenuOpen ? 'true' : 'false'"
+        (click)="toggleLanguageMenu()"
+      >
         {{ getLanguage() }}
       </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="switchLanguage('en')">🇬🇧 English</button>
-        <button mat-menu-item (click)="switchLanguage('pl')">🇵🇱 Polski</button>
-      </mat-menu>
+
+      <div class="language-menu" *ngIf="isLanguageMenuOpen">
+        <div class="language-grid">
+          <button mat-raised-button (click)="switchLanguage('en')">🇬🇧</button>
+          <button mat-raised-button (click)="switchLanguage('pl')">🇵🇱</button>
+        </div>
+      </div>
     </ng-container>
     <button mat-button *ngIf="isMobile" (click)="toggleSideMenu()">
       <mat-icon *ngIf="!isSideMenuOpen">menu</mat-icon>
@@ -25,17 +32,3 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <div class="toolbar-placeholder"></div>
-<!-- <div class="side-menu" [ngClass]="{ open: isSideMenuOpen }">
-  <button mat-raised-button class="language" [matMenuTriggerFor]="menu">
-    {{ getLanguage() }}
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="switchLanguage('en')">🇬🇧 English</button>
-    <button mat-menu-item (click)="switchLanguage('pl')">🇵🇱 Polski</button>
-  </mat-menu>
-  <ng-container *ngFor="let menuItem of menuItems">
-    <button mat-raised-button (click)="naviageTo(menuItem.path)">
-      {{ menuItem.title | translate }}
-    </button>
-  </ng-container>
-</div> -->

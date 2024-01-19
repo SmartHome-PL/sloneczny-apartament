@@ -15,6 +15,7 @@ export class TopMenuComponent implements OnInit {
   menuItems: MenuItem[] = [];
   isMobile: boolean = true;
   isSideMenuOpen: boolean = false;
+  isLanguageMenuOpen = false;
 
   lastScrollTop = 0;
   scrollDownStart = 0;
@@ -57,6 +58,10 @@ export class TopMenuComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event?: Event) {
     this.setIsMobile();
+
+    if (this.isLanguageMenuOpen) {
+      this.positionLanguageMenu();
+    }
   }
 
   private setIsMobile() {
@@ -82,10 +87,45 @@ export class TopMenuComponent implements OnInit {
   switchLanguage(language: string) {
     this.languageService.setLanguage(language);
     this.translate.use(language);
+    this.isLanguageMenuOpen = false;
   }
 
   getLanguage() {
     if (this.translate.currentLang === 'en') return '🇬🇧';
     else return '🇵🇱';
+  }
+
+  toggleLanguageMenu() {
+    this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
+
+    const menu = document.querySelector('.language-menu') as HTMLElement;
+    if (menu) {
+      if (this.isLanguageMenuOpen) {
+        menu.classList.add('open');
+      } else {
+        menu.classList.remove('open');
+      }
+    }
+
+    if (this.isLanguageMenuOpen) {
+      setTimeout(() => {
+        this.positionLanguageMenu();
+      });
+    }
+  }
+
+  positionLanguageMenu() {
+    const button = document.querySelector(
+      'button[aria-expanded]'
+    ) as HTMLElement;
+    const menu = document.querySelector('.language-menu') as HTMLElement;
+
+    if (button && menu) {
+      const buttonRect = button.getBoundingClientRect();
+      const menuWidth = menu.offsetWidth;
+
+      menu.style.top = buttonRect.bottom + 'px';
+      menu.style.left = `${buttonRect.right - menuWidth}px`;
+    }
   }
 }
