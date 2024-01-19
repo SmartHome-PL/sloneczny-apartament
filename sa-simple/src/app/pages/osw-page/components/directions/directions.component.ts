@@ -10,18 +10,18 @@ export class DirectionsComponent {
   directionsCardData: InfoCard = {
     titleBar: {
       icon: 'place',
-      title: 'Dojazd',
-      subtitle: 'Instrukcja dojazdu do Słonecznego Apartamentu w Oświęcimiu',
+      title: 'obj.pages.osw.directions.title.label',
+      subtitle: 'obj.pages.osw.directions.subtitle.label',
     },
     actionBarMenuItems: [
       {
-        title: 'Transport',
+        title: 'obj.menu.options.transport.label',
         path: '/transport',
         icon: 'airport_shuttle',
         disabled: true,
       },
       {
-        title: 'Contact',
+        title: 'obj.menu.options.contact.label',
         path: '/contact',
         icon: 'phone',
         disabled: true,

@@ -20,6 +20,9 @@
         "check-out": {
           "label": "Check-Out"
         },
+        "contact": {
+          "label": "Contact"
+        },
         "directions": {
           "label": "Directions"
         },
@@ -35,6 +38,45 @@
         "trash": {
           "label": "Trash"
         }
+      }
+    },
+    "pages": {
+      "osw": {
+        "directions": {
+          "content": {
+            "additional-info": {
+              "first": {
+                "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
+              },
+              "second": {
+                "label": "You can find more about this on the website linked below."
+              }
+            },
+            "address": {
+              "intro": {
+                "label": "You can find our apartment at the following address:"
+              }
+            },
+            "map": {
+              "intro": {
+                "label": "Below is the attached map from the google platform, marked the exact location of our apartment."
+              }
+            }
+          },
+          "subtitle": {
+            "label": "Directions to the Słoneczny Apartment in Oświęcim"
+          },
+          "title": {
+            "label": "Directions"
+          }
+        }
+      }
+    }
+  },
+  "shared": {
+    "address": {
+      "street": {
+        "label": "st."
       }
     }
   }

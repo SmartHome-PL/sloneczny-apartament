@@ -1,11 +1,15 @@
 <app-info-card [infoCardData]="directionsCardData">
-  <p>Nasz apartament znajdziecie państwo pod poniższym adresem:</p>
+  <p>
+    {{ "obj.pages.osw.directions.content.address.intro.label" | translate }}
+  </p>
   <p class="address-ident">32-600 Oświęcim</p>
-  <p class="address-ident">ul. Generała Władysława Sikorskiego 14E/4</p>
+  <p class="address-ident">
+    {{ "shared.address.street.label" | translate }} Generała Władysława
+    Sikorskiego 14E/4
+  </p>
   <mat-divider></mat-divider>
   <p>
-    Poniżej znajduje się załączona mapa z platformy google, z zaznaczoną
-    dokładną lokalizacją naszego apartamentu.
+    {{ "obj.pages.osw.directions.content.map.intro.label" | translate }}
   </p>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.434187729237!2d19.20949157722037!3d50.04069721678149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47169571dd988297%3A0x4f63fa1c54ec7619!2zU8WCb25lY3pueSBBcGFydGFtZW50IE_Fm3dpxJljaW0!5e0!3m2!1spl!2spl!4v1704635532036!5m2!1spl!2spl"
@@ -18,11 +22,14 @@
   ></iframe>
   <mat-divider></mat-divider>
   <p>
-    W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie
-    jest z transferu do naszego obiektu za dodatkową opłatą.
+    {{
+      "obj.pages.osw.directions.content.additional-info.first.label" | translate
+    }}
   </p>
   <p>
-    Więcej na ten temat znajdą państwo na stronie, do której link znajduje się
-    poniżej.
+    {{
+      "obj.pages.osw.directions.content.additional-info.second.label"
+        | translate
+    }}
   </p>
 </app-info-card>

@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { SharedModule } from '../../shared/shared.module';
 import { DirectionsComponent } from './components/directions/directions.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [CheckInComponent, OswPageComponent, DirectionsComponent],
@@ -22,6 +23,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatGridListModule,
     MatIconModule,
     MatDividerModule,
+    TranslateModule,
   ],
 })
 export class OswPageModule {}

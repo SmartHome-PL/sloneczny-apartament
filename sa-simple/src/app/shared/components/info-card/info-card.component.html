@@ -20,8 +20,8 @@
       *ngFor="let actionBarMenuItem of infoCardData.actionBarMenuItems"
     >
       <button mat-raised-button>
-        <mat-icon>{{ actionBarMenuItem.icon }}</mat-icon>
-        {{ actionBarMenuItem.title }}
+        <mat-icon>{{ actionBarMenuItem.icon | translate }}</mat-icon>
+        {{ actionBarMenuItem.title | translate }}
       </button>
     </ng-container>
   </mat-card-actions>

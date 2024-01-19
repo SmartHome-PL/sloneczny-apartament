@@ -7,6 +7,7 @@ mat-toolbar {
   font-weight: 400;
   background-color: $primary-darken-color;
   color: $base-text-color;
+  min-width: 350px;
 
   .footer-spacer {
     flex: 1 1 auto;
@@ -17,7 +18,7 @@ mat-toolbar {
   }
 
   @media (max-width: 599px) {
-    .app-version {
+    .app-creator {
       display: flex;
       flex-direction: column;
       margin-top: 1.25rem;
@@ -25,6 +26,10 @@ mat-toolbar {
       .split-text {
         margin-top: -1rem;
       }
+    }
+
+    .app-version {
+      margin-top: 0.25rem;
     }
   }
 }
