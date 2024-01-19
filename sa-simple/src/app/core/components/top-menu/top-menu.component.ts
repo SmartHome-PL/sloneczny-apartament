@@ -1,10 +1,17 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  HostListener,
+  PLATFORM_ID,
+  Inject,
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { JsonLoaderService } from '../../../shared/services/json-loader/json-loader.service';
 import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language-service/language.service';
 import { SideMenuService } from '../side-menu/side-menu.service';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-top-menu',
@@ -16,6 +23,7 @@ export class TopMenuComponent implements OnInit {
   isMobile: boolean = true;
   isSideMenuOpen: boolean = false;
   isLanguageMenuOpen = false;
+  isFirstLoadGuard = true;
 
   lastScrollTop = 0;
   scrollDownStart = 0;
@@ -25,16 +33,26 @@ export class TopMenuComponent implements OnInit {
     private jsonLoaderService: JsonLoaderService,
     private translate: TranslateService,
     private languageService: LanguageService,
-    public sideMenuService: SideMenuService
+    public sideMenuService: SideMenuService,
+    @Inject(PLATFORM_ID) private platformId: Object
   ) {}
 
   ngOnInit(): void {
     this.setIsMobile();
+
     this.jsonLoaderService
       .loadData<MenuItem[]>('assets/data/top-menu-items.json')
       .subscribe((items: MenuItem[]) => {
         this.menuItems = items;
       });
+  }
+
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      setTimeout(() => {
+        this.positionLanguageMenu();
+      }, 0);
+    }
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -98,34 +116,39 @@ export class TopMenuComponent implements OnInit {
   toggleLanguageMenu() {
     this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
 
-    const menu = document.querySelector('.language-menu') as HTMLElement;
-    if (menu) {
-      if (this.isLanguageMenuOpen) {
-        menu.classList.add('open');
-      } else {
-        menu.classList.remove('open');
-      }
-    }
-
-    if (this.isLanguageMenuOpen) {
-      setTimeout(() => {
-        this.positionLanguageMenu();
-      });
-    }
+    this.positionLanguageMenu();
   }
 
   positionLanguageMenu() {
     const button = document.querySelector(
       'button[aria-expanded]'
     ) as HTMLElement;
+    const sideMenuButton = document.querySelector(
+      '.side-menu-button'
+    ) as HTMLElement;
     const menu = document.querySelector('.language-menu') as HTMLElement;
 
     if (button && menu) {
       const buttonRect = button.getBoundingClientRect();
       const menuWidth = menu.offsetWidth;
+      const sideMenuButtonWidth = sideMenuButton
+        ? sideMenuButton.offsetWidth
+        : 0;
 
-      menu.style.top = buttonRect.bottom + 'px';
-      menu.style.left = `${buttonRect.right - menuWidth}px`;
+      if (this.isLanguageMenuOpen) {
+        menu.style.top = buttonRect.bottom + 'px';
+        menu.style.left = `${buttonRect.right - menuWidth}px`;
+      } else {
+        if (this.isFirstLoadGuard) {
+          menu.style.top = '-4rem';
+          menu.style.left = `${buttonRect.right - menuWidth + 64}px`;
+          this.isFirstLoadGuard = false;
+          console.log(sideMenuButtonWidth);
+        } else {
+          menu.style.top = '-4rem';
+          menu.style.left = `${buttonRect.right - menuWidth}px`;
+        }
+      }
     }
   }
 }

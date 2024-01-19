@@ -17,13 +17,6 @@
       >
         {{ getLanguage() }}
       </button>
-
-      <div class="language-menu" *ngIf="isLanguageMenuOpen">
-        <div class="language-grid">
-          <button mat-raised-button (click)="switchLanguage('en')">🇬🇧</button>
-          <button mat-raised-button (click)="switchLanguage('pl')">🇵🇱</button>
-        </div>
-      </div>
     </ng-container>
     <button mat-button *ngIf="isMobile" (click)="toggleSideMenu()">
       <mat-icon *ngIf="!isSideMenuOpen">menu</mat-icon>
@@ -31,4 +24,10 @@
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
+<div class="language-menu">
+  <div class="language-grid">
+    <button mat-raised-button (click)="switchLanguage('en')">🇬🇧</button>
+    <button mat-raised-button (click)="switchLanguage('pl')">🇵🇱</button>
+  </div>
+</div>
 <div class="toolbar-placeholder"></div>
