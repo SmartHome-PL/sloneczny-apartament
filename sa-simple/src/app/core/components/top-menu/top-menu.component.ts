@@ -106,6 +106,7 @@ export class TopMenuComponent implements OnInit {
     this.languageService.setLanguage(language);
     this.translate.use(language);
     this.isLanguageMenuOpen = false;
+    this.positionLanguageMenu();
   }
 
   getLanguage() {
@@ -115,7 +116,6 @@ export class TopMenuComponent implements OnInit {
 
   toggleLanguageMenu() {
     this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
-
     this.positionLanguageMenu();
   }
 
@@ -123,29 +123,23 @@ export class TopMenuComponent implements OnInit {
     const button = document.querySelector(
       'button[aria-expanded]'
     ) as HTMLElement;
-    const sideMenuButton = document.querySelector(
-      '.side-menu-button'
-    ) as HTMLElement;
     const menu = document.querySelector('.language-menu') as HTMLElement;
 
     if (button && menu) {
       const buttonRect = button.getBoundingClientRect();
       const menuWidth = menu.offsetWidth;
-      const sideMenuButtonWidth = sideMenuButton
-        ? sideMenuButton.offsetWidth
-        : 0;
+      const menuHeight = menu.offsetHeight;
 
       if (this.isLanguageMenuOpen) {
         menu.style.top = buttonRect.bottom + 'px';
         menu.style.left = `${buttonRect.right - menuWidth}px`;
       } else {
         if (this.isFirstLoadGuard) {
-          menu.style.top = '-4rem';
+          menu.style.top = -menuHeight + 'px';
           menu.style.left = `${buttonRect.right - menuWidth + 64}px`;
           this.isFirstLoadGuard = false;
-          console.log(sideMenuButtonWidth);
         } else {
-          menu.style.top = '-4rem';
+          menu.style.top = -menuHeight + 'px';
           menu.style.left = `${buttonRect.right - menuWidth}px`;
         }
       }

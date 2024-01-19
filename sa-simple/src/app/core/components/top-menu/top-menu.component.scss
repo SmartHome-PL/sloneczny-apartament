@@ -77,23 +77,24 @@ mat-toolbar {
 }
 
 .language-menu {
-  top: -4rem;
+  top: -20rem;
+  left: -20rem;
   position: absolute;
-  background-color: white;
+  background-color: $primary-lighten-color;
+  border-radius: 0 0 0.25rem 0.25rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
   transition: 0.5s;
-}
+  padding-bottom: 0.25rem;
+  padding-right: 0.25rem;
+  max-width: 12.75rem;
 
-.language-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 10px;
-  padding: 10px;
-  max-width: 300px; /* Dla 3 kolumn, każda 100px szerokości */
-}
-
-button.mat-raised-button {
-  width: 100%;
-  box-sizing: border-box;
+  button {
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: $action-color;
+    box-sizing: border-box;
+  }
 }
