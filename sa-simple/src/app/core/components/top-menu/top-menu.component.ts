@@ -4,6 +4,7 @@ import {
   HostListener,
   PLATFORM_ID,
   Inject,
+  ElementRef,
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { JsonLoaderService } from '../../../shared/services/json-loader/json-loader.service';
@@ -34,7 +35,8 @@ export class TopMenuComponent implements OnInit {
     private translate: TranslateService,
     private languageService: LanguageService,
     public sideMenuService: SideMenuService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private elementRef: ElementRef
   ) {}
 
   ngOnInit(): void {
@@ -79,6 +81,27 @@ export class TopMenuComponent implements OnInit {
 
     if (this.isLanguageMenuOpen) {
       this.positionLanguageMenu();
+    }
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const languageMenu =
+      this.elementRef.nativeElement.querySelector('.language-menu');
+    const toggleButton = this.elementRef.nativeElement.querySelector(
+      'button[aria-expanded]'
+    );
+
+    if (toggleButton && toggleButton.contains(event.target)) {
+      return;
+    }
+
+    if (
+      languageMenu &&
+      !languageMenu.contains(event.target) &&
+      this.isLanguageMenuOpen
+    ) {
+      this.toggleLanguageMenu();
     }
   }
 
