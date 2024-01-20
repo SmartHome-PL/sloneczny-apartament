@@ -22,7 +22,6 @@ export class LanguageMenuService {
   }
 
   toggle() {
-    console.log('O');
     this.isOpen.next(!this.isOpen.value);
   }
 }
