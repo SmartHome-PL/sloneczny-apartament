@@ -120,7 +120,7 @@ export class LanguageMenuComponent {
       } else {
         if (this.isLanguageMenuOpen) {
           menu.style.top = `${buttonRect.top - 4}px`;
-          menu.style.left = `${window.innerWidth - menuWidth - 124}px`;
+          menu.style.left = `${window.innerWidth - menuWidth - 125}px`;
           console.log('Open');
         } else {
           menu.style.top = `${buttonRect.top - 4}px`;
