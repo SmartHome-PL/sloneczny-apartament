@@ -96,14 +96,12 @@ export class LanguageMenuComponent {
   }
 
   toggleLanguageMenu() {
-    console.log('tick');
     this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
     this.positionLanguageMenu();
   }
 
   positionLanguageMenu() {
     const menu = document.querySelector('.language-menu') as HTMLElement;
-    console.log('ELO');
     if (this.triggeringButton && menu) {
       const buttonRect = this.triggeringButton.getBoundingClientRect();
       const menuWidth = menu.offsetWidth + 82;
@@ -121,11 +119,9 @@ export class LanguageMenuComponent {
         if (this.isLanguageMenuOpen) {
           menu.style.top = `${buttonRect.top - 4}px`;
           menu.style.left = `${window.innerWidth - menuWidth - 125}px`;
-          console.log('Open');
         } else {
           menu.style.top = `${buttonRect.top - 4}px`;
           menu.style.left = '100%';
-          console.log('Close');
         }
       }
     }

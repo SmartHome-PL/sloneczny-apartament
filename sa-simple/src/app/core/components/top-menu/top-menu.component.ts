@@ -27,7 +27,6 @@ export class TopMenuComponent implements OnInit {
 
   isMobile: boolean = true;
   isSideMenuOpen: boolean = false;
-  isLanguageMenuOpen = false;
   isFirstLoadGuard = true;
 
   triggeringButton!: HTMLElement;
@@ -87,8 +86,6 @@ export class TopMenuComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event?: Event) {
     this.setIsMobile();
-
-    this.isLanguageMenuOpen = false;
   }
 
   @HostListener('document:click', ['$event'])
