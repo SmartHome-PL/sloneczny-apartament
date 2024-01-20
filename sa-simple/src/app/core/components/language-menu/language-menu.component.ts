@@ -96,6 +96,7 @@ export class LanguageMenuComponent {
   }
 
   toggleLanguageMenu() {
+    console.log('tick');
     this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
     this.positionLanguageMenu();
   }
@@ -108,17 +109,33 @@ export class LanguageMenuComponent {
       const menuWidth = menu.offsetWidth + 82;
       const menuHeight = menu.offsetHeight;
 
-      if (this.isLanguageMenuOpen) {
-        menu.style.top = `${buttonRect.top - 4}px`;
-        menu.style.left = `${buttonRect.right - menuWidth}px`;
-      } else {
-        if (this.isFirstLoadGuard) {
-          menu.style.top = -menuHeight + 'px';
+      if (!this.isMobile) {
+        if (this.isLanguageMenuOpen) {
+          menu.style.top = `${buttonRect.top - 4}px`;
           menu.style.left = `${buttonRect.right - menuWidth}px`;
-          this.isFirstLoadGuard = false;
         } else {
-          menu.style.top = -menuHeight + 'px';
-          menu.style.left = `${buttonRect.right - menuWidth}px`;
+          if (this.isFirstLoadGuard) {
+            menu.style.top = -menuHeight + 'px';
+            menu.style.left = `${buttonRect.right - menuWidth}px`;
+            this.isFirstLoadGuard = false;
+          } else {
+            menu.style.top = -menuHeight + 'px';
+            menu.style.left = `${buttonRect.right - menuWidth}px`;
+          }
+        }
+      } else {
+        if (this.isLanguageMenuOpen) {
+          menu.style.top = `${buttonRect.top - 4}px`;
+          menu.style.left = `${buttonRect.right - menuWidth + 16}px`;
+        } else {
+          if (this.isFirstLoadGuard) {
+            menu.style.top = -menuHeight + 'px';
+            menu.style.left = `${buttonRect.right - menuWidth - 193}px`;
+            this.isFirstLoadGuard = false;
+          } else {
+            menu.style.top = -menuHeight + 'px';
+            menu.style.left = `${buttonRect.right - menuWidth + 16}px`;
+          }
         }
       }
     }
