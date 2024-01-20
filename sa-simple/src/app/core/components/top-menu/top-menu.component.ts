@@ -26,7 +26,6 @@ export class TopMenuComponent implements OnInit {
   menuItems: MenuItem[] = [];
 
   isMobile: boolean = true;
-  isSideMenuOpen: boolean = false;
   isFirstLoadGuard = true;
 
   triggeringButton!: HTMLElement;

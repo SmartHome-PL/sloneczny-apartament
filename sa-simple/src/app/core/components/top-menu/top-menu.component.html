@@ -21,8 +21,12 @@
       </button>
     </ng-container>
     <button mat-button *ngIf="isMobile" (click)="toggleSideMenu()">
-      <mat-icon *ngIf="!isSideMenuOpen">menu</mat-icon>
-      <mat-icon *ngIf="isSideMenuOpen">close</mat-icon>
+      <mat-icon *ngIf="sideMenuService.isOpen$ | async; else showMenuIcon">
+        close
+      </mat-icon>
+      <ng-template #showMenuIcon>
+        <mat-icon>menu</mat-icon>
+      </ng-template>
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
