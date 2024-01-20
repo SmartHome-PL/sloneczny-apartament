@@ -24,7 +24,12 @@
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
-<div class="language-menu" *ngIf="!isMobile">
+<app-language-menu
+  #languageMenuComponent
+  [triggeringButton]="triggeringButton"
+  [isMobile]="isMobile"
+></app-language-menu>
+<!-- <div class="language-menu" *ngIf="!isMobile">
   <button
     [disabled]="languageMenuItem.disabled"
     *ngFor="let languageMenuItem of languageMenuItems"
@@ -34,5 +39,5 @@
   >
     {{ languageMenuItem.title }}
   </button>
-</div>
+</div> -->
 <div class="toolbar-placeholder"></div>

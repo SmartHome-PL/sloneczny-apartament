@@ -1,0 +1,11 @@
+<div class="language-menu" *ngIf="!isMobile">
+  <button
+    [disabled]="languageMenuItem.disabled"
+    *ngFor="let languageMenuItem of languageMenuItems"
+    mat-raised-button
+    [color]="languageMenuItem.disabled ? 'disabled' : 'enabled'"
+    (click)="switchLanguage(languageMenuItem.path)"
+  >
+    {{ languageMenuItem.title }}
+  </button>
+</div>

@@ -75,36 +75,3 @@ mat-toolbar {
 .side-menu.open {
   right: 0;
 }
-
-.language-menu {
-  top: -20rem;
-  left: -20rem;
-  position: absolute;
-  background-color: $primary-lighten-color;
-  border-radius: 0 0 0.25rem 0.25rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-  transition: 0.5s;
-  padding-bottom: 0.25rem;
-  padding-right: 0.25rem;
-  width: 12.75rem;
-
-  button {
-    margin-top: 0.25rem;
-    margin-left: 0.25rem;
-    width: 4rem;
-    height: 4rem;
-
-    box-sizing: border-box;
-  }
-
-  .mat-disabled {
-    background-color: $action-text-color;
-    color: $base-color;
-  }
-
-  .mat-enabled {
-    background-color: $action-color;
-    color: $base-color;
-  }
-}

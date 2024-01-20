@@ -5,14 +5,15 @@ import {
   PLATFORM_ID,
   Inject,
   ElementRef,
+  ViewChild,
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { JsonLoaderService } from '../../../shared/services/json-loader/json-loader.service';
 import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
-import { LanguageService } from '../../services/language-service/language.service';
 import { SideMenuService } from '../side-menu/side-menu.service';
 import { isPlatformBrowser } from '@angular/common';
+import { LanguageMenuComponent } from '../language-menu/language-menu.component';
 
 @Component({
   selector: 'app-top-menu',
@@ -20,55 +21,16 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrl: './top-menu.component.scss',
 })
 export class TopMenuComponent implements OnInit {
+  @ViewChild('languageMenuComponent')
+  languageMenuComponent!: LanguageMenuComponent;
   menuItems: MenuItem[] = [];
-  languageMenuItems: MenuItem[] = [
-    {
-      title: '🇬🇧',
-      path: 'en',
-      icon: '',
-      disabled: false,
-    },
-    {
-      title: '🇵🇱',
-      path: 'pl',
-      icon: '',
-      disabled: false,
-    },
-    {
-      title: '🇪🇸',
-      path: 'es',
-      icon: '',
-      disabled: true,
-    },
-    {
-      title: '🇨🇿',
-      path: 'cs',
-      icon: '',
-      disabled: true,
-    },
-    {
-      title: '🇸🇰',
-      path: 'sl',
-      icon: '',
-      disabled: true,
-    },
-    {
-      title: '🇺🇦',
-      path: 'ua',
-      icon: '',
-      disabled: true,
-    },
-    {
-      title: '🇮🇹',
-      path: 'it',
-      icon: '',
-      disabled: true,
-    },
-  ];
+
   isMobile: boolean = true;
   isSideMenuOpen: boolean = false;
   isLanguageMenuOpen = false;
   isFirstLoadGuard = true;
+
+  triggeringButton!: HTMLElement;
 
   lastScrollTop = 0;
   scrollDownStart = 0;
@@ -77,7 +39,6 @@ export class TopMenuComponent implements OnInit {
     private router: Router,
     private jsonLoaderService: JsonLoaderService,
     private translate: TranslateService,
-    private languageService: LanguageService,
     public sideMenuService: SideMenuService,
     @Inject(PLATFORM_ID) private platformId: Object,
     private elementRef: ElementRef
@@ -91,13 +52,17 @@ export class TopMenuComponent implements OnInit {
       .subscribe((items: MenuItem[]) => {
         this.menuItems = items;
       });
+
+    if (isPlatformBrowser(this.platformId)) {
+      this.triggeringButton = document.querySelector(
+        'button[aria-expanded]'
+      ) as HTMLElement;
+    }
   }
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      setTimeout(() => {
-        this.positionLanguageMenu();
-      }, 0);
+      setTimeout(() => {}, 0);
     }
   }
 
@@ -109,7 +74,7 @@ export class TopMenuComponent implements OnInit {
     if (toolbar) {
       if (currentScrollPos > this.lastScrollTop && currentScrollPos > 64) {
         // Scroll Down
-        toolbar.style.top = '-4rem'; // Wysokość twojego mat-toolbar
+        toolbar.style.top = '-4rem';
       } else {
         // Scroll Up
         toolbar.style.top = '0';
@@ -124,7 +89,6 @@ export class TopMenuComponent implements OnInit {
     this.setIsMobile();
 
     this.isLanguageMenuOpen = false;
-    this.positionLanguageMenu();
   }
 
   @HostListener('document:click', ['$event'])
@@ -142,9 +106,9 @@ export class TopMenuComponent implements OnInit {
     if (
       languageMenu &&
       !languageMenu.contains(event.target) &&
-      this.isLanguageMenuOpen
+      this.languageMenuComponent.isLanguageMenuOpen
     ) {
-      this.toggleLanguageMenu();
+      this.languageMenuComponent.toggleLanguageMenu();
     }
   }
 
@@ -168,47 +132,12 @@ export class TopMenuComponent implements OnInit {
     this.router.navigate([path]);
   }
 
-  switchLanguage(language: string) {
-    this.languageService.setLanguage(language);
-    this.translate.use(language);
-    this.isLanguageMenuOpen = false;
-    this.positionLanguageMenu();
-  }
-
   getLanguage() {
     if (this.translate.currentLang === 'en') return '🇬🇧';
     else return '🇵🇱';
   }
 
   toggleLanguageMenu() {
-    this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
-    this.positionLanguageMenu();
-  }
-
-  positionLanguageMenu() {
-    const button = document.querySelector(
-      'button[aria-expanded]'
-    ) as HTMLElement;
-    const menu = document.querySelector('.language-menu') as HTMLElement;
-
-    if (button && menu) {
-      const buttonRect = button.getBoundingClientRect();
-      const menuWidth = menu.offsetWidth;
-      const menuHeight = menu.offsetHeight;
-
-      if (this.isLanguageMenuOpen) {
-        menu.style.top = buttonRect.bottom + 'px';
-        menu.style.left = `${buttonRect.right - menuWidth}px`;
-      } else {
-        if (this.isFirstLoadGuard) {
-          menu.style.top = -menuHeight + 'px';
-          menu.style.left = `${buttonRect.right - menuWidth + 64}px`;
-          this.isFirstLoadGuard = false;
-        } else {
-          menu.style.top = -menuHeight + 'px';
-          menu.style.left = `${buttonRect.right - menuWidth}px`;
-        }
-      }
-    }
+    this.languageMenuComponent.toggleLanguageMenu();
   }
 }
