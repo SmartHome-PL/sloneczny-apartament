@@ -4,7 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class SideMenuService {
+export class LanguageMenuService {
   private isOpen = new BehaviorSubject<boolean>(false);
 
   constructor() {}
@@ -22,6 +22,7 @@ export class SideMenuService {
   }
 
   toggle() {
+    console.log('O');
     this.isOpen.next(!this.isOpen.value);
   }
 }

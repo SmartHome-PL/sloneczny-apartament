@@ -12,8 +12,10 @@ import { JsonLoaderService } from '../../../shared/services/json-loader/json-loa
 import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
 import { SideMenuService } from '../side-menu/side-menu.service';
+import { LanguageMenuService } from '../language-menu/language-menu.service';
 import { isPlatformBrowser } from '@angular/common';
 import { LanguageMenuComponent } from '../language-menu/language-menu.component';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-top-menu',
@@ -30,6 +32,9 @@ export class TopMenuComponent implements OnInit {
 
   triggeringButton!: HTMLElement;
 
+  isOpenLanguageMenuSubscription: Subscription;
+  isOpenLanguageMenu: boolean = false;
+
   lastScrollTop = 0;
   scrollDownStart = 0;
 
@@ -38,9 +43,15 @@ export class TopMenuComponent implements OnInit {
     private jsonLoaderService: JsonLoaderService,
     private translate: TranslateService,
     public sideMenuService: SideMenuService,
+    public languageMenuService: LanguageMenuService,
     @Inject(PLATFORM_ID) private platformId: Object,
     private elementRef: ElementRef
-  ) {}
+  ) {
+    this.isOpenLanguageMenuSubscription =
+      this.languageMenuService.isOpen$.subscribe((isOpen) => {
+        this.isOpenLanguageMenu = isOpen;
+      });
+  }
 
   ngOnInit(): void {
     this.setIsMobile();
@@ -85,27 +96,7 @@ export class TopMenuComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event?: Event) {
     this.setIsMobile();
-  }
-
-  @HostListener('document:click', ['$event'])
-  onDocumentClick(event: MouseEvent): void {
-    const languageMenu =
-      this.elementRef.nativeElement.querySelector('.language-menu');
-    const toggleButton = this.elementRef.nativeElement.querySelector(
-      'button[aria-expanded]'
-    );
-
-    if (toggleButton && toggleButton.contains(event.target)) {
-      return;
-    }
-
-    if (
-      languageMenu &&
-      !languageMenu.contains(event.target) &&
-      this.languageMenuComponent.isLanguageMenuOpen
-    ) {
-      this.languageMenuComponent.toggleLanguageMenu();
-    }
+    this.sideMenuService.close();
   }
 
   private setIsMobile() {
@@ -121,6 +112,9 @@ export class TopMenuComponent implements OnInit {
   }
 
   toggleSideMenu() {
+    if (this.isOpenLanguageMenu) {
+      this.languageMenuService.close();
+    }
     this.sideMenuService.toggle();
   }
 
@@ -134,6 +128,6 @@ export class TopMenuComponent implements OnInit {
   }
 
   toggleLanguageMenu() {
-    this.languageMenuComponent.toggleLanguageMenu();
+    this.languageMenuService.toggle();
   }
 }

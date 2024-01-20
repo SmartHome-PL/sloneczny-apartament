@@ -10,13 +10,7 @@
           {{ menuItem.title | translate }}
         </button>
       </ng-container>
-      <button
-        mat-button
-        [attr.aria-expanded]="
-          languageMenuComponent.isLanguageMenuOpen ? 'true' : 'false'
-        "
-        (click)="toggleLanguageMenu()"
-      >
+      <button mat-button (click)="toggleLanguageMenu()">
         {{ getLanguage() }}
       </button>
     </ng-container>

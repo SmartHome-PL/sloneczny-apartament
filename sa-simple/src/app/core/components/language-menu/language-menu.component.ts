@@ -9,6 +9,9 @@ import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language-service/language.service';
 import { isPlatformBrowser } from '@angular/common';
+import { SideMenuService } from '../side-menu/side-menu.service';
+import { LanguageMenuService } from '../language-menu/language-menu.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-language-menu',
@@ -20,7 +23,8 @@ export class LanguageMenuComponent {
   triggeringButton!: HTMLElement;
   @Input()
   isMobile = true;
-  isLanguageMenuOpen = false;
+  private isOpenSubscription: Subscription;
+  isOpen = false;
   isFirstLoadGuard = true;
 
   languageMenuItems: MenuItem[] = [
@@ -71,59 +75,45 @@ export class LanguageMenuComponent {
   constructor(
     private translate: TranslateService,
     private languageService: LanguageService,
+    private sideMenuService: SideMenuService,
+    public languageMenuService: LanguageMenuService,
     @Inject(PLATFORM_ID) private platformId: Object
-  ) {}
+  ) {
+    this.isOpenSubscription = this.languageMenuService.isOpen$.subscribe(
+      (isOpen) => {
+        this.isOpen = isOpen;
+      }
+    );
+  }
 
-  ngAfterViewInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      setTimeout(() => {
-        this.positionLanguageMenu();
-      }, 0);
+  ngOnDestroy() {
+    if (this.isOpenSubscription) {
+      this.isOpenSubscription.unsubscribe();
     }
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event?: Event) {
-    this.isLanguageMenuOpen = false;
-    this.positionLanguageMenu();
+    this.languageMenuService.close();
   }
 
   switchLanguage(language: string) {
     this.languageService.setLanguage(language);
     this.translate.use(language);
-    this.isLanguageMenuOpen = false;
-    this.positionLanguageMenu();
+    this.sideMenuService.close();
+    this.languageMenuService.close();
   }
 
   toggleLanguageMenu() {
-    this.isLanguageMenuOpen = !this.isLanguageMenuOpen;
-    this.positionLanguageMenu();
+    this.languageMenuService.toggle();
   }
 
-  positionLanguageMenu() {
-    const menu = document.querySelector('.language-menu') as HTMLElement;
-    if (this.triggeringButton && menu) {
-      const buttonRect = this.triggeringButton.getBoundingClientRect();
-      const menuWidth = menu.offsetWidth + 82;
-      const menuHeight = menu.offsetHeight;
-
-      if (!this.isMobile) {
-        if (this.isLanguageMenuOpen) {
-          menu.style.top = `${buttonRect.top - 4}px`;
-          menu.style.left = `${buttonRect.right - menuWidth}px`;
-        } else {
-          menu.style.top = -menuHeight + 'px';
-          menu.style.left = `${buttonRect.right - menuWidth}px`;
-        }
-      } else {
-        if (this.isLanguageMenuOpen) {
-          menu.style.top = `${buttonRect.top - 4}px`;
-          menu.style.left = `${window.innerWidth - menuWidth - 125}px`;
-        } else {
-          menu.style.top = `${buttonRect.top - 4}px`;
-          menu.style.left = '100%';
-        }
-      }
-    }
+  closeLanguageMenu() {
+    this.languageMenuService.close();
   }
+
+  openLanguageMenu() {
+    this.languageMenuService.open();
+  }
+
 }

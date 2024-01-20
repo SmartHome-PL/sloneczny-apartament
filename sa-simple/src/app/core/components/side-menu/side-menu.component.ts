@@ -14,6 +14,7 @@ import { SideMenuService } from './side-menu.service';
 
 import { LanguageMenuComponent } from '../language-menu/language-menu.component';
 import { isPlatformBrowser } from '@angular/common';
+import { LanguageMenuService } from '../language-menu/language-menu.service';
 
 @Component({
   selector: 'app-side-menu',
@@ -35,6 +36,7 @@ export class SideMenuComponent {
     private translate: TranslateService,
     private languageService: LanguageService,
     public sideMenuService: SideMenuService,
+    public languageMenuService: LanguageMenuService,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     translate.setDefaultLang('en');
@@ -80,6 +82,7 @@ export class SideMenuComponent {
   }
 
   closeSideMenu() {
+    this.languageMenuService.close();
     this.sideMenuService.close();
   }
 
@@ -100,6 +103,6 @@ export class SideMenuComponent {
   }
 
   toggleLanguageMenu() {
-    this.languageMenuComponent.toggleLanguageMenu();
+    this.languageMenuService.toggle();
   }
 }

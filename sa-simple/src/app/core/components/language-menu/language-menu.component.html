@@ -1,4 +1,11 @@
-<div class="language-menu" [ngClass]="{ 'mobile-language-menu': isMobile }">
+<div
+  class="language-menu"
+  [ngClass]="{
+    open: isOpen,
+    mobile: isMobile,
+    'mobile.open': isMobile && isOpen
+  }"
+>
   <button
     [disabled]="languageMenuItem.disabled"
     *ngFor="let languageMenuItem of languageMenuItems"

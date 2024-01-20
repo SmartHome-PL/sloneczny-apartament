@@ -1,8 +1,8 @@
 @import "../../../../assets/styles/colors";
 
 .language-menu {
-  top: -20rem;
-  right: -20rem;
+  top: -100%;
+  right: 1rem;
   position: fixed;
   background-color: $primary-lighten-color;
   border-radius: 0 0 0.25rem 0.25rem;
@@ -33,7 +33,23 @@
   }
 }
 
-.mobile-language-menu {
+.language-menu.open {
+  background-color: $primary-lighten-color;
+  border-radius: 0 0 0.25rem 0.25rem;
+  top: 4rem;
+  right: 1rem;
+}
+
+.language-menu.mobile {
   background-color: $secondary-darken-color;
   border-radius: 0 0 0 0.25rem;
+  top: 4rem;
+  right: -13rem;
+}
+
+.language-menu.mobile.open {
+  background-color: $secondary-darken-color;
+  border-radius: 0 0 0 0.25rem;
+  top: 4rem;
+  right: 13rem;
 }
