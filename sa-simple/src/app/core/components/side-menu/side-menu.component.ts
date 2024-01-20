@@ -45,6 +45,7 @@ export class SideMenuComponent {
   }
 
   ngOnInit(): void {
+    this.setIsMobile();
     this.jsonLoaderService
       .loadData<MenuItem[]>('assets/data/top-menu-items.json')
       .subscribe((items: MenuItem[]) => {
