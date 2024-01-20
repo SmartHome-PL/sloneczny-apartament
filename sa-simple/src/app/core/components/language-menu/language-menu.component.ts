@@ -114,28 +114,16 @@ export class LanguageMenuComponent {
           menu.style.top = `${buttonRect.top - 4}px`;
           menu.style.left = `${buttonRect.right - menuWidth}px`;
         } else {
-          if (this.isFirstLoadGuard) {
-            menu.style.top = -menuHeight + 'px';
-            menu.style.left = `${buttonRect.right - menuWidth}px`;
-            this.isFirstLoadGuard = false;
-          } else {
-            menu.style.top = -menuHeight + 'px';
-            menu.style.left = `${buttonRect.right - menuWidth}px`;
-          }
+          menu.style.top = -menuHeight + 'px';
+          menu.style.left = `${buttonRect.right - menuWidth}px`;
         }
       } else {
         if (this.isLanguageMenuOpen) {
           menu.style.top = `${buttonRect.top - 4}px`;
           menu.style.left = `${buttonRect.right - menuWidth + 16}px`;
         } else {
-          if (this.isFirstLoadGuard) {
-            menu.style.top = -menuHeight + 'px';
-            menu.style.left = `${buttonRect.right - menuWidth - 193}px`;
-            this.isFirstLoadGuard = false;
-          } else {
-            menu.style.top = -menuHeight + 'px';
-            menu.style.left = `${buttonRect.right - menuWidth + 16}px`;
-          }
+          menu.style.top = -menuHeight + 'px';
+          menu.style.left = `${buttonRect.right - menuWidth + 16}px`;
         }
       }
     }
