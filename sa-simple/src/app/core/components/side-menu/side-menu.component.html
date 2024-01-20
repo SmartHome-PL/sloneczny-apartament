@@ -2,7 +2,9 @@
   <button
     mat-button
     class="language"
-    [attr.aria-expanded]="isLanguageMenuOpen ? 'true' : 'false'"
+    [attr.aria-expanded]="
+      languageMenuComponent.isLanguageMenuOpen ? 'true' : 'false'
+    "
     (click)="toggleLanguageMenu()"
   >
     {{ getLanguage() }}

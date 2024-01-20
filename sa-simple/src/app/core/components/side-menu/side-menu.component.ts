@@ -1,8 +1,6 @@
 import {
   Component,
-  OnInit,
   HostListener,
-  Input,
   ViewChild,
   Inject,
   PLATFORM_ID,
@@ -28,7 +26,6 @@ export class SideMenuComponent {
   isSideMenuOpen: boolean = false;
   menuItems: MenuItem[] = [];
   isMobile: boolean = true;
-  isLanguageMenuOpen = false;
 
   triggeringButton!: HTMLElement;
 
@@ -68,8 +65,6 @@ export class SideMenuComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event?: Event) {
     this.setIsMobile();
-
-    this.isLanguageMenuOpen = false;
   }
 
   private setIsMobile() {
