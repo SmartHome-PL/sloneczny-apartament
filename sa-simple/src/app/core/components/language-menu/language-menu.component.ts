@@ -103,7 +103,7 @@ export class LanguageMenuComponent {
 
   positionLanguageMenu() {
     const menu = document.querySelector('.language-menu') as HTMLElement;
-
+    console.log('ELO');
     if (this.triggeringButton && menu) {
       const buttonRect = this.triggeringButton.getBoundingClientRect();
       const menuWidth = menu.offsetWidth + 82;
@@ -120,10 +120,12 @@ export class LanguageMenuComponent {
       } else {
         if (this.isLanguageMenuOpen) {
           menu.style.top = `${buttonRect.top - 4}px`;
-          menu.style.left = `${buttonRect.right - menuWidth + 16}px`;
+          menu.style.left = `${window.innerWidth - menuWidth - 124}px`;
+          console.log('Open');
         } else {
-          menu.style.top = -menuHeight + 'px';
-          menu.style.left = `${buttonRect.right - menuWidth + 16}px`;
+          menu.style.top = `${buttonRect.top - 4}px`;
+          menu.style.left = '100%';
+          console.log('Close');
         }
       }
     }

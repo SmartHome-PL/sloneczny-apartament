@@ -13,6 +13,7 @@ import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language-service/language.service';
 import { SideMenuService } from './side-menu.service';
+import { distinctUntilChanged, pairwise } from 'rxjs/operators';
 
 import { LanguageMenuComponent } from '../language-menu/language-menu.component';
 import { isPlatformBrowser } from '@angular/common';
@@ -57,6 +58,18 @@ export class SideMenuComponent {
         'button[aria-expanded]'
       ) as HTMLElement;
     }
+
+    this.sideMenuService.isOpen$
+      .pipe(
+        distinctUntilChanged(), // Zapewnia reagowanie tylko na zmiany wartości
+        pairwise() // Emituje poprzednią i bieżącą wartość
+      )
+      .subscribe(([previousValue, currentValue]) => {
+        if (previousValue !== currentValue) {
+          // Tutaj uruchamiasz positionLanguageMenu, jeśli wartość się zmieniła
+          this.languageMenuComponent.positionLanguageMenu();
+        }
+      });
   }
 
   ngAfterViewInit(): void {
