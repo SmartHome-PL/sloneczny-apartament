@@ -50,6 +50,16 @@ mat-card {
         margin-top: 0;
       }
     }
+
+    .mat-disabled {
+      background-color: $action-text-color;
+      color: $base-color;
+    }
+
+    .mat-enabled {
+      background-color: $action-color;
+      color: $base-color;
+    }
   }
 
   @media (max-width: 600px) {

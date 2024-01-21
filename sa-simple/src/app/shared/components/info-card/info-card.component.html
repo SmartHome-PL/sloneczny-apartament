@@ -19,7 +19,12 @@
     <ng-container
       *ngFor="let actionBarMenuItem of infoCardData.actionBarMenuItems"
     >
-      <button mat-raised-button>
+      <button
+        mat-raised-button
+        [disabled]="actionBarMenuItem.disabled"
+        [color]="actionBarMenuItem.disabled ? 'disabled' : 'enabled'"
+        (click)="navigateTo(actionBarMenuItem.path)"
+      >
         <mat-icon>{{ actionBarMenuItem.icon | translate }}</mat-icon>
         {{ actionBarMenuItem.title | translate }}
       </button>

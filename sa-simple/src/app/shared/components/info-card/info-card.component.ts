@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { MenuItem } from '../../models/menuItem.model';
+import { Router } from '@angular/router';
 
 export interface InfoCard {
   titleBar: {
@@ -17,4 +18,10 @@ export interface InfoCard {
 })
 export class InfoCardComponent {
   @Input() infoCardData!: InfoCard;
+
+  constructor(private router: Router) {}
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+  }
 }
