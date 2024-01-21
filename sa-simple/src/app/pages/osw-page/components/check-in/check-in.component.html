@@ -5,6 +5,17 @@
   <p>
     {{ "obj.pages.osw.check-in.content.map.code-info.label" | translate }}
   </p>
+  <div class="main-button">
+    <button
+      mat-raised-button
+      (click)="unlock()"
+      [disabled]="isUnlocked"
+      [color]="isUnlocked ? 'disabled' : 'enabled'"
+    >
+      {{ "obj.pages.osw.check-in.locked.label" | translate | uppercase }}
+    </button>
+  </div>
+
   <div class="svg">
     <svg
       viewBox="0 0 2731 2731"

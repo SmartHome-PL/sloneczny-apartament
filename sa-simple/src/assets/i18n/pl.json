@@ -1,124 +1,124 @@
 {
-    "core": {
-        "menu": {
-            "options": {
-                "objects": {
-                    "label": "Obiekty"
-                }
-            }
+  "core": {
+    "menu": {
+      "options": {
+        "objects": {
+          "label": "Obiekty"
         }
-    },
-    "obj": {
-        "menu": {
-            "options": {
-                "amenities": {
-                    "label": "Udogodnienia"
-                },
-                "check-in": {
-                    "label": "Zameldowanie"
-                },
-                "check-out": {
-                    "label": "Wymeldowanie"
-                },
-                "contact": {
-                    "label": "Contact"
-                },
-                "directions": {
-                    "label": "Dojazd"
-                },
-                "rules": {
-                    "label": "Regulamin"
-                },
-                "tickets": {
-                    "label": "Bilety"
-                },
-                "transport": {
-                    "label": "Transport"
-                },
-                "trash": {
-                    "label": "Śmieci"
-                }
-            }
-        },
-        "pages": {
-            "osw": {
-                "check-in": {
-                    "content": {
-                        "instruction": {
-                            "step-one": {
-                                "additional-info": {
-                                    "label": "W przypadku wjazdu samochodem, do mieszkania przypisane jest miejsce parkingowe numer"
-                                },
-                                "car-option": {
-                                    "label": "Za pomocą bramy dla samochodów"
-                                },
-                                "human-option": {
-                                    "label": "Za pomocą bramki dla pieszych"
-                                },
-                                "label": "Do wejścia na teren apartamentu mamy dwie opcje"
-                            },
-                            "step-three": {
-                                "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania."
-                            },
-                            "step-two": {
-                                "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych"
-                            }
-                        },
-                        "map": {
-                            "code-info": {
-                                "label": "Kody zostały ukryte w celu bezpieczeństwa. By je odkryć, należy kliknąć na przycisk „Pokaż kod” i postępować zgodnie z instukcjami w okienku."
-                            },
-                            "intro": {
-                                "label": "Nasz apartament znajduje się na zamkniętym osiedlu. Poniżej znajduje się mapa z uproszczonymi instrukcjami zameldowania."
-                            }
-                        }
-                    },
-                    "locked": {
-                        "label": "Pokaż kod"
-                    },
-                    "subtitle": {
-                        "label": "Instrukcja zameldowania do Słonecznego Apartamentu w Oświęcimiu."
-                    },
-                    "title": {
-                        "label": "Zameldowanie"
-                    }
-                },
-                "directions": {
-                    "content": {
-                        "additional-info": {
-                            "first": {
-                                "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
-                            },
-                            "second": {
-                                "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
-                            }
-                        },
-                        "address": {
-                            "intro": {
-                                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
-                            }
-                        },
-                        "map": {
-                            "intro": {
-                                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
-                            }
-                        }
-                    },
-                    "subtitle": {
-                        "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
-                    },
-                    "title": {
-                        "label": "Dojazd"
-                    }
-                }
-            }
-        }
-    },
-    "shared": {
-        "address": {
-            "street": {
-                "label": "ul."
-            }
-        }
+      }
     }
+  },
+  "obj": {
+    "menu": {
+      "options": {
+        "amenities": {
+          "label": "Udogodnienia"
+        },
+        "check-in": {
+          "label": "Zameldowanie"
+        },
+        "check-out": {
+          "label": "Wymeldowanie"
+        },
+        "contact": {
+          "label": "Contact"
+        },
+        "directions": {
+          "label": "Dojazd"
+        },
+        "rules": {
+          "label": "Regulamin"
+        },
+        "tickets": {
+          "label": "Bilety"
+        },
+        "transport": {
+          "label": "Transport"
+        },
+        "trash": {
+          "label": "Śmieci"
+        }
+      }
+    },
+    "pages": {
+      "osw": {
+        "check-in": {
+          "content": {
+            "instruction": {
+              "step-one": {
+                "additional-info": {
+                  "label": "W przypadku wjazdu samochodem, do mieszkania przypisane jest miejsce parkingowe numer"
+                },
+                "car-option": {
+                  "label": "Za pomocą bramy dla samochodów"
+                },
+                "human-option": {
+                  "label": "Za pomocą bramki dla pieszych"
+                },
+                "label": "Do wejścia na teren apartamentu mamy dwie opcje"
+              },
+              "step-three": {
+                "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania."
+              },
+              "step-two": {
+                "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych"
+              }
+            },
+            "map": {
+              "code-info": {
+                "label": "Kody zostały ukryte w celu bezpieczeństwa. By je odkryć, należy kliknąć na przycisk „Pokaż kod” i wprowadzić kod przesłany w wiadomości."
+              },
+              "intro": {
+                "label": "Nasz apartament znajduje się na zamkniętym osiedlu. Poniżej znajduje się mapa z uproszczonymi instrukcjami zameldowania."
+              }
+            }
+          },
+          "locked": {
+            "label": "Pokaż kod"
+          },
+          "subtitle": {
+            "label": "Instrukcja zameldowania do Słonecznego Apartamentu w Oświęcimiu."
+          },
+          "title": {
+            "label": "Zameldowanie"
+          }
+        },
+        "directions": {
+          "content": {
+            "additional-info": {
+              "first": {
+                "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
+              },
+              "second": {
+                "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
+              }
+            },
+            "address": {
+              "intro": {
+                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+              }
+            },
+            "map": {
+              "intro": {
+                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+              }
+            }
+          },
+          "subtitle": {
+            "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+          },
+          "title": {
+            "label": "Dojazd"
+          }
+        }
+      }
+    }
+  },
+  "shared": {
+    "address": {
+      "street": {
+        "label": "ul."
+      }
+    }
+  }
 }

@@ -18,11 +18,13 @@ mat-divider {
 
 .svg {
   max-width: 640px;
-  margin: auto;
+  margin: 0.75rem auto;
 }
 
 button {
   width: 8rem;
+  background-color: $action-text-color;
+  color: $base-color;
 }
 
 .mat-disabled {
@@ -38,4 +40,10 @@ button {
 app-info-card {
   display: flex;
   flex-direction: column;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center; /* Centruje zawartość w poziomie */
+  align-items: center; /* Centruje zawartość w pionie */
 }

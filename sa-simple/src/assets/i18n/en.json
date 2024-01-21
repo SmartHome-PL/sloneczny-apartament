@@ -66,7 +66,7 @@
                         },
                         "map": {
                             "code-info": {
-                                "label": "The codes have been hidden for security purposes. To discover them, click on the \"Show code\" button and follow the instructions in the window."
+                                "label": "The codes have been hidden for security purposes. To discover them, click on the \"Show code\" button and enter the code sent in the message."
                             },
                             "intro": {
                                 "label": "Our apartment is located in a gated community. Below is a map with simplified check-in instructions."
