@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { UnlockDialogService } from './unlock-dialog.service';
 
 @Component({
   selector: 'app-unlock-dialog',
@@ -7,9 +8,12 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrl: './unlock-dialog.component.scss',
 })
 export class UnlockDialogComponent {
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    private unlockDialogService: UnlockDialogService
+  ) {}
 
   onEnterClick() {
-    console.log('UNLOCK');
+    this.unlockDialogService.unlock();
   }
 }

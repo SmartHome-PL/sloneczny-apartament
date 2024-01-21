@@ -3,6 +3,8 @@ import { InfoCard } from '../../../../shared/components/info-card/info-card.comp
 import { formatDate } from '@angular/common';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { UnlockDialogComponent } from './unlock-dialog/unlock-dialog.component';
+import { UnlockDialogService } from './unlock-dialog/unlock-dialog.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-check-in',
@@ -11,13 +13,26 @@ import { UnlockDialogComponent } from './unlock-dialog/unlock-dialog.component';
 })
 export class CheckInComponent {
   simplePass: string;
-  isUnlocked: boolean = false;
   carCode: string = 'obj.pages.osw.check-in.locked.label';
   pedestrianCode: string = 'obj.pages.osw.check-in.locked.label';
-  constructor(private dialog: MatDialog) {
+
+  isUnlockedSubscription: Subscription;
+  isUnlocked: boolean = false;
+
+  constructor(
+    private dialog: MatDialog,
+    public unlockDialogService: UnlockDialogService
+  ) {
     const today = new Date();
     const formattedDate = formatDate(today, 'ddMMyyyy', 'en-US');
     this.simplePass = `${formattedDate}S@Osw`;
+
+    this.isUnlockedSubscription =
+      this.unlockDialogService.isUnlocked$.subscribe((isUnlocked) => {
+        if (isUnlocked) {
+          this.unlock();
+        }
+      });
   }
   directionsCardData: InfoCard = {
     titleBar: {
@@ -29,7 +44,7 @@ export class CheckInComponent {
       {
         title: 'obj.menu.options.directions.label',
         path: '/directions',
-        icon: 'location',
+        icon: 'place',
         disabled: false,
       },
       {
