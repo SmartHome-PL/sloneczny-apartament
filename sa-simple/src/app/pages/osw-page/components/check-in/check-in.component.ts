@@ -64,7 +64,7 @@ export class CheckInComponent {
 
   openDialog(): void {
     this.dialog.open(UnlockDialogComponent, {
-      width: '250px',
+      width: '16rem',
     });
   }
 }

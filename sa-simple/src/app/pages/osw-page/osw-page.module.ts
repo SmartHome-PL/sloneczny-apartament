@@ -13,6 +13,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { TranslateModule } from '@ngx-translate/core';
 import { UnlockDialogComponent } from './components/check-in/unlock-dialog/unlock-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatDividerModule,
     TranslateModule,
     MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
 })
 export class OswPageModule {}
