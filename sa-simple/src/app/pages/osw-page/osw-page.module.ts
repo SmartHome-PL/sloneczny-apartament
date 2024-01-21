@@ -11,9 +11,16 @@ import { SharedModule } from '../../shared/shared.module';
 import { DirectionsComponent } from './components/directions/directions.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { TranslateModule } from '@ngx-translate/core';
+import { UnlockDialogComponent } from './components/check-in/unlock-dialog/unlock-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
-  declarations: [CheckInComponent, OswPageComponent, DirectionsComponent],
+  declarations: [
+    CheckInComponent,
+    OswPageComponent,
+    DirectionsComponent,
+    UnlockDialogComponent,
+  ],
   imports: [
     CommonModule,
     SharedModule,
@@ -24,6 +31,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MatIconModule,
     MatDividerModule,
     TranslateModule,
+    MatDialogModule,
   ],
 })
 export class OswPageModule {}
