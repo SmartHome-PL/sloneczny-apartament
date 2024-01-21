@@ -147,14 +147,11 @@ export class TopMenuComponent implements OnInit {
     const languageToggleButton = document.getElementById(
       'languageToggleButton'
     );
-
-    // Sprawdź, czy kliknięcie nastąpiło na przycisku
     if (
       languageToggleButton &&
       event.target instanceof Node &&
       languageToggleButton.contains(event.target)
     ) {
-      // Jeśli kliknięcie nastąpiło na przycisku, nie rób nic
       return;
     }
 
@@ -164,7 +161,6 @@ export class TopMenuComponent implements OnInit {
         event.target
       );
     if (clickedOutside) {
-      // Logika do zamknięcia languageMenu
       this.languageMenuService.close();
     }
   }

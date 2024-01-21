@@ -4,6 +4,7 @@ import {
   ViewChild,
   Inject,
   PLATFORM_ID,
+  ViewContainerRef,
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { JsonLoaderService } from '../../../shared/services/json-loader/json-loader.service';
@@ -22,8 +23,8 @@ import { LanguageMenuService } from '../language-menu/language-menu.service';
   styleUrl: './side-menu.component.scss',
 })
 export class SideMenuComponent {
-  @ViewChild('languageMenuComponent')
-  languageMenuComponent!: LanguageMenuComponent;
+  @ViewChild('languageMenuComponent', { read: ViewContainerRef })
+  languageMenuComponentRef!: ViewContainerRef;
   isSideMenuOpen: boolean = false;
   menuItems: MenuItem[] = [];
   isMobile: boolean = true;
@@ -104,5 +105,27 @@ export class SideMenuComponent {
 
   toggleLanguageMenu() {
     this.languageMenuService.toggle();
+  }
+
+  private handleClickOutside(event: MouseEvent) {
+    const languageToggleButton = document.getElementById(
+      'languageToggleButton'
+    );
+    if (
+      languageToggleButton &&
+      event.target instanceof Node &&
+      languageToggleButton.contains(event.target)
+    ) {
+      return;
+    }
+
+    const clickedOutside =
+      this.languageMenuComponentRef &&
+      !this.languageMenuComponentRef.element.nativeElement.contains(
+        event.target
+      );
+    if (clickedOutside) {
+      this.languageMenuService.close();
+    }
   }
 }
