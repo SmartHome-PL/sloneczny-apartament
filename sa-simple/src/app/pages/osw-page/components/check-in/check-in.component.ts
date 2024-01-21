@@ -12,7 +12,6 @@ import { Subscription } from 'rxjs';
   styleUrl: './check-in.component.scss',
 })
 export class CheckInComponent {
-  simplePass: string;
   carCode: string = 'obj.pages.osw.check-in.locked.label';
   pedestrianCode: string = 'obj.pages.osw.check-in.locked.label';
 
@@ -23,10 +22,6 @@ export class CheckInComponent {
     private dialog: MatDialog,
     public unlockDialogService: UnlockDialogService
   ) {
-    const today = new Date();
-    const formattedDate = formatDate(today, 'ddMMyyyy', 'en-US');
-    this.simplePass = `${formattedDate}S@Osw`;
-
     this.isUnlockedSubscription =
       this.unlockDialogService.isUnlocked$.subscribe((isUnlocked) => {
         if (isUnlocked) {
