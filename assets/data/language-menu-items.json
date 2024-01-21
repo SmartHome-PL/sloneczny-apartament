@@ -1,0 +1,44 @@
+[
+  {
+    "title": "English",
+    "path": "en",
+    "icon": "🇬🇧",
+    "disabled": false
+  },
+  {
+    "title": "Polski",
+    "path": "pl",
+    "icon": "🇵🇱",
+    "disabled": false
+  },
+  {
+    "title": "Español",
+    "path": "es",
+    "icon": "🇪🇸",
+    "disabled": true
+  },
+  {
+    "title": "Čeština",
+    "path": "cs",
+    "icon": "🇨🇿",
+    "disabled": true
+  },
+  {
+    "title": "Slovenčina",
+    "path": "sk",
+    "icon": "🇸🇰",
+    "disabled": true
+  },
+  {
+    "title": "Українська",
+    "path": "uk",
+    "icon": "🇺🇦",
+    "disabled": true
+  },
+  {
+    "title": "Italiano",
+    "path": "it",
+    "icon": "🇮🇹",
+    "disabled": true
+  }
+]
