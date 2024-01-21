@@ -1,6 +1,21 @@
+@import "../../../../../assets/styles/colors.scss";
+
+.address-ident {
+  text-indent: 1rem;
+}
+
+mat-divider {
+  background-color: $primary-darken-color;
+  margin-bottom: 0.75rem;
+}
+
 .page-content {
   height: 100%;
   width: 765px;
   background-color: rgb(0, 0, 0, 10%);
   margin: 0 auto;
+}
+
+svg {
+  max-width: 640px;
 }

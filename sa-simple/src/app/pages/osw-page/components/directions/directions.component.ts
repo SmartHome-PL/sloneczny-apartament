@@ -21,6 +21,12 @@ export class DirectionsComponent {
         disabled: true,
       },
       {
+        title: 'obj.menu.options.check-in.label',
+        path: '/check-in',
+        icon: 'group_add',
+        disabled: false,
+      },
+      {
         title: 'obj.menu.options.contact.label',
         path: '/contact',
         icon: 'phone',

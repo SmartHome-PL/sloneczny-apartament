@@ -1,83 +1,118 @@
 {
-  "core": {
-    "menu": {
-      "options": {
-        "objects": {
-          "label": "Objects"
-        }
-      }
-    }
-  },
-  "obj": {
-    "menu": {
-      "options": {
-        "amenities": {
-          "label": "Amenities"
-        },
-        "check-in": {
-          "label": "Check-In"
-        },
-        "check-out": {
-          "label": "Check-Out"
-        },
-        "contact": {
-          "label": "Contact"
-        },
-        "directions": {
-          "label": "Directions"
-        },
-        "rules": {
-          "label": "Rules"
-        },
-        "tickets": {
-          "label": "Tickets"
-        },
-        "transport": {
-          "label": "Transport"
-        },
-        "trash": {
-          "label": "Trash"
-        }
-      }
-    },
-    "pages": {
-      "osw": {
-        "directions": {
-          "content": {
-            "additional-info": {
-              "first": {
-                "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
-              },
-              "second": {
-                "label": "You can find more about this on the website linked below."
-              }
-            },
-            "address": {
-              "intro": {
-                "label": "You can find our apartment at the following address:"
-              }
-            },
-            "map": {
-              "intro": {
-                "label": "Below is the attached map from the google platform, marked the exact location of our apartment."
-              }
+    "core": {
+        "menu": {
+            "options": {
+                "objects": {
+                    "label": "Objects"
+                }
             }
-          },
-          "subtitle": {
-            "label": "Directions to the Słoneczny Apartment in Oświęcim"
-          },
-          "title": {
-            "label": "Directions"
-          }
         }
-      }
+    },
+    "obj": {
+        "menu": {
+            "options": {
+                "amenities": {
+                    "label": "Amenities"
+                },
+                "check-in": {
+                    "label": "Check-In"
+                },
+                "check-out": {
+                    "label": "Check-Out"
+                },
+                "contact": {
+                    "label": "Contact"
+                },
+                "directions": {
+                    "label": "Directions"
+                },
+                "rules": {
+                    "label": "Rules"
+                },
+                "tickets": {
+                    "label": "Tickets"
+                },
+                "transport": {
+                    "label": "Transport"
+                },
+                "trash": {
+                    "label": "Trash"
+                }
+            }
+        },
+        "pages": {
+            "osw": {
+                "check-in": {
+                    "content": {
+                        "instruction": {
+                            "step-one": {
+                                "additional-info": {
+                                    "label": "If you enter by car, a parking space number is assigned to the apartment"
+                                },
+                                "car-option": {
+                                    "label": "Using the car gate"
+                                },
+                                "human-option": {
+                                    "label": "Using a pedestrian gate"
+                                },
+                                "label": "We have two options to enter the apartment"
+                            },
+                            "step-three": {
+                                "label": "The code for the apartment door handle is sent in a separate message when the apartment is ready for check-in."
+                            },
+                            "step-two": {
+                                "label": "To enter the building I use the same code as the pedestrian gate"
+                            }
+                        },
+                        "map": {
+                            "intro": {
+                                "label": "Our apartment is located in a gated community. Below is a map with simplified check-in instructions."
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Check-in instructions for the Słoneczny Apartament in Oświęcim."
+                    },
+                    "title": {
+                        "label": "Check-In"
+                    }
+                },
+                "directions": {
+                    "content": {
+                        "additional-info": {
+                            "first": {
+                                "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
+                            },
+                            "second": {
+                                "label": "You can find more about this on the website linked below."
+                            }
+                        },
+                        "address": {
+                            "intro": {
+                                "label": "You can find our apartment at the following address:"
+                            }
+                        },
+                        "map": {
+                            "intro": {
+                                "label": "Below is the attached map from the google platform, marked the exact location of our apartment."
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Directions to the Słoneczny Apartment in Oświęcim"
+                    },
+                    "title": {
+                        "label": "Directions"
+                    }
+                }
+            }
+        }
+    },
+    "shared": {
+        "address": {
+            "street": {
+                "label": "st."
+            }
+        }
     }
-  },
-  "shared": {
-    "address": {
-      "street": {
-        "label": "st."
-      }
-    }
-  }
 }

@@ -42,6 +42,41 @@
         },
         "pages": {
             "osw": {
+                "check-in": {
+                    "content": {
+                        "instruction": {
+                            "step-one": {
+                                "additional-info": {
+                                    "label": "W przypadku wjazdu samochodem, do mieszkania przypisane jest miejsce parkingowe numer"
+                                },
+                                "car-option": {
+                                    "label": "Za pomocą bramy dla samochodów"
+                                },
+                                "human-option": {
+                                    "label": "Za pomocą bramki dla pieszych"
+                                },
+                                "label": "Do wejścia na teren apartamentu mamy dwie opcje"
+                            },
+                            "step-three": {
+                                "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania."
+                            },
+                            "step-two": {
+                                "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych"
+                            }
+                        },
+                        "map": {
+                            "intro": {
+                                "label": "Nasz apartament znajduje się na zamkniętym osiedlu. Poniżej znajduje się mapa z uproszczonymi instrukcjami zameldowania."
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Instrukcja zameldowania do Słonecznego Apartamentu w Oświęcimiu."
+                    },
+                    "title": {
+                        "label": "Zameldowanie"
+                    }
+                },
                 "directions": {
                     "content": {
                         "additional-info": {
