@@ -6,6 +6,7 @@ import {
   Inject,
   ElementRef,
   ViewChild,
+  ViewContainerRef,
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { JsonLoaderService } from '../../../shared/services/json-loader/json-loader.service';
@@ -14,7 +15,6 @@ import { TranslateService } from '@ngx-translate/core';
 import { SideMenuService } from '../side-menu/side-menu.service';
 import { LanguageMenuService } from '../language-menu/language-menu.service';
 import { isPlatformBrowser } from '@angular/common';
-import { LanguageMenuComponent } from '../language-menu/language-menu.component';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -23,8 +23,8 @@ import { Subscription } from 'rxjs';
   styleUrl: './top-menu.component.scss',
 })
 export class TopMenuComponent implements OnInit {
-  @ViewChild('languageMenuComponent')
-  languageMenuComponent!: LanguageMenuComponent;
+  @ViewChild('languageMenuComponent', { read: ViewContainerRef })
+  languageMenuComponentRef!: ViewContainerRef;
   menuItems: MenuItem[] = [];
 
   isMobile: boolean = true;
@@ -67,11 +67,23 @@ export class TopMenuComponent implements OnInit {
         'button[aria-expanded]'
       ) as HTMLElement;
     }
+
+    if (isPlatformBrowser(this.platformId)) {
+      document.addEventListener(
+        'click',
+        this.handleClickOutside.bind(this),
+        true
+      );
+    }
   }
 
-  ngAfterViewInit(): void {
+  ngOnDestroy() {
     if (isPlatformBrowser(this.platformId)) {
-      setTimeout(() => {}, 0);
+      document.removeEventListener(
+        'click',
+        this.handleClickOutside.bind(this),
+        true
+      );
     }
   }
 
@@ -129,5 +141,31 @@ export class TopMenuComponent implements OnInit {
 
   toggleLanguageMenu() {
     this.languageMenuService.toggle();
+  }
+
+  private handleClickOutside(event: MouseEvent) {
+    const languageToggleButton = document.getElementById(
+      'languageToggleButton'
+    );
+
+    // Sprawdź, czy kliknięcie nastąpiło na przycisku
+    if (
+      languageToggleButton &&
+      event.target instanceof Node &&
+      languageToggleButton.contains(event.target)
+    ) {
+      // Jeśli kliknięcie nastąpiło na przycisku, nie rób nic
+      return;
+    }
+
+    const clickedOutside =
+      this.languageMenuComponentRef &&
+      !this.languageMenuComponentRef.element.nativeElement.contains(
+        event.target
+      );
+    if (clickedOutside) {
+      // Logika do zamknięcia languageMenu
+      this.languageMenuService.close();
+    }
   }
 }

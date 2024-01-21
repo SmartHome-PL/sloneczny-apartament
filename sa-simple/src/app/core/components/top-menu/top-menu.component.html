@@ -10,7 +10,7 @@
           {{ menuItem.title | translate }}
         </button>
       </ng-container>
-      <button mat-button (click)="toggleLanguageMenu()">
+      <button mat-button (click)="toggleLanguageMenu()" id="languageToggleButton">
         {{ getLanguage() }}
       </button>
     </ng-container>
