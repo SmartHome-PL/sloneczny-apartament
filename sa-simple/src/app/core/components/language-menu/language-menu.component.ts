@@ -8,10 +8,10 @@ import {
 import { MenuItem } from '../../../shared/models/menuItem.model';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language-service/language.service';
-import { isPlatformBrowser } from '@angular/common';
 import { SideMenuService } from '../side-menu/side-menu.service';
 import { LanguageMenuService } from '../language-menu/language-menu.service';
 import { Subscription } from 'rxjs';
+import { JsonLoaderService } from '../../../shared/services/json-loader/json-loader.service';
 
 @Component({
   selector: 'app-language-menu',
@@ -27,55 +27,13 @@ export class LanguageMenuComponent {
   isOpen = false;
   isFirstLoadGuard = true;
 
-  languageMenuItems: MenuItem[] = [
-    {
-      title: '🇬🇧',
-      path: 'en',
-      icon: '',
-      disabled: false,
-    },
-    {
-      title: '🇵🇱',
-      path: 'pl',
-      icon: '',
-      disabled: false,
-    },
-    {
-      title: '🇪🇸',
-      path: 'es',
-      icon: '',
-      disabled: true,
-    },
-    {
-      title: '🇨🇿',
-      path: 'cs',
-      icon: '',
-      disabled: true,
-    },
-    {
-      title: '🇸🇰',
-      path: 'sl',
-      icon: '',
-      disabled: true,
-    },
-    {
-      title: '🇺🇦',
-      path: 'ua',
-      icon: '',
-      disabled: true,
-    },
-    {
-      title: '🇮🇹',
-      path: 'it',
-      icon: '',
-      disabled: true,
-    },
-  ];
+  languageMenuItems: MenuItem[] = [];
 
   constructor(
     private translate: TranslateService,
     private languageService: LanguageService,
     private sideMenuService: SideMenuService,
+    private jsonLoaderService: JsonLoaderService,
     public languageMenuService: LanguageMenuService,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
@@ -84,6 +42,14 @@ export class LanguageMenuComponent {
         this.isOpen = isOpen;
       }
     );
+  }
+
+  ngOnInit() {
+    this.jsonLoaderService
+      .loadData<MenuItem[]>('assets/data/language-menu-items.json')
+      .subscribe((items: MenuItem[]) => {
+        this.languageMenuItems = items;
+      });
   }
 
   ngOnDestroy() {
@@ -115,5 +81,4 @@ export class LanguageMenuComponent {
   openLanguageMenu() {
     this.languageMenuService.open();
   }
-
 }
