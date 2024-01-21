@@ -1,3 +1,10 @@
+<div
+  class="overlay"
+  *ngIf="sideMenuService.isOpen$ | async"
+  (click)="closeSideMenu()"
+>
+  <mat-icon>dashboard</mat-icon>
+</div>
 <div class="side-menu" [ngClass]="{ open: sideMenuService.isOpen$ | async }">
   <button mat-button class="language" (click)="toggleLanguageMenu()">
     {{ getLanguage() }}
