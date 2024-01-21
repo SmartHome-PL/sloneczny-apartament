@@ -16,6 +16,26 @@ mat-divider {
   margin: 0 auto;
 }
 
-svg {
+.svg {
   max-width: 640px;
+  margin: auto;
+}
+
+button {
+  width: 8rem;
+}
+
+.mat-disabled {
+  background-color: $action-text-color;
+  color: $base-color;
+}
+
+.mat-enabled {
+  background-color: $action-color;
+  color: $base-color;
+}
+
+app-info-card {
+  display: flex;
+  flex-direction: column;
 }

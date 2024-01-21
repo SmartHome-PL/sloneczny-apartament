@@ -65,10 +65,16 @@
                             }
                         },
                         "map": {
+                            "code-info": {
+                                "label": "Kody zostały ukryte w celu bezpieczeństwa. By je odkryć, należy kliknąć na przycisk „Pokaż kod” i postępować zgodnie z instukcjami w okienku."
+                            },
                             "intro": {
                                 "label": "Nasz apartament znajduje się na zamkniętym osiedlu. Poniżej znajduje się mapa z uproszczonymi instrukcjami zameldowania."
                             }
                         }
+                    },
+                    "locked": {
+                        "label": "Pokaż kod"
                     },
                     "subtitle": {
                         "label": "Instrukcja zameldowania do Słonecznego Apartamentu w Oświęcimiu."

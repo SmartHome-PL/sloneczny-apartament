@@ -65,10 +65,16 @@
                             }
                         },
                         "map": {
+                            "code-info": {
+                                "label": "The codes have been hidden for security purposes. To discover them, click on the \"Show code\" button and follow the instructions in the window."
+                            },
                             "intro": {
                                 "label": "Our apartment is located in a gated community. Below is a map with simplified check-in instructions."
                             }
                         }
+                    },
+                    "locked": {
+                        "label": "Show code"
                     },
                     "subtitle": {
                         "label": "Check-in instructions for the Słoneczny Apartament in Oświęcim."

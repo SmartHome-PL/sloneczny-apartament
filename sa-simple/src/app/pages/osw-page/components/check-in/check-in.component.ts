@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { InfoCard } from '../../../../shared/components/info-card/info-card.component';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-check-in',
@@ -7,6 +8,15 @@ import { InfoCard } from '../../../../shared/components/info-card/info-card.comp
   styleUrl: './check-in.component.scss',
 })
 export class CheckInComponent {
+  simplePass: string;
+  isUnlocked: boolean = false;
+  carCode: string = 'obj.pages.osw.check-in.locked.label';
+  pedestrianCode: string = 'obj.pages.osw.check-in.locked.label';
+  constructor() {
+    const today = new Date();
+    const formattedDate = formatDate(today, 'ddMMyyyy', 'en-US');
+    this.simplePass = `${formattedDate}S@Osw`;
+  }
   directionsCardData: InfoCard = {
     titleBar: {
       icon: 'group_add',
@@ -28,4 +38,10 @@ export class CheckInComponent {
       },
     ],
   };
+
+  unlock() {
+    this.carCode = '##5045738#';
+    this.pedestrianCode = '#5045738#';
+    this.isUnlocked = true;
+  }
 }
