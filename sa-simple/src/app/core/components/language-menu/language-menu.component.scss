@@ -53,3 +53,13 @@
   top: 4rem;
   right: 13rem;
 }
+
+@media (max-width: 600px) {
+  .language-menu.mobile {
+    right: -13rem;
+  }
+
+  .language-menu.mobile.open {
+    right: 8.75rem;
+  }
+}

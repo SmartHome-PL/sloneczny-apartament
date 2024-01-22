@@ -43,7 +43,23 @@
     position: fixed;
     transform: scale(6);
     color: rgb($primary-color, 0.75);
-    top: calc(50% - (4rem / 2));
-    left: calc(50% - (13rem / 2));
+    top: calc(50% + (4rem / 2));
+    left: calc((50% - 1rem) - (13rem / 2));
+  }
+}
+
+@media (max-width: 600px) {
+  // 600px to przykładowa szerokość, którą możesz dostosować
+  .side-menu {
+    width: 8.75rem; // Nowa szerokość dla urządzeń mobilnych
+    right: -8.75rem; // Zaktualizuj również pozycję, aby menu było całkowicie ukryte
+  }
+
+  .side-menu.open {
+    right: 0;
+  }
+
+  .overlay mat-icon {
+    left: calc((50% - 1rem) - (8.75rem / 2));
   }
 }
