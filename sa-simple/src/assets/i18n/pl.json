@@ -131,7 +131,7 @@
             },
             "password": {
                 "input": {
-                    "title": {
+                    "placeholder": {
                         "label": "Hasło"
                     }
                 },
@@ -139,7 +139,18 @@
                     "label": "Hasło powinno znajdować się w wiadomości w której otrzymali państwo link do tej strony."
                 },
                 "title": {
-                    "label": "Hasło"
+                    "label": "Wprowadź hasło"
+                },
+                "validation": {
+                    "invalid": {
+                        "label": "Hasło jest nieprawidłowe!"
+                    },
+                    "length": {
+                        "label": "Hasło jest za krótkie (co najmniej 8 znaków)!"
+                    },
+                    "required": {
+                        "label": "Hasło jest wymagane!"
+                    }
                 }
             }
         }

@@ -2,19 +2,7 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { UnlockDialogService } from './unlock-dialog.service';
 import { formatDate } from '@angular/common';
-import {
-  AbstractControl,
-  FormControl,
-  ValidatorFn,
-  Validators,
-} from '@angular/forms';
-
-export function correctPasswordValidator(correctPassword: string): ValidatorFn {
-  return (control: AbstractControl): { [key: string]: any } | null => {
-    const isIncorrect = control.value !== correctPassword;
-    return isIncorrect ? { incorrectPassword: { value: control.value } } : null;
-  };
-}
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-unlock-dialog',
@@ -23,33 +11,51 @@ export function correctPasswordValidator(correctPassword: string): ValidatorFn {
 })
 export class UnlockDialogComponent {
   simplePass: string;
-  passwordError: string | null = null;
-  passwordFormControl = new FormControl();
+  passwordError: string = '';
+  password: string = '';
+  passwordPlaceholder: string = '';
   constructor(
     public dialog: MatDialog,
     public dialogRef: MatDialogRef<UnlockDialogComponent>,
     private unlockDialogService: UnlockDialogService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private translateService: TranslateService
   ) {
     const today = new Date();
     const formattedDate = formatDate(today, 'ddMMyyyy', 'en-US');
     this.simplePass = `${formattedDate}S@Osw`;
 
-    this.passwordFormControl = new FormControl('', [
-      Validators.required,
-      Validators.minLength(8),
-      correctPasswordValidator(this.simplePass),
-    ]);
+    this.translateService
+      .get('shared.dialog.password.input.placeholder.label')
+      .subscribe((res: string) => {
+        this.passwordPlaceholder = res;
+      });
   }
 
   onEnterClick() {
-    if (this.passwordFormControl.value === this.simplePass) {
+    if (this.password === this.simplePass) {
       this.unlockDialogService.unlock();
-      this.passwordError = null;
-      this.dialogRef.close();
+      this.passwordError = '';
     } else {
-      this.passwordError = 'Password is incorrect.';
-      this.cdr.detectChanges();
+      if (this.password.length === 0) {
+        this.translateService
+          .get('shared.dialog.password.validation.required.label')
+          .subscribe((res: string) => {
+            this.passwordError = res;
+          });
+      } else if (this.password.length < 8) {
+        this.translateService
+          .get('shared.dialog.password.validation.length.label')
+          .subscribe((res: string) => {
+            this.passwordError = res;
+          });
+      } else {
+        this.translateService
+          .get('shared.dialog.password.validation.invalid.label')
+          .subscribe((res: string) => {
+            this.passwordError = res;
+          });
+      }
     }
   }
 }

@@ -131,7 +131,7 @@
             },
             "password": {
                 "input": {
-                    "title": {
+                    "placeholder": {
                         "label": "Password"
                     }
                 },
@@ -139,7 +139,18 @@
                     "label": "The password should be included in the message in which you received a link to this website."
                 },
                 "title": {
-                    "label": "Password"
+                    "label": "Enter your password"
+                },
+                "validation": {
+                    "invalid": {
+                        "label": "Password is invalid!"
+                    },
+                    "length": {
+                        "label": "Password is too short (at least 8 characters)!"
+                    },
+                    "required": {
+                        "label": "Password is required!"
+                    }
                 }
             }
         }
