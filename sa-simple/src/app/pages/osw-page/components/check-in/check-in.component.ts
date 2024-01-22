@@ -58,8 +58,6 @@ export class CheckInComponent {
   }
 
   openDialog(): void {
-    this.dialog.open(UnlockDialogComponent, {
-      width: '16rem',
-    });
+    this.dialog.open(UnlockDialogComponent, { maxWidth: '38rem' });
   }
 }

@@ -1,13 +1,34 @@
-<h1 mat-dialog-title>Password</h1>
-<div mat-dialog-content>
-  <mat-form-field>
-    <mat-label>Password</mat-label>
+<h1 mat-dialog-title class="title-bar">
+  {{ "shared.dialog.password.title.label" | translate }}
+</h1>
+<div mat-dialog-content class="content-zone">
+  {{ "shared.dialog.password.short-instruction.label" | translate }}
+  <mat-form-field class="password-input">
+    <mat-label>
+      {{ "shared.dialog.password.input.title.label" | translate }}</mat-label
+    >
     <input matInput type="password" [formControl]="passwordFormControl" />
+    <mat-error *ngIf="passwordFormControl.hasError('required')">
+      Password is required
+    </mat-error>
+    <mat-error *ngIf="passwordFormControl.hasError('minlength')">
+      Password must be at least 8 characters
+    </mat-error>
+    <mat-error *ngIf="passwordFormControl.hasError('incorrectPassword')"
+      >Password is incorrect.</mat-error
+    >
   </mat-form-field>
 </div>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button cdkFocusInitial (click)="onEnterClick()">
-    Enter
+<div mat-dialog-actions class="actions-bar">
+  <button mat-button mat-dialog-close>
+    {{ "shared.dialog.button.cancel.label" | translate }}
+  </button>
+  <button
+    mat-button
+    (click)="onEnterClick()"
+    [disabled]="passwordFormControl.invalid"
+    [color]="passwordFormControl.invalid ? 'disabled' : 'enabled'"
+  >
+    {{ "shared.dialog.button.enter.label" | translate }}
   </button>
 </div>
