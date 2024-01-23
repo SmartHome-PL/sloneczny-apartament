@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { InfoCard } from '../../../../shared/components/info-card/info-card.component';
 import { formatDate } from '@angular/common';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { UnlockDialogComponent } from './unlock-dialog/unlock-dialog.component';
-import { UnlockDialogService } from './unlock-dialog/unlock-dialog.service';
+import { UnlockDialogComponent } from '../unlock-dialog/unlock-dialog.component';
+import { UnlockDialogService } from '../unlock-dialog/unlock-dialog.service';
 import { Subscription } from 'rxjs';
 
 @Component({

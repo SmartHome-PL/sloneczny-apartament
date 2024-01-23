@@ -11,7 +11,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { DirectionsComponent } from './components/directions/directions.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { TranslateModule } from '@ngx-translate/core';
-import { UnlockDialogComponent } from './components/check-in/unlock-dialog/unlock-dialog.component';
+import { UnlockDialogComponent } from './components/unlock-dialog/unlock-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
