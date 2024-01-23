@@ -17,6 +17,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { AmenitiesComponent } from './components/amenities/amenities.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     OswPageComponent,
     DirectionsComponent,
     UnlockDialogComponent,
+    AmenitiesComponent,
   ],
   imports: [
     CommonModule,

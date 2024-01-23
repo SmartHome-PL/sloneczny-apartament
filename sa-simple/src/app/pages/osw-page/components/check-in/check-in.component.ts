@@ -5,6 +5,8 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { UnlockDialogComponent } from '../unlock-dialog/unlock-dialog.component';
 import { UnlockDialogService } from '../unlock-dialog/unlock-dialog.service';
 import { Subscription } from 'rxjs';
+import { JsonLoaderService } from '../../../../shared/services/json-loader/json-loader.service';
+import { MenuItem } from '../../../../shared/models/menuItem.model';
 
 @Component({
   selector: 'app-check-in',
@@ -18,10 +20,28 @@ export class CheckInComponent {
   isUnlockedSubscription: Subscription;
   isUnlocked: boolean = false;
 
+  directionsCardData: InfoCard = {
+    titleBar: {
+      icon: 'group_add',
+      title: 'obj.pages.osw.check-in.title.label',
+      subtitle: 'obj.pages.osw.check-in.subtitle.label',
+    },
+    actionBarMenuItems: [],
+  };
+
   constructor(
     private dialog: MatDialog,
-    public unlockDialogService: UnlockDialogService
+    public unlockDialogService: UnlockDialogService,
+    private jsonLoaderService: JsonLoaderService
   ) {
+    this.jsonLoaderService
+      .loadData<MenuItem[]>('assets/data/osw-menu-items.json')
+      .subscribe((items: MenuItem[]) => {
+        this.directionsCardData.actionBarMenuItems = items.filter((menuItem) =>
+          items[1].haveRedirectionTo.includes(menuItem.id)
+        );
+      });
+
     this.isUnlockedSubscription =
       this.unlockDialogService.isUnlocked$.subscribe((isUnlocked) => {
         if (isUnlocked) {
@@ -29,27 +49,6 @@ export class CheckInComponent {
         }
       });
   }
-  directionsCardData: InfoCard = {
-    titleBar: {
-      icon: 'group_add',
-      title: 'obj.pages.osw.check-in.title.label',
-      subtitle: 'obj.pages.osw.check-in.subtitle.label',
-    },
-    actionBarMenuItems: [
-      {
-        title: 'obj.menu.options.directions.label',
-        path: '/directions',
-        icon: 'place',
-        disabled: false,
-      },
-      {
-        title: 'obj.menu.options.contact.label',
-        path: '/contact',
-        icon: 'phone',
-        disabled: true,
-      },
-    ],
-  };
 
   unlock() {
     this.carCode = '##5045738#';
