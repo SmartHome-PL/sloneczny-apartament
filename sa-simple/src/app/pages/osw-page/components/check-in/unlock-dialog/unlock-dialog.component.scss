@@ -1,19 +1,34 @@
 @import "../../../../../../assets/styles/colors.scss";
 
-.title-bar,
-.actions-bar {
+.title-bar {
   background-color: $primary-darken-color !important;
   height: 4rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+
+  mat-icon {
+    margin-top: 0.25rem;
+    scale: 1.5;
+  }
+
+  h1 {
+    margin-left: 1.25rem;
+  }
 }
 
 .content-zone {
   margin-top: -1rem;
-  padding-top: 1rem;
+  padding-top: 1.75rem;
   margin-bottom: -1rem;
   background-color: $secondary-color;
   display: flex;
   flex-direction: column;
   color: $primary-text-color;
+
+  span {
+    font-size: 0.9rem;
+  }
 
   .password-input {
     padding-top: 1rem;
@@ -44,14 +59,15 @@
 }
 
 .actions-bar {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
-  gap: 0.5rem;
+  background-color: $primary-darken-color !important;
+  height: 4rem;
+  display: flex; // Zmień z grid na flex
+  justify-content: space-between; // Rozstawia elementy równomiernie, pierwszy na początku, ostatni na końcu
 
   button {
     background-color: $action-color;
     color: $base-color;
-    width: 100%;
+    width: 6rem; // Ustal stałą szerokość dla przycisków
     height: 100%;
     margin: 0;
   }

@@ -36,6 +36,7 @@ export class UnlockDialogComponent {
     if (this.password === this.simplePass) {
       this.unlockDialogService.unlock();
       this.passwordError = '';
+      this.dialogRef.close();
     } else {
       if (this.password.length === 0) {
         this.translateService

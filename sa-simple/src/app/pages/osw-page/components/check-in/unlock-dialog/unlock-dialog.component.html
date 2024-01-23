@@ -1,8 +1,12 @@
-<h1 mat-dialog-title class="title-bar">
-  {{ "shared.dialog.password.title.label" | translate }}
-</h1>
+<div mat-dialog-title class="title-bar">
+  <mat-icon>key</mat-icon>
+  <h1>{{ "shared.dialog.password.title.label" | translate }}</h1>
+</div>
 <div mat-dialog-content class="content-zone">
-  {{ "shared.dialog.password.short-instruction.label" | translate }}
+  <span>
+    {{ "shared.dialog.password.short-instruction.label" | translate }}</span
+  >
+
   <div class="password-input">
     <input
       id="password"
