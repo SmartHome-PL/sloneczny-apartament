@@ -18,6 +18,7 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { AmenitiesComponent } from './components/amenities/amenities.component';
+import { PageBuilderComponent } from './components/page-builder/page-builder.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AmenitiesComponent } from './components/amenities/amenities.component';
     DirectionsComponent,
     UnlockDialogComponent,
     AmenitiesComponent,
+    PageBuilderComponent,
   ],
   imports: [
     CommonModule,

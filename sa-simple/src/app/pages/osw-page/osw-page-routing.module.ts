@@ -7,15 +7,16 @@ import { AmenitiesComponent } from './components/amenities/amenities.component';
 
 const routes: Routes = [
   { path: '', component: OswPageComponent },
-  { path: 'check-in', component: CheckInComponent },
-  { path: 'directions', component: DirectionsComponent },
-  { path: 'amenities', component: AmenitiesComponent },
+  // { path: 'check-in', component: CheckInComponent },
+  // { path: 'directions', component: DirectionsComponent },
+  // { path: 'amenities', component: AmenitiesComponent },
 ];
 
 import jsonData from '../../../assets/data/osw-menu-items.json';
+import { PageBuilderComponent } from './components/page-builder/page-builder.component';
 
 jsonData.forEach((page: { path: any }) => {
-  routes.push({ path: page.path, component: CheckInComponent });
+  routes.push({ path: page.path, component: PageBuilderComponent });
 });
 
 @NgModule({
