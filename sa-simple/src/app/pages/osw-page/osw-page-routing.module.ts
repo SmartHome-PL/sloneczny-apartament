@@ -12,6 +12,12 @@ const routes: Routes = [
   { path: 'amenities', component: AmenitiesComponent },
 ];
 
+import jsonData from '../../../assets/data/osw-menu-items.json';
+
+jsonData.forEach((page: { path: any }) => {
+  routes.push({ path: page.path, component: CheckInComponent });
+});
+
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],

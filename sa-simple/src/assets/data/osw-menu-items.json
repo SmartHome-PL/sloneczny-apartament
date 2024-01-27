@@ -2,7 +2,7 @@
   {
     "id": 0,
     "title": "obj.menu.options.directions.label",
-    "path": "/osw/directions",
+    "path": "osw/directions",
     "icon": "place",
     "disabled": false,
     "haveRedirectionTo": [1, 6, 7, 8]
@@ -10,7 +10,7 @@
   {
     "id": 1,
     "title": "obj.menu.options.check-in.label",
-    "path": "/osw/check-in",
+    "path": "osw/check-in",
     "icon": "group_add",
     "disabled": false,
     "haveRedirectionTo": [0, 2, 4, 7, 8]
@@ -18,7 +18,7 @@
   {
     "id": 2,
     "title": "obj.menu.options.amenities.label",
-    "path": "/osw/amenities",
+    "path": "osw/amenities",
     "icon": "movie_filter",
     "disabled": false,
     "haveRedirectionTo": [1, 3, 4, 6, 7, 8]
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "title": "obj.menu.options.check-out.label",
-    "path": "/osw/check-out",
+    "path": "osw/check-out",
     "icon": "clear",
     "disabled": true,
     "haveRedirectionTo": []
@@ -34,7 +34,7 @@
   {
     "id": 4,
     "title": "obj.menu.options.rules.label",
-    "path": "/osw/rules",
+    "path": "osw/rules",
     "icon": "smoke_free",
     "disabled": true,
     "haveRedirectionTo": []
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "title": "obj.menu.options.trash.label",
-    "path": "/osw/trash",
+    "path": "osw/trash",
     "icon": "delete",
     "disabled": true,
     "haveRedirectionTo": []
@@ -50,7 +50,7 @@
   {
     "id": 6,
     "title": "obj.menu.options.transport.label",
-    "path": "/osw/transport",
+    "path": "osw/transport",
     "icon": "airport_shuttle",
     "disabled": true,
     "haveRedirectionTo": []
@@ -58,7 +58,7 @@
   {
     "id": 7,
     "title": "obj.menu.options.tickets.label",
-    "path": "/osw/tickets",
+    "path": "osw/tickets",
     "icon": "confirmation_number",
     "disabled": true,
     "haveRedirectionTo": []
@@ -66,7 +66,7 @@
   {
     "id": 8,
     "title": "obj.menu.options.contact.label",
-    "path": "/osw/contact",
+    "path": "osw/contact",
     "icon": "phone",
     "disabled": true,
     "haveRedirectionTo": []
