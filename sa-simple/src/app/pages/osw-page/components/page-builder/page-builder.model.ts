@@ -11,4 +11,5 @@ export interface PageBuilderData {
   titleIcon: string;
   subtitle: string;
   redirections: Redirect[];
+  componentName: string;
 }

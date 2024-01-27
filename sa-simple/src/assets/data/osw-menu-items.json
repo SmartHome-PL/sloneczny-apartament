@@ -9,7 +9,8 @@
     "content": {
       "title": "obj.pages.osw.directions.title.label",
       "icon": "place",
-      "subTitle": "obj.pages.osw.directions.subtitle.label"
+      "subTitle": "obj.pages.osw.directions.subtitle.label",
+      "component": "DirectionsComponent"
     }
   },
   {
@@ -22,7 +23,8 @@
     "content": {
       "title": "obj.pages.osw.check-in.title.label",
       "icon": "group_add",
-      "subTitle": "obj.pages.osw.check-in.subtitle.label"
+      "subTitle": "obj.pages.osw.check-in.subtitle.label",
+      "component": "CheckInComponent"
     }
   },
   {
@@ -35,7 +37,8 @@
     "content": {
       "title": "obj.pages.osw.amenities.title.label",
       "icon": "movie_filter",
-      "subTitle": "obj.pages.osw.amenities.subtitle.label"
+      "subTitle": "obj.pages.osw.amenities.subtitle.label",
+      "component": "AmenitiesComponent"
     }
   },
   {
@@ -48,7 +51,8 @@
     "content": {
       "title": "obj.pages.osw.check-out.title.label",
       "icon": "clear",
-      "subTitle": "obj.pages.osw.check-out.subtitle.label"
+      "subTitle": "obj.pages.osw.check-out.subtitle.label",
+      "component": "DirectionsComponent"
     }
   },
   {
@@ -61,7 +65,8 @@
     "content": {
       "title": "obj.pages.osw.rules.title.label",
       "icon": "smoke_free",
-      "subTitle": "obj.pages.osw.rules.subtitle.label"
+      "subTitle": "obj.pages.osw.rules.subtitle.label",
+      "component": "DirectionsComponent"
     }
   },
   {
@@ -74,7 +79,8 @@
     "content": {
       "title": "obj.pages.osw.trash.title.label",
       "icon": "delete",
-      "subTitle": "obj.pages.osw.trash.subtitle.label"
+      "subTitle": "obj.pages.osw.trash.subtitle.label",
+      "component": "DirectionsComponent"
     }
   },
   {
@@ -87,7 +93,8 @@
     "content": {
       "title": "obj.pages.osw.transport.title.label",
       "icon": "delete",
-      "subTitle": "obj.pages.osw.transport.subtitle.label"
+      "subTitle": "obj.pages.osw.transport.subtitle.label",
+      "component": "DirectionsComponent"
     }
   },
   {
@@ -100,7 +107,8 @@
     "content": {
       "title": "obj.pages.osw.tickets.title.label",
       "icon": "confirmation_number",
-      "subTitle": "obj.pages.osw.tickets.subtitle.label"
+      "subTitle": "obj.pages.osw.tickets.subtitle.label",
+      "component": "DirectionsComponent"
     }
   },
   {
@@ -113,7 +121,8 @@
     "content": {
       "title": "obj.pages.osw.contact.title.label",
       "icon": "phone",
-      "subTitle": "obj.pages.osw.contact.subtitle.label"
+      "subTitle": "obj.pages.osw.contact.subtitle.label",
+      "component": "DirectionsComponent"
     }
   }
 ]

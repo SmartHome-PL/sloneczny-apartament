@@ -1,7 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Type, ViewChild, ViewContainerRef } from '@angular/core';
 import { DataLoaderService } from './data-loader.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PageBuilderData } from './page-builder.model';
+import { DirectionsComponent } from '../directions/directions.component';
+import { CheckInComponent } from '../check-in/check-in.component';
+import { AmenitiesComponent } from '../amenities/amenities.component';
+
+const componentMappings: { [key: string]: Type<any> } = {
+  DirectionsComponent: DirectionsComponent,
+  CheckInComponent: CheckInComponent,
+  AmenitiesComponent: AmenitiesComponent,
+};
 
 @Component({
   selector: 'app-page-builder',
@@ -14,6 +23,7 @@ export class PageBuilderComponent {
     titleIcon: '',
     subtitle: '',
     redirections: [],
+    componentName: '',
   };
 
   constructor(
@@ -21,6 +31,12 @@ export class PageBuilderComponent {
     private dataLoaderService: DataLoaderService,
     private router: Router
   ) {}
+
+  @ViewChild('dynamicComponentContainer', {
+    read: ViewContainerRef,
+    static: true,
+  })
+  container!: ViewContainerRef;
 
   ngOnInit() {
     this.route.url.subscribe((url) => {
@@ -35,6 +51,10 @@ export class PageBuilderComponent {
           this.dataLoaderService.getRedirectionsData(
             pageData.haveRedirectionTo
           );
+        this.pageBuilderData.componentName = pageData.content.component;
+        if (this.pageBuilderData.componentName) {
+          this.loadComponent(this.pageBuilderData.componentName);
+        }
       } else {
         console.warn(
           'Dane strony nie zostały znalezione dla ścieżki:',
@@ -42,6 +62,16 @@ export class PageBuilderComponent {
         );
       }
     });
+  }
+
+  loadComponent(componentName: string) {
+    const componentClass = componentMappings[componentName];
+
+    if (componentClass) {
+      const componentRef = this.container.createComponent(componentClass);
+    } else {
+      console.error('Nie znaleziono komponentu dla:', componentName);
+    }
   }
 
   navigateTo(path: string) {
