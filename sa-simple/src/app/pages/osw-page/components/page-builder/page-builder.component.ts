@@ -5,11 +5,23 @@ import { PageBuilderData } from './page-builder.model';
 import { DirectionsComponent } from '../directions/directions.component';
 import { CheckInComponent } from '../check-in/check-in.component';
 import { AmenitiesComponent } from '../amenities/amenities.component';
+import { CheckOutComponent } from '../check-out/check-out.component';
+import { RulesComponent } from '../rules/rules.component';
+import { TrashComponent } from '../trash/trash.component';
+import { TransportComponent } from '../transport/transport.component';
+import { TicketsComponent } from '../tickets/tickets.component';
+import { ContactComponent } from '../contact/contact.component';
 
 const componentMappings: { [key: string]: Type<any> } = {
   DirectionsComponent: DirectionsComponent,
   CheckInComponent: CheckInComponent,
   AmenitiesComponent: AmenitiesComponent,
+  CheckOutComponent: CheckOutComponent,
+  RulesComponent: RulesComponent,
+  TrashComponent: TrashComponent,
+  TransportComponent: TransportComponent,
+  TicketsComponent: TicketsComponent,
+  ContactComponent: ContactComponent,
 };
 
 @Component({

@@ -19,6 +19,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { AmenitiesComponent } from './components/amenities/amenities.component';
 import { PageBuilderComponent } from './components/page-builder/page-builder.component';
+import { CheckOutComponent } from './components/check-out/check-out.component';
+import { RulesComponent } from './components/rules/rules.component';
+import { TrashComponent } from './components/trash/trash.component';
+import { TransportComponent } from './components/transport/transport.component';
+import { TicketsComponent } from './components/tickets/tickets.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +34,12 @@ import { PageBuilderComponent } from './components/page-builder/page-builder.com
     UnlockDialogComponent,
     AmenitiesComponent,
     PageBuilderComponent,
+    CheckOutComponent,
+    RulesComponent,
+    TrashComponent,
+    TransportComponent,
+    TicketsComponent,
+    ContactComponent,
   ],
   imports: [
     CommonModule,
