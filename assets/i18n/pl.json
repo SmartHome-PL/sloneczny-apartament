@@ -21,7 +21,7 @@
                     "label": "Wymeldowanie"
                 },
                 "contact": {
-                    "label": "Contact"
+                    "label": "Kontakt"
                 },
                 "directions": {
                     "label": "Dojazd"
@@ -42,6 +42,14 @@
         },
         "pages": {
             "osw": {
+                "amenities": {
+                    "subtitle": {
+                        "label": "Lista udogodnień w Słonecznym Apartamencie w Oświęcimiu"
+                    },
+                    "title": {
+                        "label": "Udogodnienia"
+                    }
+                },
                 "check-in": {
                     "content": {
                         "instruction": {
@@ -83,6 +91,22 @@
                         "label": "Zameldowanie"
                     }
                 },
+                "check-out": {
+                    "subtitle": {
+                        "label": "Instrukcja wymeldowania z Apartamentu Słonecznego w Oświęcimiu"
+                    },
+                    "title": {
+                        "label": "Wymeldowanie"
+                    }
+                },
+                "contact": {
+                    "subtitle": {
+                        "label": "Szczegółowe informacje jak się z nami skontaktować"
+                    },
+                    "title": {
+                        "label": "Kontakt"
+                    }
+                },
                 "directions": {
                     "content": {
                         "additional-info": {
@@ -105,10 +129,42 @@
                         }
                     },
                     "subtitle": {
-                        "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                        "label": "Instrukcja dojazdu do Słonecznego Apartamentu w Oświęcimiu"
                     },
                     "title": {
                         "label": "Dojazd"
+                    }
+                },
+                "rules": {
+                    "subtitle": {
+                        "label": "Informacje o zasadach panujących w naszym apartamencie"
+                    },
+                    "title": {
+                        "label": "Regulamin"
+                    }
+                },
+                "tickets": {
+                    "subtitle": {
+                        "label": "Możliwość zakupu biletów w naszym apartamencie"
+                    },
+                    "title": {
+                        "label": "Bilety"
+                    }
+                },
+                "transport": {
+                    "subtitle": {
+                        "label": "Szczegóły dotyczące naszej usługi transportowej dla naszych gości"
+                    },
+                    "title": {
+                        "label": "Transport"
+                    }
+                },
+                "trash": {
+                    "subtitle": {
+                        "label": "Informacja o wynoszeniu śmieci w naszym mieszkaniu"
+                    },
+                    "title": {
+                        "label": "Śmieci"
                     }
                 }
             }

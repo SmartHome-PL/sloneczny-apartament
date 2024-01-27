@@ -42,6 +42,14 @@
         },
         "pages": {
             "osw": {
+                "amenities": {
+                    "subtitle": {
+                        "label": "List of amenities in Słoneczny Apartament in Oświęcim"
+                    },
+                    "title": {
+                        "label": "Amenities"
+                    }
+                },
                 "check-in": {
                     "content": {
                         "instruction": {
@@ -83,6 +91,22 @@
                         "label": "Check-In"
                     }
                 },
+                "check-out": {
+                    "subtitle": {
+                        "label": "Check-out instructions for the Słoneczny Apartament in Oświęcim."
+                    },
+                    "title": {
+                        "label": "Check-Out"
+                    }
+                },
+                "contact": {
+                    "subtitle": {
+                        "label": "Detailed informations how to contact us"
+                    },
+                    "title": {
+                        "label": "Contact"
+                    }
+                },
                 "directions": {
                     "content": {
                         "additional-info": {
@@ -109,6 +133,38 @@
                     },
                     "title": {
                         "label": "Directions"
+                    }
+                },
+                "rules": {
+                    "subtitle": {
+                        "label": "Informations about rules in our apartment"
+                    },
+                    "title": {
+                        "label": "Rules"
+                    }
+                },
+                "tickets": {
+                    "subtitle": {
+                        "label": "Available tickets to buy in our apartment"
+                    },
+                    "title": {
+                        "label": "Tickets"
+                    }
+                },
+                "transport": {
+                    "subtitle": {
+                        "label": "Details about our transport service for our guests"
+                    },
+                    "title": {
+                        "label": "Transport"
+                    }
+                },
+                "trash": {
+                    "subtitle": {
+                        "label": "Information about taking out trash in our apartment"
+                    },
+                    "title": {
+                        "label": "Trash"
                     }
                 }
             }
