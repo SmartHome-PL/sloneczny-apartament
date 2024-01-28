@@ -26,6 +26,7 @@ import { TransportComponent } from './components/transport/transport.component';
 import { TicketsComponent } from './components/tickets/tickets.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { WiFiComponent } from './components/wi-fi/wi-fi.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { WiFiComponent } from './components/wi-fi/wi-fi.component';
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
+    MatToolbarModule,
   ],
 })
 export class OswPageModule {}
