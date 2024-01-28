@@ -5,7 +5,7 @@
     "path": "osw/directions",
     "icon": "place",
     "disabled": false,
-    "haveRedirectionTo": [1, 6, 7, 8],
+    "haveRedirectionTo": [1, 7, 8, 9],
     "content": {
       "title": "obj.pages.osw.directions.title.label",
       "icon": "place",
@@ -19,7 +19,7 @@
     "path": "osw/check-in",
     "icon": "group_add",
     "disabled": false,
-    "haveRedirectionTo": [0, 2, 4, 7, 8],
+    "haveRedirectionTo": [0, 2, 5, 8, 9],
     "content": {
       "title": "obj.pages.osw.check-in.title.label",
       "icon": "group_add",
@@ -33,7 +33,7 @@
     "path": "osw/amenities",
     "icon": "movie_filter",
     "disabled": false,
-    "haveRedirectionTo": [1, 3, 4, 6, 7, 8],
+    "haveRedirectionTo": [1, 3, 4, 5, 7, 8, 9],
     "content": {
       "title": "obj.pages.osw.amenities.title.label",
       "icon": "movie_filter",
@@ -43,6 +43,20 @@
   },
   {
     "id": 3,
+    "title": "obj.menu.options.wifi.label",
+    "path": "osw/wifi",
+    "icon": "wifi",
+    "disabled": false,
+    "haveRedirectionTo": [1, 4, 5, 7, 8, 9],
+    "content": {
+      "title": "obj.pages.osw.wifi.title.label",
+      "icon": "wifi",
+      "subTitle": "obj.pages.osw.wifi.subtitle.label",
+      "component": "WiFiComponent"
+    }
+  },
+  {
+    "id": 4,
     "title": "obj.menu.options.check-out.label",
     "path": "osw/check-out",
     "icon": "clear",
@@ -56,7 +70,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "obj.menu.options.rules.label",
     "path": "osw/rules",
     "icon": "smoke_free",
@@ -70,7 +84,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "obj.menu.options.trash.label",
     "path": "osw/trash",
     "icon": "delete",
@@ -84,7 +98,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "obj.menu.options.transport.label",
     "path": "osw/transport",
     "icon": "airport_shuttle",
@@ -98,7 +112,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "obj.menu.options.tickets.label",
     "path": "osw/tickets",
     "icon": "confirmation_number",
@@ -112,7 +126,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "obj.menu.options.contact.label",
     "path": "osw/contact",
     "icon": "phone",

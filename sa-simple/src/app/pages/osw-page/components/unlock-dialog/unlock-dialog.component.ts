@@ -1,7 +1,6 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { UnlockDialogService } from './unlock-dialog.service';
-import { formatDate } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -18,12 +17,9 @@ export class UnlockDialogComponent {
     public dialog: MatDialog,
     public dialogRef: MatDialogRef<UnlockDialogComponent>,
     private unlockDialogService: UnlockDialogService,
-    private cdr: ChangeDetectorRef,
     private translateService: TranslateService
   ) {
-    const today = new Date();
-    const formattedDate = formatDate(today, 'ddMMyyyy', 'en-US');
-    this.simplePass = `${formattedDate}S@Osw`;
+    this.simplePass = 'Sloneczny2024';
 
     this.translateService
       .get('shared.dialog.password.input.placeholder.label')

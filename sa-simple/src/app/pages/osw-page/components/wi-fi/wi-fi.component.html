@@ -1,0 +1,52 @@
+<p>
+  {{ "obj.pages.osw.wifi.content.intro.label" | translate }}
+</p>
+<mat-divider></mat-divider>
+<p>{{ "obj.pages.osw.wifi.content.password.intro.label" | translate }}:</p>
+<p class="address-ident">
+  - {{ "obj.pages.osw.wifi.content.password.ssid25.label" | translate }}:
+  <button
+    mat-raised-button
+    (click)="openDialog()"
+    [disabled]="isUnlocked"
+    [color]="isUnlocked ? 'disabled' : 'enabled'"
+  >
+    {{ wiFiName25 | translate | uppercase }}
+  </button>
+</p>
+<p class="address-ident">
+  - {{ "obj.pages.osw.wifi.content.password.label" | translate }}:
+  <button
+    mat-raised-button
+    (click)="openDialog()"
+    [disabled]="isUnlocked"
+    [color]="isUnlocked ? 'disabled' : 'enabled'"
+  >
+    {{ wiFiName5 | translate | uppercase }}
+  </button>
+</p>
+<p class="address-ident">
+  - {{ "obj.pages.osw.wifi.content.password.ssid5.label" | translate }}:
+  <button
+    mat-raised-button
+    (click)="openDialog()"
+    [disabled]="isUnlocked"
+    [color]="isUnlocked ? 'disabled' : 'enabled'"
+  >
+    {{ wiFiPassword25 | translate | uppercase }}
+  </button>
+</p>
+<p class="address-ident">
+  - {{ "obj.pages.osw.wifi.content.password.label" | translate }}:
+  <button
+    mat-raised-button
+    (click)="openDialog()"
+    [disabled]="isUnlocked"
+    [color]="isUnlocked ? 'disabled' : 'enabled'"
+  >
+    {{ wiFiPassword5 | translate | uppercase }}
+  </button>
+</p>
+<p>
+  {{ "obj.pages.osw.wifi.content.password.security.label" | translate }}
+</p>

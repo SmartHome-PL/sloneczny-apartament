@@ -37,6 +37,9 @@
                 },
                 "trash": {
                     "label": "Śmieci"
+                },
+                "wifi": {
+                    "label": "Wi-Fi"
                 }
             }
         },
@@ -165,6 +168,37 @@
                     },
                     "title": {
                         "label": "Śmieci"
+                    }
+                },
+                "wifi": {
+                    "content": {
+                        "intro": {
+                            "label": "W naszym apartamencie znajdziesz najwyższą jakość połączenia internetowego,\n  zaprojektowanego z myślą o potrzebach naszych gości. Oferujemy dwa pasma\n  Wi-Fi: 2,5 GHz i 5 GHz, z imponującą prędkością do 300 Mb/s, co zapewnia\n  błyskawiczny dostęp do internetu."
+                        },
+                        "password": {
+                            "intro": {
+                                "label": "Dla Twojej wygody poniżej znajdziesz dane do logowania się do naszej sieci Wi-Fi"
+                            },
+                            "label": "Hasło",
+                            "security": {
+                                "label": "Prosimy o zachowanie poufności tych danych w celu zapewnienia bezpieczeństwa\n  sieci."
+                            },
+                            "ssid25": {
+                                "label": "Nazwa sieci 2.5GHz (SSID)"
+                            },
+                            "ssid5": {
+                                "label": "Nazwa sieci 5GHz (SSID)"
+                            }
+                        }
+                    },
+                    "locked": {
+                        "label": "Pokaż kod"
+                    },
+                    "subtitle": {
+                        "label": "Informacje o Wi-Fi w naszym apartamencie"
+                    },
+                    "title": {
+                        "label": "Wi-Fi"
                     }
                 }
             }

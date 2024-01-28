@@ -25,6 +25,7 @@ import { TrashComponent } from './components/trash/trash.component';
 import { TransportComponent } from './components/transport/transport.component';
 import { TicketsComponent } from './components/tickets/tickets.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { WiFiComponent } from './components/wi-fi/wi-fi.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ContactComponent } from './components/contact/contact.component';
     TransportComponent,
     TicketsComponent,
     ContactComponent,
+    WiFiComponent,
   ],
   imports: [
     CommonModule,

@@ -11,6 +11,7 @@ import { TrashComponent } from '../trash/trash.component';
 import { TransportComponent } from '../transport/transport.component';
 import { TicketsComponent } from '../tickets/tickets.component';
 import { ContactComponent } from '../contact/contact.component';
+import { WiFiComponent } from '../wi-fi/wi-fi.component';
 
 const componentMappings: { [key: string]: Type<any> } = {
   DirectionsComponent: DirectionsComponent,
@@ -22,6 +23,7 @@ const componentMappings: { [key: string]: Type<any> } = {
   TransportComponent: TransportComponent,
   TicketsComponent: TicketsComponent,
   ContactComponent: ContactComponent,
+  WiFiComponent: WiFiComponent,
 };
 
 @Component({

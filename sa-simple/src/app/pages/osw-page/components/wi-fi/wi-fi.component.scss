@@ -1,0 +1,49 @@
+@import "../../../../../assets/styles/colors.scss";
+
+.address-ident {
+  text-indent: 1rem;
+}
+
+mat-divider {
+  background-color: $primary-darken-color;
+  margin-bottom: 0.75rem;
+}
+
+.page-content {
+  height: 100%;
+  width: 765px;
+  background-color: rgb(0, 0, 0, 10%);
+  margin: 0 auto;
+}
+
+.svg {
+  max-width: 640px;
+  margin: 0.75rem auto;
+}
+
+button {
+  width: 8rem;
+  background-color: $action-text-color;
+  color: $base-color;
+}
+
+.mat-disabled {
+  background-color: $action-text-color;
+  color: $base-color;
+}
+
+.mat-enabled {
+  background-color: $action-color;
+  color: $base-color;
+}
+
+app-info-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center; /* Centruje zawartość w poziomie */
+  align-items: center; /* Centruje zawartość w pionie */
+}

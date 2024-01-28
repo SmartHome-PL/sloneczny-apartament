@@ -37,6 +37,9 @@
                 },
                 "trash": {
                     "label": "Trash"
+                },
+                "wifi": {
+                    "label": "Wi-Fi"
                 }
             }
         },
@@ -165,6 +168,37 @@
                     },
                     "title": {
                         "label": "Trash"
+                    }
+                },
+                "wifi": {
+                    "content": {
+                        "intro": {
+                            "label": "In our apartment you will find the highest quality internet connection, designed with the needs of our guests in mind. We offer two bands Wi-Fi: 2.5 GHz and 5 GHz, with impressive speeds of up to 300 Mbps, which ensures instant internet access."
+                        },
+                        "password": {
+                            "intro": {
+                                "label": "For your convenience, below you will find login details to our network WiFi"
+                            },
+                            "label": "Password",
+                            "security": {
+                                "label": "We ask you to keep this information confidential to ensure your security networks."
+                            },
+                            "ssid25": {
+                                "label": "2.5GHz network name (SSID)"
+                            },
+                            "ssid5": {
+                                "label": "5GHz network name (SSID)"
+                            }
+                        }
+                    },
+                    "locked": {
+                        "label": "Show code"
+                    },
+                    "subtitle": {
+                        "label": "Informations about Wi-Fi in our apartment"
+                    },
+                    "title": {
+                        "label": "Wi-Fi"
                     }
                 }
             }
