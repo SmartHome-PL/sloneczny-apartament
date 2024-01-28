@@ -1,4 +1,5 @@
 import { Component, Type, ViewChild, ViewContainerRef } from '@angular/core';
+import { Location } from '@angular/common';
 import { DataLoaderService } from './data-loader.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PageBuilderData } from './page-builder.model';
@@ -43,7 +44,8 @@ export class PageBuilderComponent {
   constructor(
     private route: ActivatedRoute,
     private dataLoaderService: DataLoaderService,
-    private router: Router
+    private router: Router,
+    private location: Location
   ) {}
 
   @ViewChild('dynamicComponentContainer', {
@@ -90,5 +92,9 @@ export class PageBuilderComponent {
 
   navigateTo(path: string) {
     this.router.navigate([path]);
+  }
+
+  goBack() {
+    this.location.back();
   }
 }

@@ -24,6 +24,27 @@ mat-card {
         color: $base-text-color;
       }
     }
+
+    .header-spacer {
+      flex: 1 1 auto;
+    }
+
+    button {
+      margin-top: -0.5rem;
+      margin-right: -0.5rem;
+      height: 4rem;
+      width: 4rem;
+
+      mat-icon {
+        margin-left: 0.75rem;
+        margin-top: 0rem;
+      }
+    }
+
+    .mat-enabled {
+      background-color: $action-color;
+      color: $base-color;
+    }
   }
 
   mat-card-content {
