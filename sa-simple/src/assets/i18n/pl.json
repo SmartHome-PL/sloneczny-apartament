@@ -112,22 +112,33 @@
                 },
                 "directions": {
                     "content": {
-                        "additional-info": {
-                            "first": {
-                                "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
-                            },
-                            "second": {
-                                "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
-                            }
-                        },
                         "address": {
                             "intro": {
                                 "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                            },
+                            "title": {
+                                "label": "Adres"
                             }
                         },
                         "map": {
                             "intro": {
                                 "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                            },
+                            "title": {
+                                "label": "Mapa"
+                            }
+                        },
+                        "transport": {
+                            "description": {
+                                "first": {
+                                    "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
+                                },
+                                "second": {
+                                    "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
+                                }
+                            },
+                            "title": {
+                                "label": "Transport"
                             }
                         }
                     },

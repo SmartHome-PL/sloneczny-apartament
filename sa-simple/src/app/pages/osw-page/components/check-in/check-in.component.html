@@ -1,18 +1,28 @@
-<p>
-  {{ "obj.pages.osw.check-in.content.map.intro.label" | translate }}
-</p>
-<p>
-  {{ "obj.pages.osw.check-in.content.map.code-info.label" | translate }}
-</p>
-<div class="main-button">
-  <button
-    mat-raised-button
-    (click)="openDialog()"
-    [disabled]="isUnlocked"
-    [color]="isUnlocked ? 'disabled' : 'enabled'"
-  >
-    {{ "obj.pages.osw.check-in.locked.label" | translate | uppercase }}
-  </button>
+<mat-toolbar>
+  <div class="mat-icon-background">
+    <mat-icon>navigation</mat-icon>
+  </div>
+  {{ "obj.pages.osw.check-in.content.map.title.label" | translate }}
+</mat-toolbar>
+<div class="description">
+  <p>
+    {{ "obj.pages.osw.check-in.content.map.intro.label" | translate }}
+  </p>
+  <p>
+    {{ "obj.pages.osw.check-in.content.map.code-info.label" | translate }}
+  </p>
+  <div class="main-button">
+    <button
+      mat-raised-button
+      (click)="openDialog()"
+      [disabled]="isUnlocked"
+      [color]="isUnlocked ? 'disabled' : 'enabled'"
+    >
+      {{
+        "obj.pages.osw.check-in.content.locked.label" | translate | uppercase
+      }}
+    </button>
+  </div>
 </div>
 
 <div class="svg">
@@ -593,64 +603,100 @@
     </defs>
   </svg>
 </div>
-<mat-divider></mat-divider>
-<p>
-  1.
-  {{ "obj.pages.osw.check-in.content.instruction.step-one.label" | translate }}:
-</p>
-<p class="address-ident">
+<mat-toolbar>
+  <div class="mat-icon-background">
+    <mat-icon>looks_one</mat-icon>
+  </div>
   {{
-    "obj.pages.osw.check-in.content.instruction.step-one.car-option.label"
-      | translate
-  }}:
-  <button
-    mat-raised-button
-    (click)="openDialog()"
-    [disabled]="isUnlocked"
-    [color]="isUnlocked ? 'disabled' : 'enabled'"
-  >
-    {{ carCode | translate | uppercase }}
-  </button>
-</p>
-
-<p class="address-ident">
-  {{
-    "obj.pages.osw.check-in.content.instruction.step-one.human-option.label"
-      | translate
-  }}:
-  <button
-    mat-raised-button
-    (click)="openDialog()"
-    [disabled]="isUnlocked"
-    [color]="isUnlocked ? 'disabled' : 'enabled'"
-  >
-    {{ pedestrianCode | translate | uppercase }}
-  </button>
-</p>
-<p>
-  *{{
-    "obj.pages.osw.check-in.content.instruction.step-one.additional-info.label"
+    "obj.pages.osw.check-in.content.instruction.step-one.title.label"
       | translate
   }}
-  21
-</p>
-<mat-divider></mat-divider>
-<p>
-  2.
-  {{ "obj.pages.osw.check-in.content.instruction.step-two.label" | translate }}:
-  <button
-    mat-raised-button
-    (click)="openDialog()"
-    [disabled]="isUnlocked"
-    [color]="isUnlocked ? 'disabled' : 'enabled'"
-  >
-    {{ pedestrianCode | translate | uppercase }}
-  </button>
-</p>
-<mat-divider></mat-divider>
-<p>
-  3.
+</mat-toolbar>
+<div class="description">
+  <p>
+    1.
+    {{
+      "obj.pages.osw.check-in.content.instruction.step-one.intro.label"
+        | translate
+    }}:
+  </p>
+  <p class="address-ident">
+    {{
+      "obj.pages.osw.check-in.content.instruction.step-one.car-option.label"
+        | translate
+    }}:
+    <button
+      mat-raised-button
+      (click)="openDialog()"
+      [disabled]="isUnlocked"
+      [color]="isUnlocked ? 'disabled' : 'enabled'"
+    >
+      {{ carCode | translate | uppercase }}
+    </button>
+  </p>
+  <p class="address-ident">
+    {{
+      "obj.pages.osw.check-in.content.instruction.step-one.human-option.label"
+        | translate
+    }}:
+    <button
+      mat-raised-button
+      (click)="openDialog()"
+      [disabled]="isUnlocked"
+      [color]="isUnlocked ? 'disabled' : 'enabled'"
+    >
+      {{ pedestrianCode | translate | uppercase }}
+    </button>
+  </p>
+  <p>
+    *{{
+      "obj.pages.osw.check-in.content.instruction.step-one.additional-info.label"
+        | translate
+    }}
+    21
+  </p>
+</div>
+<mat-toolbar>
+  <div class="mat-icon-background">
+    <mat-icon>looks_two</mat-icon>
+  </div>
   {{
-    "obj.pages.osw.check-in.content.instruction.step-three.label" | translate
+    "obj.pages.osw.check-in.content.instruction.step-two.title.label"
+      | translate
   }}
-</p>
+</mat-toolbar>
+<div class="description">
+  <p>
+    2.
+    {{
+      "obj.pages.osw.check-in.content.instruction.step-two.description.label"
+        | translate
+    }}:
+    <button
+      mat-raised-button
+      (click)="openDialog()"
+      [disabled]="isUnlocked"
+      [color]="isUnlocked ? 'disabled' : 'enabled'"
+    >
+      {{ pedestrianCode | translate | uppercase }}
+    </button>
+  </p>
+</div>
+<mat-toolbar>
+  <div class="mat-icon-background">
+    <mat-icon>looks_3</mat-icon>
+  </div>
+  {{
+    "obj.pages.osw.check-in.content.instruction.step-three.title.label"
+      | translate
+  }}
+</mat-toolbar>
+<div class="description">
+  <p>
+    3.
+    {{
+      "obj.pages.osw.check-in.content.instruction.step-three.description.label"
+        | translate
+    }}
+  </p>
+</div>

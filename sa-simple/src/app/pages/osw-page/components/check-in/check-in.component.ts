@@ -10,8 +10,8 @@ import { Subscription } from 'rxjs';
   styleUrl: './check-in.component.scss',
 })
 export class CheckInComponent {
-  carCode: string = 'obj.pages.osw.check-in.locked.label';
-  pedestrianCode: string = 'obj.pages.osw.check-in.locked.label';
+  carCode: string = 'obj.pages.osw.check-in.content.locked.label';
+  pedestrianCode: string = 'obj.pages.osw.check-in.content.locked.label';
 
   isUnlockedSubscription: Subscription;
   isUnlocked: boolean = false;

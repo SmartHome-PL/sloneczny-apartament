@@ -112,22 +112,33 @@
                 },
                 "directions": {
                     "content": {
-                        "additional-info": {
-                            "first": {
-                                "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
-                            },
-                            "second": {
-                                "label": "You can find more about this on the website linked below."
-                            }
-                        },
                         "address": {
                             "intro": {
                                 "label": "You can find our apartment at the following address:"
+                            },
+                            "title": {
+                                "label": "Address"
                             }
                         },
                         "map": {
                             "intro": {
                                 "label": "Below is the attached map from the google platform, marked the exact location of our apartment."
+                            },
+                            "title": {
+                                "label": "Map"
+                            }
+                        },
+                        "transport": {
+                            "description": {
+                                "first": {
+                                    "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
+                                },
+                                "second": {
+                                    "label": "You can find more about this on the website linked below."
+                                }
+                            },
+                            "title": {
+                                "label": "Transport"
                             }
                         }
                     },
