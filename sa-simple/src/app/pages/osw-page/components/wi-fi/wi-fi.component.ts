@@ -10,10 +10,8 @@ import { UnlockDialogComponent } from '../unlock-dialog/unlock-dialog.component'
   styleUrl: './wi-fi.component.scss',
 })
 export class WiFiComponent {
-  wiFiName25: string = 'obj.pages.osw.wifi.locked.label';
-  wiFiName5: string = 'obj.pages.osw.wifi.locked.label';
-  wiFiPassword25: string = 'obj.pages.osw.wifi.locked.label';
-  wiFiPassword5: string = 'obj.pages.osw.wifi.locked.label';
+  wiFiName: string = 'obj.pages.osw.wifi.locked.label';
+  wiFiPassword: string = 'obj.pages.osw.wifi.locked.label';
 
   isUnlockedSubscription: Subscription;
   isUnlocked: boolean = false;
@@ -31,10 +29,8 @@ export class WiFiComponent {
   }
 
   unlock() {
-    this.wiFiName25 = 'WiFi 2.5';
-    this.wiFiName5 = 'WiFi 5';
-    this.wiFiPassword25 = 'Password2.5';
-    this.wiFiPassword5 = 'Password5';
+    this.wiFiName = 'TP-Link_24E8';
+    this.wiFiPassword = '90281501';
     this.isUnlocked = true;
   }
 

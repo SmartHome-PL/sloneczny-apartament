@@ -11,7 +11,7 @@
     [disabled]="isUnlocked"
     [color]="isUnlocked ? 'disabled' : 'enabled'"
   >
-    {{ wiFiName25 | translate | uppercase }}
+    {{ wiFiName | translate | uppercase }}
   </button>
 </p>
 <p class="address-ident">
@@ -22,29 +22,7 @@
     [disabled]="isUnlocked"
     [color]="isUnlocked ? 'disabled' : 'enabled'"
   >
-    {{ wiFiName5 | translate | uppercase }}
-  </button>
-</p>
-<p class="address-ident">
-  - {{ "obj.pages.osw.wifi.content.password.ssid5.label" | translate }}:
-  <button
-    mat-raised-button
-    (click)="openDialog()"
-    [disabled]="isUnlocked"
-    [color]="isUnlocked ? 'disabled' : 'enabled'"
-  >
-    {{ wiFiPassword25 | translate | uppercase }}
-  </button>
-</p>
-<p class="address-ident">
-  - {{ "obj.pages.osw.wifi.content.password.label" | translate }}:
-  <button
-    mat-raised-button
-    (click)="openDialog()"
-    [disabled]="isUnlocked"
-    [color]="isUnlocked ? 'disabled' : 'enabled'"
-  >
-    {{ wiFiPassword5 | translate | uppercase }}
+    {{ wiFiPassword | translate | uppercase }}
   </button>
 </p>
 <p>

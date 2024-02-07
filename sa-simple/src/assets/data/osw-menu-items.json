@@ -60,7 +60,7 @@
     "title": "obj.menu.options.check-out.label",
     "path": "osw/check-out",
     "icon": "clear",
-    "disabled": false,
+    "disabled": true,
     "haveRedirectionTo": [4, 5, 6, 8],
     "content": {
       "title": "obj.pages.osw.check-out.title.label",
@@ -74,7 +74,7 @@
     "title": "obj.menu.options.rules.label",
     "path": "osw/rules",
     "icon": "smoke_free",
-    "disabled": false,
+    "disabled": true,
     "haveRedirectionTo": [],
     "content": {
       "title": "obj.pages.osw.rules.title.label",
@@ -88,7 +88,7 @@
     "title": "obj.menu.options.trash.label",
     "path": "osw/trash",
     "icon": "delete",
-    "disabled": false,
+    "disabled": true,
     "haveRedirectionTo": [],
     "content": {
       "title": "obj.pages.osw.trash.title.label",
@@ -102,7 +102,7 @@
     "title": "obj.menu.options.transport.label",
     "path": "osw/transport",
     "icon": "airport_shuttle",
-    "disabled": false,
+    "disabled": true,
     "haveRedirectionTo": [],
     "content": {
       "title": "obj.pages.osw.transport.title.label",
@@ -116,7 +116,7 @@
     "title": "obj.menu.options.tickets.label",
     "path": "osw/tickets",
     "icon": "confirmation_number",
-    "disabled": false,
+    "disabled": true,
     "haveRedirectionTo": [],
     "content": {
       "title": "obj.pages.osw.tickets.title.label",
@@ -130,7 +130,7 @@
     "title": "obj.menu.options.contact.label",
     "path": "osw/contact",
     "icon": "phone",
-    "disabled": false,
+    "disabled": true,
     "haveRedirectionTo": [],
     "content": {
       "title": "obj.pages.osw.contact.title.label",
