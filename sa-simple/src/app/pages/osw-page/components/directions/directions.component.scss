@@ -37,3 +37,9 @@ iframe {
   border-radius: 0.25rem;
   margin-bottom: 0.75rem;
 }
+
+@media (max-width: 599px) {
+  mat-toolbar {
+    height: 4rem;
+  }
+}

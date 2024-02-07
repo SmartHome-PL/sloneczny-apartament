@@ -69,3 +69,9 @@ app-info-card {
   justify-content: center; /* Centruje zawartość w poziomie */
   align-items: center; /* Centruje zawartość w pionie */
 }
+
+@media (max-width: 599px) {
+  mat-toolbar {
+    height: 4rem;
+  }
+}
