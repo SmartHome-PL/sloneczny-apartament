@@ -46,6 +46,53 @@
         "pages": {
             "osw": {
                 "amenities": {
+                    "content": {
+                        "android-tv": {
+                            "description": {
+                                "part-four": {
+                                    "label": "Dla większej wygody i bezpieczeństwa, rekomendujemy również opcję \"rzucania\" ekranu z telefonu na telewizor. Ta funkcja pozwala na bezpośrednie przesyłanie treści z urządzenia mobilnego na telewizor bez konieczności logowania się na poszczególnych aplikacjach na telewizorze. Jest to szybki i bezpieczny sposób na dzielenie się treściami i cieszenie się nimi na większym ekranie."
+                                },
+                                "part-one": {
+                                    "label": "W naszym apartamencie zapewniamy najnowocześniejsze doświadczenia rozrywkowe dzięki telewizorowi z systemem Android TV. Ten zaawansowany system umożliwia dostęp do szerokiej gamy darmowych i płatnych platform VOD, co oznacza, że nasi goście mogą cieszyć się różnorodnością treści na wyciągnięcie ręki."
+                                },
+                                "part-three": {
+                                    "label": "Pragniemy podkreślić, że w przypadku korzystania z własnych kont na wspomnianych platformach, ważne jest, aby pamiętać o wylogowaniu się ze swojego konta na telewizorze po zakończeniu oglądania. Jest to istotne dla ochrony prywatności i bezpieczeństwa Twoich danych."
+                                },
+                                "part-two": {
+                                    "label": "Dzięki Android TV, goście mają możliwość korzystania z popularnych serwisów streamingowych takich jak YouTube, Netflix, Disney+, czy SkyShowTime. Możesz łatwo zalogować się na swoje konta, aby uzyskać dostęp do ulubionych filmów, seriali i programów, oferując rozrywkę dla każdego."
+                                }
+                            }
+                        },
+                        "online-tv": {
+                            "description": {
+                                "part-one": {
+                                    "label": "Jednym z głównych atutów naszego apartamentu jest dostęp do podstawowego pakietu telewizji internetowej MEGOGO z naszego Smart TV, oferującego bogatą rozrywkę dla każdego."
+                                },
+                                "part-three": {
+                                    "label": "Dodatkowo, MEGOGO oferuje imponującą kolekcję ponad 2200 filmów i seriali. Niezależnie od tego, czy preferujesz najnowsze hity kinowe, klasyki, czy popularne seriale, nasza oferta spełni Twoje oczekiwania. Spędzaj wieczory na relaksującym seansie filmowym, ciesząc się wygodą i prywatnością własnego apartamentu."
+                                },
+                                "part-two": {
+                                    "label": "Z MEGOGO możesz cieszyć się dostępem do 95 kanałów telewizyjnych, w tym popularnych stacji takich jak Eleven Sports, TVN24, Disney Channel, Ale Kino+ i Kino Polska. To idealna propozycja zarówno dla miłośników sportu, aktualnych wiadomości, filmów familijnych, jak i kina artystycznego."
+                                }
+                            },
+                            "title": {
+                                "label": "Telewizja Online"
+                            }
+                        },
+                        "prime-video": {
+                            "description": {
+                                "part-one": {
+                                    "label": "Podczas pobytu w naszym apartamencie zapewniamy Ci dostęp do Prime Video na naszym Smart TV. Możesz korzystać z bogatej oferty filmów, seriali i ekskluzywnych produkcji Amazon Originals, bez dodatkowych opłat. Oferujemy Ci wygodny i nieograniczony dostęp do szerokiej gamy rozrywki."
+                                },
+                                "part-three": {
+                                    "label": "Znajdziesz tam ekskluzywne treści Amazon Originals, które z pewnością wzbogacą Twój czas spędzony w naszym apartamencie. Odkrywaj nowe historie i przeżywaj niezapomniane chwile z oryginalnymi produkcjami, dostępnymi tylko na Prime Video."
+                                },
+                                "part-two": {
+                                    "label": "Ciesz się nieograniczonym dostępem do różnorodnej kolekcji filmów i seriali dostępnych na Prime Video. Od najnowszych hitów po klasyki kina, a także bogatą ofertę seriali, w tym ekskluzywne produkcje Amazon Originals, dostępne są na wyciągnięcie ręki."
+                                }
+                            }
+                        }
+                    },
                     "subtitle": {
                         "label": "Lista udogodnień w Słonecznym Apartamencie w Oświęcimiu"
                     },
