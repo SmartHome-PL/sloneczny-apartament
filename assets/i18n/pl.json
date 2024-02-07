@@ -66,14 +66,35 @@
                                 "human-option": {
                                     "label": "Za pomocą bramki dla pieszych"
                                 },
-                                "label": "Do wejścia na teren apartamentu mamy dwie opcje"
+                                "intro": {
+                                    "label": "Do wejścia na teren osiedla mamy dwie opcje"
+                                },
+                                "label": "Do wejścia na teren apartamentu mamy dwie opcje",
+                                "title": {
+                                    "label": "Wejście na teren osiedla"
+                                }
                             },
                             "step-three": {
-                                "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania."
+                                "description": {
+                                    "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania."
+                                },
+                                "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania.",
+                                "title": {
+                                    "label": "Wejście do apartamentu"
+                                }
                             },
                             "step-two": {
-                                "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych"
+                                "description": {
+                                    "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych"
+                                },
+                                "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych",
+                                "title": {
+                                    "label": "Wejście do budynku"
+                                }
                             }
+                        },
+                        "locked": {
+                            "label": "Pokaż kod"
                         },
                         "map": {
                             "code-info": {
@@ -81,11 +102,11 @@
                             },
                             "intro": {
                                 "label": "Nasz apartament znajduje się na zamkniętym osiedlu. Poniżej znajduje się mapa z uproszczonymi instrukcjami zameldowania."
+                            },
+                            "title": {
+                                "label": "Skrócona instrukcja"
                             }
                         }
-                    },
-                    "locked": {
-                        "label": "Pokaż kod"
                     },
                     "subtitle": {
                         "label": "Instrukcja zameldowania do Słonecznego Apartamentu w Oświęcimiu."
@@ -112,22 +133,33 @@
                 },
                 "directions": {
                     "content": {
-                        "additional-info": {
-                            "first": {
-                                "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
-                            },
-                            "second": {
-                                "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
-                            }
-                        },
                         "address": {
                             "intro": {
                                 "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                            },
+                            "title": {
+                                "label": "Adres"
                             }
                         },
                         "map": {
                             "intro": {
                                 "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                            },
+                            "title": {
+                                "label": "Mapa"
+                            }
+                        },
+                        "transport": {
+                            "description": {
+                                "first": {
+                                    "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
+                                },
+                                "second": {
+                                    "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
+                                }
+                            },
+                            "title": {
+                                "label": "Transport"
                             }
                         }
                     },

@@ -66,14 +66,35 @@
                                 "human-option": {
                                     "label": "Using a pedestrian gate"
                                 },
-                                "label": "We have two options to enter the apartment"
+                                "intro": {
+                                    "label": "We have two options to enter the estate"
+                                },
+                                "label": "We have two options to enter the apartment",
+                                "title": {
+                                    "label": "Entrance to the estate"
+                                }
                             },
                             "step-three": {
-                                "label": "The code for the apartment door handle is sent in a separate message when the apartment is ready for check-in."
+                                "description": {
+                                    "label": "The code for the apartment door handle is sent in a separate message when the apartment is ready for check-in."
+                                },
+                                "label": "The code for the apartment door handle is sent in a separate message when the apartment is ready for check-in.",
+                                "title": {
+                                    "label": "Entrance to the apartment"
+                                }
                             },
                             "step-two": {
-                                "label": "To enter the building I use the same code as the pedestrian gate"
+                                "description": {
+                                    "label": "To enter the building I use the same code as the pedestrian gate"
+                                },
+                                "label": "To enter the building I use the same code as the pedestrian gate",
+                                "title": {
+                                    "label": "Entrance to the building"
+                                }
                             }
+                        },
+                        "locked": {
+                            "label": "Show code"
                         },
                         "map": {
                             "code-info": {
@@ -81,11 +102,11 @@
                             },
                             "intro": {
                                 "label": "Our apartment is located in a gated community. Below is a map with simplified check-in instructions."
+                            },
+                            "title": {
+                                "label": "Quick guide"
                             }
                         }
-                    },
-                    "locked": {
-                        "label": "Show code"
                     },
                     "subtitle": {
                         "label": "Check-in instructions for the Słoneczny Apartament in Oświęcim."
@@ -112,22 +133,33 @@
                 },
                 "directions": {
                     "content": {
-                        "additional-info": {
-                            "first": {
-                                "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
-                            },
-                            "second": {
-                                "label": "You can find more about this on the website linked below."
-                            }
-                        },
                         "address": {
                             "intro": {
                                 "label": "You can find our apartment at the following address:"
+                            },
+                            "title": {
+                                "label": "Address"
                             }
                         },
                         "map": {
                             "intro": {
                                 "label": "Below is the attached map from the google platform, marked the exact location of our apartment."
+                            },
+                            "title": {
+                                "label": "Map"
+                            }
+                        },
+                        "transport": {
+                            "description": {
+                                "first": {
+                                    "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
+                                },
+                                "second": {
+                                    "label": "You can find more about this on the website linked below."
+                                }
+                            },
+                            "title": {
+                                "label": "Transport"
                             }
                         }
                     },
