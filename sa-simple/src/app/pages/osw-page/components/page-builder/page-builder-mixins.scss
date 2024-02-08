@@ -1,0 +1,79 @@
+@import "../../../../../assets/styles/colors.scss";
+
+@mixin page-builder-styles {
+  .description {
+    margin: 1rem;
+
+    p {
+      color: $primary-darken-color;
+    }
+
+    .ident {
+      text-indent: 1rem;
+    }
+
+    button {
+      width: 12rem;
+      background-color: $action-text-color;
+      color: $base-color;
+      margin-bottom: 1rem;
+    }
+
+    .button-description {
+      text-align: center;
+    }
+
+    .center-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mat-disabled {
+      background-color: $action-text-color;
+      color: $base-color;
+    }
+
+    .mat-enabled {
+      background-color: $action-color;
+      color: $base-color;
+    }
+  }
+
+  .mat-toolbar {
+    border-radius: 0.25rem;
+    background-color: $primary-lighten-color;
+    img {
+      margin-right: 1rem;
+      height: 100%;
+    }
+    .mat-icon-background {
+      height: 100%;
+      width: 4rem;
+      background-color: rgb(0, 0, 0, 0.25);
+      margin-right: 1rem;
+
+      mat-icon {
+        scale: 2;
+        margin-left: 1.25rem;
+        margin-top: 1.25rem;
+      }
+    }
+  }
+
+  iframe {
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .svg {
+    max-width: 640px;
+    margin: 0.75rem auto;
+  }
+
+  @media (max-width: 599px) {
+    mat-toolbar {
+      height: 4rem;
+    }
+  }
+}

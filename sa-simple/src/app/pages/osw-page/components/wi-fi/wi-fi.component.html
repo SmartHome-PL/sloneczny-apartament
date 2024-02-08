@@ -17,19 +17,24 @@
 </mat-toolbar>
 <div class="description">
   <p>{{ "obj.pages.osw.wifi.content.password.intro.label" | translate }}:</p>
-  <p class="address-ident">
-    - {{ "obj.pages.osw.wifi.content.password.ssid25.label" | translate }}:
+  <p class="button-description">
+    {{ "obj.pages.osw.wifi.content.password.ssid25.label" | translate }}
+  </p>
+  <div class="center-button">
     <button
       mat-raised-button
+      class="password-unlock"
       (click)="openDialog()"
       [disabled]="isUnlocked"
       [color]="isUnlocked ? 'disabled' : 'enabled'"
     >
       {{ wiFiName | translate | uppercase }}
     </button>
+  </div>
+  <p class="button-description">
+    {{ "obj.pages.osw.wifi.content.password.label" | translate }}
   </p>
-  <p class="address-ident">
-    - {{ "obj.pages.osw.wifi.content.password.label" | translate }}:
+  <div class="center-button">
     <button
       mat-raised-button
       (click)="openDialog()"
@@ -38,7 +43,7 @@
     >
       {{ wiFiPassword | translate | uppercase }}
     </button>
-  </p>
+  </div>
   <p>
     {{ "obj.pages.osw.wifi.content.password.security.label" | translate }}
   </p>

@@ -11,7 +11,7 @@
   <p>
     {{ "obj.pages.osw.check-in.content.map.code-info.label" | translate }}
   </p>
-  <div class="main-button">
+  <div class="center-button">
     <button
       mat-raised-button
       (click)="openDialog()"
@@ -619,11 +619,13 @@
         | translate
     }}:
   </p>
-  <p class="address-ident">
+  <p class="button-description">
     {{
       "obj.pages.osw.check-in.content.instruction.step-one.car-option.label"
         | translate
-    }}:
+    }}
+  </p>
+  <div class="center-button">
     <button
       mat-raised-button
       (click)="openDialog()"
@@ -632,12 +634,14 @@
     >
       {{ carCode | translate | uppercase }}
     </button>
-  </p>
-  <p class="address-ident">
+  </div>
+  <p class="button-description">
     {{
       "obj.pages.osw.check-in.content.instruction.step-one.human-option.label"
         | translate
-    }}:
+    }}
+  </p>
+  <div class="center-button">
     <button
       mat-raised-button
       (click)="openDialog()"
@@ -646,7 +650,7 @@
     >
       {{ pedestrianCode | translate | uppercase }}
     </button>
-  </p>
+  </div>
   <p>
     *{{
       "obj.pages.osw.check-in.content.instruction.step-one.additional-info.label"
@@ -670,6 +674,14 @@
       "obj.pages.osw.check-in.content.instruction.step-two.description.label"
         | translate
     }}:
+  </p>
+  <p class="button-description">
+    {{
+      "obj.pages.osw.check-in.content.instruction.step-one.car-option.label"
+        | translate
+    }}
+  </p>
+  <div class="center-button">
     <button
       mat-raised-button
       (click)="openDialog()"
@@ -678,7 +690,7 @@
     >
       {{ pedestrianCode | translate | uppercase }}
     </button>
-  </p>
+  </div>
 </div>
 <mat-toolbar>
   <div class="mat-icon-background">
