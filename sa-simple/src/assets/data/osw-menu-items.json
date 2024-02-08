@@ -19,7 +19,7 @@
     "path": "osw/check-in",
     "icon": "group_add",
     "disabled": false,
-    "haveRedirectionTo": [0, 2, 5, 8, 9],
+    "haveRedirectionTo": [0, 2, 3, 5, 8, 9],
     "content": {
       "title": "obj.pages.osw.check-in.title.label",
       "icon": "group_add",
@@ -60,8 +60,8 @@
     "title": "obj.menu.options.check-out.label",
     "path": "osw/check-out",
     "icon": "clear",
-    "disabled": true,
-    "haveRedirectionTo": [4, 5, 6, 8],
+    "disabled": false,
+    "haveRedirectionTo": [5, 6, 7, 8, 9],
     "content": {
       "title": "obj.pages.osw.check-out.title.label",
       "icon": "clear",
