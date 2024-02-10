@@ -4,8 +4,17 @@
   .description {
     margin: 1rem;
 
-    p {
+    p,
+    ol {
       color: $primary-darken-color;
+
+      li {
+        margin: 0.25rem 0;
+
+        u {
+          font-weight: 500;
+        }
+      }
     }
 
     .error-title {

@@ -5,7 +5,7 @@
     "path": "osw/directions",
     "icon": "place",
     "disabled": false,
-    "haveRedirectionTo": [1, 7, 8, 9],
+    "haveRedirectionTo": [1, 5, 7, 8, 9],
     "content": {
       "title": "obj.pages.osw.directions.title.label",
       "icon": "place",
@@ -74,8 +74,8 @@
     "title": "obj.menu.options.rules.label",
     "path": "osw/rules",
     "icon": "smoke_free",
-    "disabled": true,
-    "haveRedirectionTo": [],
+    "disabled": false,
+    "haveRedirectionTo": [1, 2, 3, 4, 6, 7, 8, 9],
     "content": {
       "title": "obj.pages.osw.rules.title.label",
       "icon": "smoke_free",
