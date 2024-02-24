@@ -1,395 +1,450 @@
 {
-  "core": {
-    "menu": {
-      "options": {
-        "objects": {
-          "label": "Objects"
-        }
-      }
-    }
-  },
-  "obj": {
-    "menu": {
-      "options": {
-        "amenities": {
-          "label": "Amenities"
-        },
-        "check-in": {
-          "label": "Check-In"
-        },
-        "check-out": {
-          "label": "Check-Out"
-        },
-        "contact": {
-          "label": "Contact"
-        },
-        "directions": {
-          "label": "Directions"
-        },
-        "rules": {
-          "label": "Rules"
-        },
-        "tickets": {
-          "label": "Tickets"
-        },
-        "transport": {
-          "label": "Transport"
-        },
-        "trash": {
-          "label": "Trash"
-        },
-        "wifi": {
-          "label": "Wi-Fi"
-        }
-      }
-    },
-    "pages": {
-      "osw": {
-        "amenities": {
-          "content": {
-            "android-tv": {
-              "description": {
-                "part-four": {
-                  "label": "For greater convenience and security, we also recommend the option of \"casting\" your phone's screen to the TV. This feature allows for direct streaming of content from your mobile device to the TV without the need to log into individual apps on the TV. It is a quick and secure way to share content and enjoy it on a larger screen."
-                },
-                "part-one": {
-                  "label": "In our apartment, we provide the latest entertainment experiences thanks to the Android TV system. This advanced system allows access to a wide range of free and subscription-based VOD platforms, meaning our guests can enjoy a diversity of content at their fingertips."
-                },
-                "part-three": {
-                  "label": "We want to emphasize that when using your own accounts on these platforms, it is important to remember to log out of your account on the TV after watching. This is crucial for protecting your privacy and the security of your data."
-                },
-                "part-two": {
-                  "label": "With Android TV, guests have the opportunity to use popular streaming services such as YouTube, Netflix, Disney+, and SkyShowTime. You can easily log into your accounts to access your favorite movies, series, and shows, offering entertainment for everyone."
-                }
-              }
-            },
-            "online-tv": {
-              "description": {
-                "part-one": {
-                  "label": "One of the main advantages of our apartment is access to the basic amenities MEGOGO internet TV package from our Smart TV, offering a rich entertainment for everyone."
-                },
-                "part-three": {
-                  "label": "Additionally, MEGOGO offers an impressive collection of over 2,200 movies and series. Regardless of whether you prefer the latest cinema hits, classics or popular series, our offer will meet your expectations. Spend your evenings watching a relaxing movie while enjoying the comfort and privacy of your own apartment."
-                },
-                "part-two": {
-                  "label": "With MEGOGO you can enjoy access to 95 TV channels, including popular stations such as Eleven Sports, TVN24, Disney Channel, Ale Kino+ and Kino Polska. This is an ideal proposition for lovers of sports, current news, family films and art cinema."
-                }
-              },
-              "title": {
-                "label": "Online Television"
-              }
-            },
-            "prime-video": {
-              "description": {
-                "part-one": {
-                  "label": "During your stay in our apartment, we provide you with access to Prime Video on our Smart TV. You can enjoy a wide range of movies, series, and exclusive Amazon Originals productions without any additional fees. We offer you convenient and unlimited access to a broad spectrum of entertainment."
-                },
-                "part-three": {
-                  "label": "You will find exclusive Amazon Originals content that will surely enrich your time spent in our apartment. Discover new stories and experience unforgettable moments with original productions available only on Prime Video."
-                },
-                "part-two": {
-                  "label": "Enjoy unlimited access to a diverse collection of movies and series available on Prime Video. From the latest hits to cinema classics, as well as a rich selection of series including exclusive Amazon Originals productions, everything is at your fingertips."
-                }
-              }
-            }
-          },
-          "subtitle": {
-            "label": "List of amenities in Słoneczny Apartament in Oświęcim"
-          },
-          "title": {
-            "label": "Amenities"
-          }
-        },
-        "check-in": {
-          "content": {
-            "instruction": {
-              "step-one": {
-                "additional-info": {
-                  "label": "If you enter by car, a parking space number is assigned to the apartment"
-                },
-                "car-option": {
-                  "label": "Car gate code"
-                },
-                "human-option": {
-                  "label": "Pedestrian gate code"
-                },
-                "intro": {
-                  "label": "We have two options for entering the estate: on foot or by car. Below are the codes for both entry methods."
-                },
-                "title": {
-                  "label": "Entrance to the estate"
-                }
-              },
-              "step-three": {
-                "description": {
-                  "label": "The code for the apartment door handle is sent in a separate message when the apartment is ready for check-in."
-                },
-                "label": "The code for the apartment door handle is sent in a separate message when the apartment is ready for check-in.",
-                "title": {
-                  "label": "Entrance to the apartment"
-                }
-              },
-              "step-two": {
-                "description": {
-                  "label": "To enter the building I use the same code as the pedestrian gate"
-                },
-                "human-option": {
-                  "label": "Car gate code"
-                },
-                "label": "To enter the building I use the same code as the pedestrian gate",
-                "title": {
-                  "label": "Entrance to the building"
-                }
-              }
-            },
-            "locked": {
-              "label": "Show code"
-            },
-            "map": {
-              "code-info": {
-                "label": "The codes have been hidden for security purposes. To discover them, click on the \"Show code\" button and enter the code sent in the message."
-              },
-              "intro": {
-                "label": "Our apartment is located in a gated community. Below is a map with simplified check-in instructions."
-              },
-              "title": {
-                "label": "Quick guide"
-              }
-            }
-          },
-          "subtitle": {
-            "label": "Check-in instructions for the Słoneczny Apartament in Oświęcim."
-          },
-          "title": {
-            "label": "Check-In"
-          }
-        },
-        "check-out": {
-          "content": {
-            "instruction": {
-              "step-one": {
-                "intro": {
-                  "label": "Leaving the apartment involves leaving the keys on the gold leaf table in the living room and closing the door tightly after leaving the apartment."
-                },
-                "time-info": {
-                  "label": "Please remember that the access code to the apartment is only valid until 12PM on the day of departure."
-                },
-                "title": {
-                  "label": "Exit from the apartment"
-                },
-                "warning": {
-                  "key-info": {
-                    "label": "It is forbidden to throw keys into the mailbox!"
-                  },
-                  "title": {
-                    "label": "Important"
-                  },
-                  "vod-additional-info": {
-                    "label": "and others: logging out is available from the settings menu"
-                  },
-                  "vod-important-info": {
-                    "label": "It is forbidden to log out of the application"
-                  },
-                  "vod-info": {
-                    "label": "Please log out of your VOD accounts on your TV if you have logged in to them. We do not guarantee that the staff will always log out of your accounts, but we try to take care of your safety and make sure that no trace of your accounts is left on our TV. If you have problems logging out of your TV, here are the instructions for the following platforms"
-                  }
-                }
-              },
-              "step-two": {
-                "car-description": {
-                  "label": "If you are traveling by car, stop in front of the gate and use the silver button to the right of the gate to open the pedestrian gate."
-                },
-                "car-gate-open-description": {
-                  "label": "Then, in order to open the gate, you need to enter the gate code."
-                },
-                "car-gate-opened-description": {
-                  "label": "Then, after opening the gate, just leave the estate."
-                },
-                "car-option": {
-                  "label": "Car gate code"
-                },
-                "ped-description": {
-                  "label": "If you do not have a car, simply approach the gate and press the silver button to the right of the gate to open it."
-                },
-                "safe-journey": {
-                  "label": "We wish you a safe journey!"
-                },
-                "title": {
-                  "label": "Exit from the estate"
-                }
-              }
-            },
-            "map": {
-              "intro": {
-                "label": "To leave the apartment, simply leave your keys on the gold leaf table in the living room and simply leave the apartment. Below is a map with simplified check-out instructions."
-              },
-              "code-info": {
-                "label": "The codes have been hidden for security purposes. To discover them, click on the \"Show code\" button and enter the code sent in the message."
-              },
-              "title": {
-                "label": "Quick guide"
-              }
-            }
-          },
-          "subtitle": {
-            "label": "Check-out instructions for the Słoneczny Apartament in Oświęcim."
-          },
-          "title": {
-            "label": "Check-Out"
-          }
-        },
-        "contact": {
-          "subtitle": {
-            "label": "Detailed informations how to contact us"
-          },
-          "title": {
-            "label": "Contact"
-          }
-        },
-        "directions": {
-          "content": {
-            "address": {
-              "intro": {
-                "label": "You can find our apartment at the following address:"
-              },
-              "title": {
-                "label": "Address"
-              }
-            },
-            "map": {
-              "intro": {
-                "label": "Below is the attached map from the google platform, marked the exact location of our apartment."
-              },
-              "title": {
-                "label": "Map"
-              }
-            },
-            "transport": {
-              "description": {
-                "first": {
-                  "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
-                },
-                "second": {
-                  "label": "You can find more about this on the website linked below."
-                }
-              },
-              "title": {
-                "label": "Transport"
-              }
-            }
-          },
-          "subtitle": {
-            "label": "Directions to the Słoneczny Apartment in Oświęcim"
-          },
-          "title": {
-            "label": "Directions"
-          }
-        },
-        "rules": {
-          "subtitle": {
-            "label": "Informations about rules in our apartment"
-          },
-          "title": {
-            "label": "Rules"
-          }
-        },
-        "tickets": {
-          "subtitle": {
-            "label": "Available tickets to buy in our apartment"
-          },
-          "title": {
-            "label": "Tickets"
-          }
-        },
-        "transport": {
-          "subtitle": {
-            "label": "Details about our transport service for our guests"
-          },
-          "title": {
-            "label": "Transport"
-          }
-        },
-        "trash": {
-          "subtitle": {
-            "label": "Information about taking out trash in our apartment"
-          },
-          "title": {
-            "label": "Trash"
-          }
-        },
-        "wifi": {
-          "content": {
-            "intro": {
-              "label": "In our apartment you will find the highest quality internet connection, designed with the needs of our guests in mind. We offer two bands Wi-Fi: 2.5 GHz and 5 GHz, with impressive speeds of up to 300 Mbps, which ensures instant internet access."
-            },
-            "password": {
-              "intro": {
-                "label": "For your convenience, below you will find login details to our network WiFi"
-              },
-              "label": "Password",
-              "security": {
-                "label": "We ask you to keep this information confidential to ensure your security networks."
-              },
-              "ssid25": {
-                "label": "2.5GHz network name (SSID)"
-              },
-              "ssid5": {
-                "label": "5GHz network name (SSID)"
-              }
-            }
-          },
-          "locked": {
-            "label": "Show code"
-          },
-          "subtitle": {
-            "label": "Informations about Wi-Fi in our apartment"
-          },
-          "title": {
-            "label": "Wi-Fi"
-          }
-        }
-      }
-    }
-  },
-  "shared": {
     "address": {
-      "street": {
-        "label": "st."
-      }
+        "street": {
+            "label": "st."
+        }
+    },
+    "core": {
+        "menu": {
+            "options": {
+                "objects": {
+                    "label": "Objects"
+                }
+            }
+        }
     },
     "dialog": {
-      "button": {
-        "cancel": {
-          "label": "Cancel"
+        "button": {
+            "cancel": {
+                "label": "Cancel"
+            },
+            "enter": {
+                "label": "Enter"
+            }
         },
-        "enter": {
-          "label": "Enter"
+        "password": {
+            "input": {
+                "placeholder": {
+                    "label": "Password"
+                }
+            },
+            "short-instruction": {
+                "label": "The password should be included in the message in which you received a link to this website."
+            },
+            "title": {
+                "label": "Enter your password"
+            },
+            "validation": {
+                "invalid": {
+                    "label": "Password is invalid!"
+                },
+                "length": {
+                    "label": "Password is too short (at least 8 characters)!"
+                },
+                "required": {
+                    "label": "Password is required!"
+                }
+            }
         }
-      },
-      "password": {
-        "input": {
-          "placeholder": {
-            "label": "Password"
-          }
+    },
+    "obj": {
+        "menu": {
+            "options": {
+                "amenities": {
+                    "label": "Amenities"
+                },
+                "check-in": {
+                    "label": "Check-In"
+                },
+                "check-out": {
+                    "label": "Check-Out"
+                },
+                "contact": {
+                    "label": "Contact"
+                },
+                "directions": {
+                    "label": "Directions"
+                },
+                "rules": {
+                    "label": "Rules"
+                },
+                "tickets": {
+                    "label": "Tickets"
+                },
+                "transport": {
+                    "label": "Transport"
+                },
+                "trash": {
+                    "label": "Trash"
+                },
+                "wifi": {
+                    "label": "Wi-Fi"
+                }
+            }
         },
-        "short-instruction": {
-          "label": "The password should be included in the message in which you received a link to this website."
-        },
-        "title": {
-          "label": "Enter your password"
-        },
-        "validation": {
-          "invalid": {
-            "label": "Password is invalid!"
-          },
-          "length": {
-            "label": "Password is too short (at least 8 characters)!"
-          },
-          "required": {
-            "label": "Password is required!"
-          }
+        "pages": {
+            "osw": {
+                "amenities": {
+                    "content": {
+                        "android-tv": {
+                            "description": {
+                                "part-four": {
+                                    "label": "For greater convenience and security, we also recommend the option of \"casting\" your phone's screen to the TV. This feature allows for direct streaming of content from your mobile device to the TV without the need to log into individual apps on the TV. It is a quick and secure way to share content and enjoy it on a larger screen."
+                                },
+                                "part-one": {
+                                    "label": "In our apartment, we provide the latest entertainment experiences thanks to the Android TV system. This advanced system allows access to a wide range of free and subscription-based VOD platforms, meaning our guests can enjoy a diversity of content at their fingertips."
+                                },
+                                "part-three": {
+                                    "label": "We want to emphasize that when using your own accounts on these platforms, it is important to remember to log out of your account on the TV after watching. This is crucial for protecting your privacy and the security of your data."
+                                },
+                                "part-two": {
+                                    "label": "With Android TV, guests have the opportunity to use popular streaming services such as YouTube, Netflix, Disney+, and SkyShowTime. You can easily log into your accounts to access your favorite movies, series, and shows, offering entertainment for everyone."
+                                }
+                            }
+                        },
+                        "online-tv": {
+                            "description": {
+                                "part-one": {
+                                    "label": "One of the main advantages of our apartment is access to the basic amenities MEGOGO internet TV package from our Smart TV, offering a rich entertainment for everyone."
+                                },
+                                "part-three": {
+                                    "label": "Additionally, MEGOGO offers an impressive collection of over 2,200 movies and series. Regardless of whether you prefer the latest cinema hits, classics or popular series, our offer will meet your expectations. Spend your evenings watching a relaxing movie while enjoying the comfort and privacy of your own apartment."
+                                },
+                                "part-two": {
+                                    "label": "With MEGOGO you can enjoy access to 95 TV channels, including popular stations such as Eleven Sports, TVN24, Disney Channel, Ale Kino+ and Kino Polska. This is an ideal proposition for lovers of sports, current news, family films and art cinema."
+                                }
+                            },
+                            "title": {
+                                "label": "Online Television"
+                            }
+                        },
+                        "prime-video": {
+                            "description": {
+                                "part-one": {
+                                    "label": "During your stay in our apartment, we provide you with access to Prime Video on our Smart TV. You can enjoy a wide range of movies, series, and exclusive Amazon Originals productions without any additional fees. We offer you convenient and unlimited access to a broad spectrum of entertainment."
+                                },
+                                "part-three": {
+                                    "label": "You will find exclusive Amazon Originals content that will surely enrich your time spent in our apartment. Discover new stories and experience unforgettable moments with original productions available only on Prime Video."
+                                },
+                                "part-two": {
+                                    "label": "Enjoy unlimited access to a diverse collection of movies and series available on Prime Video. From the latest hits to cinema classics, as well as a rich selection of series including exclusive Amazon Originals productions, everything is at your fingertips."
+                                }
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "List of amenities in Słoneczny Apartament in Oświęcim"
+                    },
+                    "title": {
+                        "label": "Amenities"
+                    }
+                },
+                "check-in": {
+                    "content": {
+                        "instruction": {
+                            "step-one": {
+                                "additional-info": {
+                                    "label": "If you enter by car, a parking space number is assigned to the apartment"
+                                },
+                                "car-option": {
+                                    "label": "Car gate code"
+                                },
+                                "human-option": {
+                                    "label": "Pedestrian gate code"
+                                },
+                                "intro": {
+                                    "label": "We have two options for entering the estate: on foot or by car. Below are the codes for both entry methods."
+                                },
+                                "title": {
+                                    "label": "Entrance to the estate"
+                                }
+                            },
+                            "step-three": {
+                                "description": {
+                                    "label": "The code for the apartment door handle is sent in a separate message when the apartment is ready for check-in."
+                                },
+                                "label": "The code for the apartment door handle is sent in a separate message when the apartment is ready for check-in.",
+                                "title": {
+                                    "label": "Entrance to the apartment"
+                                }
+                            },
+                            "step-two": {
+                                "description": {
+                                    "label": "To enter the building I use the same code as the pedestrian gate"
+                                },
+                                "human-option": {
+                                    "label": "Car gate code"
+                                },
+                                "label": "To enter the building I use the same code as the pedestrian gate",
+                                "title": {
+                                    "label": "Entrance to the building"
+                                }
+                            }
+                        },
+                        "locked": {
+                            "label": "Show code"
+                        },
+                        "map": {
+                            "code-info": {
+                                "label": "The codes have been hidden for security purposes. To discover them, click on the \"Show code\" button and enter the code sent in the message."
+                            },
+                            "intro": {
+                                "label": "Our apartment is located in a gated community. Below is a map with simplified check-in instructions."
+                            },
+                            "title": {
+                                "label": "Quick guide"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Check-in instructions for the Słoneczny Apartament in Oświęcim."
+                    },
+                    "title": {
+                        "label": "Check-In"
+                    }
+                },
+                "check-out": {
+                    "content": {
+                        "instruction": {
+                            "step-one": {
+                                "intro": {
+                                    "label": "Leaving the apartment involves leaving the keys on the gold leaf table in the living room and closing the door tightly after leaving the apartment."
+                                },
+                                "time-info": {
+                                    "label": "Please remember that the access code to the apartment is only valid until 12PM on the day of departure."
+                                },
+                                "title": {
+                                    "label": "Exit from the apartment"
+                                },
+                                "warning": {
+                                    "key-info": {
+                                        "label": "It is forbidden to throw keys into the mailbox!"
+                                    },
+                                    "title": {
+                                        "label": "Important"
+                                    },
+                                    "vod-additional-info": {
+                                        "label": "and others: logging out is available from the settings menu"
+                                    },
+                                    "vod-important-info": {
+                                        "label": "It is forbidden to log out of the application"
+                                    },
+                                    "vod-info": {
+                                        "label": "Please log out of your VOD accounts on your TV if you have logged in to them. We do not guarantee that the staff will always log out of your accounts, but we try to take care of your safety and make sure that no trace of your accounts is left on our TV. If you have problems logging out of your TV, here are the instructions for the following platforms"
+                                    }
+                                }
+                            },
+                            "step-two": {
+                                "car-description": {
+                                    "label": "If you are traveling by car, stop in front of the gate and use the silver button to the right of the gate to open the pedestrian gate."
+                                },
+                                "car-gate-open-description": {
+                                    "label": "Then, in order to open the gate, you need to enter the gate code."
+                                },
+                                "car-gate-opened-description": {
+                                    "label": "Then, after opening the gate, just leave the estate."
+                                },
+                                "car-option": {
+                                    "label": "Car gate code"
+                                },
+                                "ped-description": {
+                                    "label": "If you do not have a car, simply approach the gate and press the silver button to the right of the gate to open it."
+                                },
+                                "safe-journey": {
+                                    "label": "We wish you a safe journey!"
+                                },
+                                "title": {
+                                    "label": "Exit from the estate"
+                                }
+                            }
+                        },
+                        "map": {
+                            "code-info": {
+                                "label": "The codes have been hidden for security purposes. To discover them, click on the \"Show code\" button and enter the code sent in the message."
+                            },
+                            "title": {
+                                "label": "Quick guide"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Check-out instructions for the Słoneczny Apartament in Oświęcim."
+                    },
+                    "title": {
+                        "label": "Check-Out"
+                    }
+                },
+                "contact": {
+                    "subtitle": {
+                        "label": "Detailed informations how to contact us"
+                    },
+                    "title": {
+                        "label": "Contact"
+                    }
+                },
+                "directions": {
+                    "content": {
+                        "address": {
+                            "intro": {
+                                "label": "You can find our apartment at the following address:"
+                            },
+                            "title": {
+                                "label": "Address"
+                            }
+                        },
+                        "map": {
+                            "intro": {
+                                "label": "Below is the attached map from the google platform, marked the exact location of our apartment."
+                            },
+                            "title": {
+                                "label": "Map"
+                            }
+                        },
+                        "transport": {
+                            "description": {
+                                "first": {
+                                    "label": "If you arrive by plane or train, you can use it is with transfer to our property for an additional fee."
+                                },
+                                "second": {
+                                    "label": "You can find more about this on the website linked below."
+                                }
+                            },
+                            "title": {
+                                "label": "Transport"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Directions to the Słoneczny Apartment in Oświęcim"
+                    },
+                    "title": {
+                        "label": "Directions"
+                    }
+                },
+                "rules": {
+                    "content": {
+                        "reservation-section": {
+                            "1st": {
+                                "label": "Reservations made using external platforms such as: Booking, AirBnB, Noclegowo, Vrbo and TripAdvisor are managed in accordance with arrangements and rules set on these platforms."
+                            },
+                            "2nd": {
+                                "label": "Direct reservations can be made by phone or e-mail or available communication channels such as messenger or instagram."
+                            },
+                            "3rd": {
+                                "label": "In case of direct booking, <u>an advance payment of 50% of the total stay price is required</u>. The remaining amount <u>must be paid no later than 2 weeks before the day check-in</u>."
+                            },
+                            "4th": {
+                                "label": "Direct bookings can only be paid by bank transfer traditional transfer, phone transfer or via the Revolut application."
+                            },
+                            "title": {
+                                "label": "Reservation"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Informations about rules in our apartment"
+                    },
+                    "title": {
+                        "label": "Rules"
+                    }
+                },
+                "tickets": {
+                    "subtitle": {
+                        "label": "Available tickets to buy in our apartment"
+                    },
+                    "title": {
+                        "label": "Tickets"
+                    }
+                },
+                "transport": {
+                    "subtitle": {
+                        "label": "Details about our transport service for our guests"
+                    },
+                    "title": {
+                        "label": "Transport"
+                    }
+                },
+                "trash": {
+                    "subtitle": {
+                        "label": "Information about taking out trash in our apartment"
+                    },
+                    "title": {
+                        "label": "Trash"
+                    }
+                },
+                "wifi": {
+                    "content": {
+                        "intro": {
+                            "label": "In our apartment you will find the highest quality internet connection, designed with the needs of our guests in mind. We offer two bands Wi-Fi: 2.5 GHz and 5 GHz, with impressive speeds of up to 300 Mbps, which ensures instant internet access."
+                        },
+                        "password": {
+                            "intro": {
+                                "label": "For your convenience, below you will find login details to our network WiFi"
+                            },
+                            "label": "Password",
+                            "security": {
+                                "label": "We ask you to keep this information confidential to ensure your security networks."
+                            },
+                            "ssid25": {
+                                "label": "2.5GHz network name (SSID)"
+                            },
+                            "ssid5": {
+                                "label": "5GHz network name (SSID)"
+                            }
+                        }
+                    },
+                    "locked": {
+                        "label": "Show code"
+                    },
+                    "subtitle": {
+                        "label": "Informations about Wi-Fi in our apartment"
+                    },
+                    "title": {
+                        "label": "Wi-Fi"
+                    }
+                }
+            }
         }
-      }
+    },
+    "shared": {
+        "address": {
+            "street": {
+                "label": "st."
+            }
+        },
+        "dialog": {
+            "button": {
+                "cancel": {
+                    "label": "Cancel"
+                },
+                "enter": {
+                    "label": "Enter"
+                }
+            },
+            "password": {
+                "input": {
+                    "placeholder": {
+                        "label": "Password"
+                    }
+                },
+                "short-instruction": {
+                    "label": "The password should be included in the message in which you received a link to this website."
+                },
+                "title": {
+                    "label": "Enter your password"
+                },
+                "validation": {
+                    "invalid": {
+                        "label": "Password is invalid!"
+                    },
+                    "length": {
+                        "label": "Password is too short (at least 8 characters)!"
+                    },
+                    "required": {
+                        "label": "Password is required!"
+                    }
+                }
+            }
+        }
     }
-  }
 }
