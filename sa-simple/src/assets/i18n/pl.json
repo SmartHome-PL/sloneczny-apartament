@@ -1,395 +1,450 @@
 {
-  "core": {
-    "menu": {
-      "options": {
-        "objects": {
-          "label": "Obiekty"
-        }
-      }
-    }
-  },
-  "obj": {
-    "menu": {
-      "options": {
-        "amenities": {
-          "label": "Udogodnienia"
-        },
-        "check-in": {
-          "label": "Zameldowanie"
-        },
-        "check-out": {
-          "label": "Wymeldowanie"
-        },
-        "contact": {
-          "label": "Kontakt"
-        },
-        "directions": {
-          "label": "Dojazd"
-        },
-        "rules": {
-          "label": "Regulamin"
-        },
-        "tickets": {
-          "label": "Bilety"
-        },
-        "transport": {
-          "label": "Transport"
-        },
-        "trash": {
-          "label": "Śmieci"
-        },
-        "wifi": {
-          "label": "Wi-Fi"
-        }
-      }
-    },
-    "pages": {
-      "osw": {
-        "amenities": {
-          "content": {
-            "android-tv": {
-              "description": {
-                "part-four": {
-                  "label": "Dla większej wygody i bezpieczeństwa, rekomendujemy również opcję \"rzucania\" ekranu z telefonu na telewizor. Ta funkcja pozwala na bezpośrednie przesyłanie treści z urządzenia mobilnego na telewizor bez konieczności logowania się na poszczególnych aplikacjach na telewizorze. Jest to szybki i bezpieczny sposób na dzielenie się treściami i cieszenie się nimi na większym ekranie."
-                },
-                "part-one": {
-                  "label": "W naszym apartamencie zapewniamy najnowocześniejsze doświadczenia rozrywkowe dzięki telewizorowi z systemem Android TV. Ten zaawansowany system umożliwia dostęp do szerokiej gamy darmowych i płatnych platform VOD, co oznacza, że nasi goście mogą cieszyć się różnorodnością treści na wyciągnięcie ręki."
-                },
-                "part-three": {
-                  "label": "Pragniemy podkreślić, że w przypadku korzystania z własnych kont na wspomnianych platformach, ważne jest, aby pamiętać o wylogowaniu się ze swojego konta na telewizorze po zakończeniu oglądania. Jest to istotne dla ochrony prywatności i bezpieczeństwa Twoich danych."
-                },
-                "part-two": {
-                  "label": "Dzięki Android TV, goście mają możliwość korzystania z popularnych serwisów streamingowych takich jak YouTube, Netflix, Disney+, czy SkyShowTime. Możesz łatwo zalogować się na swoje konta, aby uzyskać dostęp do ulubionych filmów, seriali i programów, oferując rozrywkę dla każdego."
-                }
-              }
-            },
-            "online-tv": {
-              "description": {
-                "part-one": {
-                  "label": "Jednym z głównych atutów naszego apartamentu jest dostęp do podstawowego pakietu telewizji internetowej MEGOGO z naszego Smart TV, oferującego bogatą rozrywkę dla każdego."
-                },
-                "part-three": {
-                  "label": "Dodatkowo, MEGOGO oferuje imponującą kolekcję ponad 2200 filmów i seriali. Niezależnie od tego, czy preferujesz najnowsze hity kinowe, klasyki, czy popularne seriale, nasza oferta spełni Twoje oczekiwania. Spędzaj wieczory na relaksującym seansie filmowym, ciesząc się wygodą i prywatnością własnego apartamentu."
-                },
-                "part-two": {
-                  "label": "Z MEGOGO możesz cieszyć się dostępem do 95 kanałów telewizyjnych, w tym popularnych stacji takich jak Eleven Sports, TVN24, Disney Channel, Ale Kino+ i Kino Polska. To idealna propozycja zarówno dla miłośników sportu, aktualnych wiadomości, filmów familijnych, jak i kina artystycznego."
-                }
-              },
-              "title": {
-                "label": "Telewizja Online"
-              }
-            },
-            "prime-video": {
-              "description": {
-                "part-one": {
-                  "label": "Podczas pobytu w naszym apartamencie zapewniamy Ci dostęp do Prime Video na naszym Smart TV. Możesz korzystać z bogatej oferty filmów, seriali i ekskluzywnych produkcji Amazon Originals, bez dodatkowych opłat. Oferujemy Ci wygodny i nieograniczony dostęp do szerokiej gamy rozrywki."
-                },
-                "part-three": {
-                  "label": "Znajdziesz tam ekskluzywne treści Amazon Originals, które z pewnością wzbogacą Twój czas spędzony w naszym apartamencie. Odkrywaj nowe historie i przeżywaj niezapomniane chwile z oryginalnymi produkcjami, dostępnymi tylko na Prime Video."
-                },
-                "part-two": {
-                  "label": "Ciesz się nieograniczonym dostępem do różnorodnej kolekcji filmów i seriali dostępnych na Prime Video. Od najnowszych hitów po klasyki kina, a także bogatą ofertę seriali, w tym ekskluzywne produkcje Amazon Originals, dostępne są na wyciągnięcie ręki."
-                }
-              }
-            }
-          },
-          "subtitle": {
-            "label": "Lista udogodnień w Słonecznym Apartamencie w Oświęcimiu"
-          },
-          "title": {
-            "label": "Udogodnienia"
-          }
-        },
-        "check-in": {
-          "content": {
-            "instruction": {
-              "step-one": {
-                "additional-info": {
-                  "label": "W przypadku wjazdu samochodem, do mieszkania przypisane jest miejsce parkingowe numer"
-                },
-                "car-option": {
-                  "label": "Kod do bramy samochodowej"
-                },
-                "human-option": {
-                  "label": "Kod do bramki dla pieszych"
-                },
-                "intro": {
-                  "label": "Na teren osiedla mamy dwie możliwości wejścia: pieszo lub samochodem. Poniżej znajdują się kody dla obu sposobów wejścia."
-                },
-                "title": {
-                  "label": "Wejście na teren osiedla"
-                }
-              },
-              "step-three": {
-                "description": {
-                  "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania."
-                },
-                "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania.",
-                "title": {
-                  "label": "Wejście do apartamentu"
-                }
-              },
-              "step-two": {
-                "description": {
-                  "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych"
-                },
-                "human-option": {
-                  "label": "Kod do bramy samochodowej"
-                },
-                "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych",
-                "title": {
-                  "label": "Wejście do budynku"
-                }
-              }
-            },
-            "locked": {
-              "label": "Pokaż kod"
-            },
-            "map": {
-              "code-info": {
-                "label": "Kody zostały ukryte w celu bezpieczeństwa. By je odkryć, należy kliknąć na przycisk „Pokaż kod” i wprowadzić kod przesłany w wiadomości."
-              },
-              "intro": {
-                "label": "Nasz apartament znajduje się na zamkniętym osiedlu. Poniżej znajduje się mapa z uproszczonymi instrukcjami zameldowania."
-              },
-              "title": {
-                "label": "Skrócona instrukcja"
-              }
-            }
-          },
-          "subtitle": {
-            "label": "Instrukcja zameldowania do Słonecznego Apartamentu w Oświęcimiu."
-          },
-          "title": {
-            "label": "Zameldowanie"
-          }
-        },
-        "check-out": {
-          "content": {
-            "instruction": {
-              "step-one": {
-                "intro": {
-                  "label": "Opuszczenie apartamentu polega na zostawieniu kluczy na stole w salonie w złotym liściu i szczelnym domknięciu drzwi po opuszczeniu apartamentu."
-                },
-                "time-info": {
-                  "label": "Proszę pamiętać o tym, że kod dostępu do mieszkania jest aktywny tylko do godziny 12:00 w dniu wyjazdu."
-                },
-                "title": {
-                  "label": "Wyjście z apartamentu"
-                },
-                "warning": {
-                  "key-info": {
-                    "label": "Zabronione jest wrzucanie kluczy do skrzynki na listy!"
-                  },
-                  "title": {
-                    "label": "Ważne"
-                  },
-                  "vod-additional-info": {
-                    "label": "i pozostałe: wylogowanie jest dostępne z menu ustawień"
-                  },
-                  "vod-important-info": {
-                    "label": "Zabronione jest wylogowywanie się z aplikacji"
-                  },
-                  "vod-info": {
-                    "label": "Prosimy o wylogowanie się z kont VOD na telewizorze, jeżeli państwo się na nie zalogowali. Nie gwarantujemy że obsługa zawsze wyloguje się z państwa kont, ale staramy się dbać o wasze bezpieczeństwo i pilnować, by ślad po waszych kontach nie został na naszym telewizorze. W razie problemów z wylogowaniem się z telewizora, poniżej zamieszczam instrukcję dla następujących platform"
-                  }
-                }
-              },
-              "step-two": {
-                "car-description": {
-                  "label": "W przypadku podróżowania samochodem, trzeba zatrzymać się przed bramą i za pomocą srebrnego guzika na prawo od bramki otworzyć bramkę dla pieszych."
-                },
-                "car-gate-open-description": {
-                  "label": "Następnie w celu otwarcia bramy trzeba wprowadzić kod do bramy."
-                },
-                "car-gate-opened-description": {
-                  "label": "Następnie po otwarciu bramy wystarczy opuścić teren osiedla."
-                },
-                "car-option": {
-                  "label": "Kod do bramy samochodowej"
-                },
-                "ped-description": {
-                  "label": "W przypadku braku posiadania samochodu, wystarczy podejść do bramki i wcisnąć srebrny guzik na prawo od bramki w celu jej otwarcia."
-                },
-                "safe-journey": {
-                  "label": "Życzymy bezpiecznej podróży!"
-                },
-                "title": {
-                  "label": "Wyjście z terenu osiedla"
-                }
-              }
-            },
-            "map": {
-              "intro": {
-                "label": "W celu opuszczenia apartamentu wystarczy zostawić klucze na stole w złotym liściu w salonie i po prostu opuścić apartament. Poniżej znajduje się mapa z uproszczoną instrukcją wymeldowania."
-              },
-              "code-info": {
-                "label": "Kody zostały ukryte w celu bezpieczeństwa. By je odkryć, należy kliknąć na przycisk „Pokaż kod” i wprowadzić kod przesłany w wiadomości."
-              },
-              "title": {
-                "label": "Skrócona instrukcja"
-              }
-            }
-          },
-          "subtitle": {
-            "label": "Instrukcja wymeldowania z Apartamentu Słonecznego w Oświęcimiu"
-          },
-          "title": {
-            "label": "Wymeldowanie"
-          }
-        },
-        "contact": {
-          "subtitle": {
-            "label": "Szczegółowe informacje jak się z nami skontaktować"
-          },
-          "title": {
-            "label": "Kontakt"
-          }
-        },
-        "directions": {
-          "content": {
-            "address": {
-              "intro": {
-                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
-              },
-              "title": {
-                "label": "Adres"
-              }
-            },
-            "map": {
-              "intro": {
-                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
-              },
-              "title": {
-                "label": "Mapa"
-              }
-            },
-            "transport": {
-              "description": {
-                "first": {
-                  "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
-                },
-                "second": {
-                  "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
-                }
-              },
-              "title": {
-                "label": "Transport"
-              }
-            }
-          },
-          "subtitle": {
-            "label": "Instrukcja dojazdu do Słonecznego Apartamentu w Oświęcimiu"
-          },
-          "title": {
-            "label": "Dojazd"
-          }
-        },
-        "rules": {
-          "subtitle": {
-            "label": "Informacje o zasadach panujących w naszym apartamencie"
-          },
-          "title": {
-            "label": "Regulamin"
-          }
-        },
-        "tickets": {
-          "subtitle": {
-            "label": "Możliwość zakupu biletów w naszym apartamencie"
-          },
-          "title": {
-            "label": "Bilety"
-          }
-        },
-        "transport": {
-          "subtitle": {
-            "label": "Szczegóły dotyczące naszej usługi transportowej dla naszych gości"
-          },
-          "title": {
-            "label": "Transport"
-          }
-        },
-        "trash": {
-          "subtitle": {
-            "label": "Informacja o wynoszeniu śmieci w naszym mieszkaniu"
-          },
-          "title": {
-            "label": "Śmieci"
-          }
-        },
-        "wifi": {
-          "content": {
-            "intro": {
-              "label": "W naszym apartamencie znajdziesz najwyższą jakość połączenia internetowego,\n  zaprojektowanego z myślą o potrzebach naszych gości. Oferujemy dwa pasma\n  Wi-Fi: 2,5 GHz i 5 GHz, z imponującą prędkością do 300 Mb/s, co zapewnia\n  błyskawiczny dostęp do internetu."
-            },
-            "password": {
-              "intro": {
-                "label": "Dla Twojej wygody poniżej znajdziesz dane do logowania się do naszej sieci Wi-Fi"
-              },
-              "label": "Hasło",
-              "security": {
-                "label": "Prosimy o zachowanie poufności tych danych w celu zapewnienia bezpieczeństwa\n  sieci."
-              },
-              "ssid25": {
-                "label": "Nazwa sieci 2.5GHz (SSID)"
-              },
-              "ssid5": {
-                "label": "Nazwa sieci 5GHz (SSID)"
-              }
-            }
-          },
-          "locked": {
-            "label": "Pokaż kod"
-          },
-          "subtitle": {
-            "label": "Informacje o Wi-Fi w naszym apartamencie"
-          },
-          "title": {
-            "label": "Wi-Fi"
-          }
-        }
-      }
-    }
-  },
-  "shared": {
     "address": {
-      "street": {
-        "label": "ul."
-      }
+        "street": {
+            "label": "ul."
+        }
+    },
+    "core": {
+        "menu": {
+            "options": {
+                "objects": {
+                    "label": "Obiekty"
+                }
+            }
+        }
     },
     "dialog": {
-      "button": {
-        "cancel": {
-          "label": "Anuluj"
+        "button": {
+            "cancel": {
+                "label": "Anuluj"
+            },
+            "enter": {
+                "label": "Wejdź"
+            }
         },
-        "enter": {
-          "label": "Wejdź"
+        "password": {
+            "input": {
+                "placeholder": {
+                    "label": "Hasło"
+                }
+            },
+            "short-instruction": {
+                "label": "Hasło powinno znajdować się w wiadomości w której otrzymali państwo link do tej strony."
+            },
+            "title": {
+                "label": "Wprowadź hasło"
+            },
+            "validation": {
+                "invalid": {
+                    "label": "Hasło jest nieprawidłowe!"
+                },
+                "length": {
+                    "label": "Hasło jest za krótkie (co najmniej 8 znaków)!"
+                },
+                "required": {
+                    "label": "Hasło jest wymagane!"
+                }
+            }
         }
-      },
-      "password": {
-        "input": {
-          "placeholder": {
-            "label": "Hasło"
-          }
+    },
+    "obj": {
+        "menu": {
+            "options": {
+                "amenities": {
+                    "label": "Udogodnienia"
+                },
+                "check-in": {
+                    "label": "Zameldowanie"
+                },
+                "check-out": {
+                    "label": "Wymeldowanie"
+                },
+                "contact": {
+                    "label": "Kontakt"
+                },
+                "directions": {
+                    "label": "Dojazd"
+                },
+                "rules": {
+                    "label": "Regulamin"
+                },
+                "tickets": {
+                    "label": "Bilety"
+                },
+                "transport": {
+                    "label": "Transport"
+                },
+                "trash": {
+                    "label": "Śmieci"
+                },
+                "wifi": {
+                    "label": "Wi-Fi"
+                }
+            }
         },
-        "short-instruction": {
-          "label": "Hasło powinno znajdować się w wiadomości w której otrzymali państwo link do tej strony."
-        },
-        "title": {
-          "label": "Wprowadź hasło"
-        },
-        "validation": {
-          "invalid": {
-            "label": "Hasło jest nieprawidłowe!"
-          },
-          "length": {
-            "label": "Hasło jest za krótkie (co najmniej 8 znaków)!"
-          },
-          "required": {
-            "label": "Hasło jest wymagane!"
-          }
+        "pages": {
+            "osw": {
+                "amenities": {
+                    "content": {
+                        "android-tv": {
+                            "description": {
+                                "part-four": {
+                                    "label": "Dla większej wygody i bezpieczeństwa, rekomendujemy również opcję \"rzucania\" ekranu z telefonu na telewizor. Ta funkcja pozwala na bezpośrednie przesyłanie treści z urządzenia mobilnego na telewizor bez konieczności logowania się na poszczególnych aplikacjach na telewizorze. Jest to szybki i bezpieczny sposób na dzielenie się treściami i cieszenie się nimi na większym ekranie."
+                                },
+                                "part-one": {
+                                    "label": "W naszym apartamencie zapewniamy najnowocześniejsze doświadczenia rozrywkowe dzięki telewizorowi z systemem Android TV. Ten zaawansowany system umożliwia dostęp do szerokiej gamy darmowych i płatnych platform VOD, co oznacza, że nasi goście mogą cieszyć się różnorodnością treści na wyciągnięcie ręki."
+                                },
+                                "part-three": {
+                                    "label": "Pragniemy podkreślić, że w przypadku korzystania z własnych kont na wspomnianych platformach, ważne jest, aby pamiętać o wylogowaniu się ze swojego konta na telewizorze po zakończeniu oglądania. Jest to istotne dla ochrony prywatności i bezpieczeństwa Twoich danych."
+                                },
+                                "part-two": {
+                                    "label": "Dzięki Android TV, goście mają możliwość korzystania z popularnych serwisów streamingowych takich jak YouTube, Netflix, Disney+, czy SkyShowTime. Możesz łatwo zalogować się na swoje konta, aby uzyskać dostęp do ulubionych filmów, seriali i programów, oferując rozrywkę dla każdego."
+                                }
+                            }
+                        },
+                        "online-tv": {
+                            "description": {
+                                "part-one": {
+                                    "label": "Jednym z głównych atutów naszego apartamentu jest dostęp do podstawowego pakietu telewizji internetowej MEGOGO z naszego Smart TV, oferującego bogatą rozrywkę dla każdego."
+                                },
+                                "part-three": {
+                                    "label": "Dodatkowo, MEGOGO oferuje imponującą kolekcję ponad 2200 filmów i seriali. Niezależnie od tego, czy preferujesz najnowsze hity kinowe, klasyki, czy popularne seriale, nasza oferta spełni Twoje oczekiwania. Spędzaj wieczory na relaksującym seansie filmowym, ciesząc się wygodą i prywatnością własnego apartamentu."
+                                },
+                                "part-two": {
+                                    "label": "Z MEGOGO możesz cieszyć się dostępem do 95 kanałów telewizyjnych, w tym popularnych stacji takich jak Eleven Sports, TVN24, Disney Channel, Ale Kino+ i Kino Polska. To idealna propozycja zarówno dla miłośników sportu, aktualnych wiadomości, filmów familijnych, jak i kina artystycznego."
+                                }
+                            },
+                            "title": {
+                                "label": "Telewizja Online"
+                            }
+                        },
+                        "prime-video": {
+                            "description": {
+                                "part-one": {
+                                    "label": "Podczas pobytu w naszym apartamencie zapewniamy Ci dostęp do Prime Video na naszym Smart TV. Możesz korzystać z bogatej oferty filmów, seriali i ekskluzywnych produkcji Amazon Originals, bez dodatkowych opłat. Oferujemy Ci wygodny i nieograniczony dostęp do szerokiej gamy rozrywki."
+                                },
+                                "part-three": {
+                                    "label": "Znajdziesz tam ekskluzywne treści Amazon Originals, które z pewnością wzbogacą Twój czas spędzony w naszym apartamencie. Odkrywaj nowe historie i przeżywaj niezapomniane chwile z oryginalnymi produkcjami, dostępnymi tylko na Prime Video."
+                                },
+                                "part-two": {
+                                    "label": "Ciesz się nieograniczonym dostępem do różnorodnej kolekcji filmów i seriali dostępnych na Prime Video. Od najnowszych hitów po klasyki kina, a także bogatą ofertę seriali, w tym ekskluzywne produkcje Amazon Originals, dostępne są na wyciągnięcie ręki."
+                                }
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Lista udogodnień w Słonecznym Apartamencie w Oświęcimiu"
+                    },
+                    "title": {
+                        "label": "Udogodnienia"
+                    }
+                },
+                "check-in": {
+                    "content": {
+                        "instruction": {
+                            "step-one": {
+                                "additional-info": {
+                                    "label": "W przypadku wjazdu samochodem, do mieszkania przypisane jest miejsce parkingowe numer"
+                                },
+                                "car-option": {
+                                    "label": "Kod do bramy samochodowej"
+                                },
+                                "human-option": {
+                                    "label": "Kod do bramki dla pieszych"
+                                },
+                                "intro": {
+                                    "label": "Na teren osiedla mamy dwie możliwości wejścia: pieszo lub samochodem. Poniżej znajdują się kody dla obu sposobów wejścia."
+                                },
+                                "title": {
+                                    "label": "Wejście na teren osiedla"
+                                }
+                            },
+                            "step-three": {
+                                "description": {
+                                    "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania."
+                                },
+                                "label": "Kod do klamki od mieszkania wysyłany jest osobną wiadomością w momencie gdy mieszkanie jest już gotowe do zameldowania.",
+                                "title": {
+                                    "label": "Wejście do apartamentu"
+                                }
+                            },
+                            "step-two": {
+                                "description": {
+                                    "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych"
+                                },
+                                "human-option": {
+                                    "label": "Kod do bramy samochodowej"
+                                },
+                                "label": "Do wejścia do budynku używamu tego samego kodu co do bramki dla pieszych",
+                                "title": {
+                                    "label": "Wejście do budynku"
+                                }
+                            }
+                        },
+                        "locked": {
+                            "label": "Pokaż kod"
+                        },
+                        "map": {
+                            "code-info": {
+                                "label": "Kody zostały ukryte w celu bezpieczeństwa. By je odkryć, należy kliknąć na przycisk „Pokaż kod” i wprowadzić kod przesłany w wiadomości."
+                            },
+                            "intro": {
+                                "label": "Nasz apartament znajduje się na zamkniętym osiedlu. Poniżej znajduje się mapa z uproszczonymi instrukcjami zameldowania."
+                            },
+                            "title": {
+                                "label": "Skrócona instrukcja"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Instrukcja zameldowania do Słonecznego Apartamentu w Oświęcimiu."
+                    },
+                    "title": {
+                        "label": "Zameldowanie"
+                    }
+                },
+                "check-out": {
+                    "content": {
+                        "instruction": {
+                            "step-one": {
+                                "intro": {
+                                    "label": "Opuszczenie apartamentu polega na zostawieniu kluczy na stole w salonie w złotym liściu i szczelnym domknięciu drzwi po opuszczeniu apartamentu."
+                                },
+                                "time-info": {
+                                    "label": "Proszę pamiętać o tym, że kod dostępu do mieszkania jest aktywny tylko do godziny 12:00 w dniu wyjazdu."
+                                },
+                                "title": {
+                                    "label": "Wyjście z apartamentu"
+                                },
+                                "warning": {
+                                    "key-info": {
+                                        "label": "Zabronione jest wrzucanie kluczy do skrzynki na listy!"
+                                    },
+                                    "title": {
+                                        "label": "Ważne"
+                                    },
+                                    "vod-additional-info": {
+                                        "label": "i pozostałe: wylogowanie jest dostępne z menu ustawień"
+                                    },
+                                    "vod-important-info": {
+                                        "label": "Zabronione jest wylogowywanie się z aplikacji"
+                                    },
+                                    "vod-info": {
+                                        "label": "Prosimy o wylogowanie się z kont VOD na telewizorze, jeżeli państwo się na nie zalogowali. Nie gwarantujemy że obsługa zawsze wyloguje się z państwa kont, ale staramy się dbać o wasze bezpieczeństwo i pilnować, by ślad po waszych kontach nie został na naszym telewizorze. W razie problemów z wylogowaniem się z telewizora, poniżej zamieszczam instrukcję dla następujących platform"
+                                    }
+                                }
+                            },
+                            "step-two": {
+                                "car-description": {
+                                    "label": "W przypadku podróżowania samochodem, trzeba zatrzymać się przed bramą i za pomocą srebrnego guzika na prawo od bramki otworzyć bramkę dla pieszych."
+                                },
+                                "car-gate-open-description": {
+                                    "label": "Następnie w celu otwarcia bramy trzeba wprowadzić kod do bramy."
+                                },
+                                "car-gate-opened-description": {
+                                    "label": "Następnie po otwarciu bramy wystarczy opuścić teren osiedla."
+                                },
+                                "car-option": {
+                                    "label": "Kod do bramy samochodowej"
+                                },
+                                "ped-description": {
+                                    "label": "W przypadku braku posiadania samochodu, wystarczy podejść do bramki i wcisnąć srebrny guzik na prawo od bramki w celu jej otwarcia."
+                                },
+                                "safe-journey": {
+                                    "label": "Życzymy bezpiecznej podróży!"
+                                },
+                                "title": {
+                                    "label": "Wyjście z terenu osiedla"
+                                }
+                            }
+                        },
+                        "map": {
+                            "code-info": {
+                                "label": "Kody zostały ukryte w celu bezpieczeństwa. By je odkryć, należy kliknąć na przycisk „Pokaż kod” i wprowadzić kod przesłany w wiadomości."
+                            },
+                            "title": {
+                                "label": "Skrócona instrukcja"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Instrukcja wymeldowania z Apartamentu Słonecznego w Oświęcimiu"
+                    },
+                    "title": {
+                        "label": "Wymeldowanie"
+                    }
+                },
+                "contact": {
+                    "subtitle": {
+                        "label": "Szczegółowe informacje jak się z nami skontaktować"
+                    },
+                    "title": {
+                        "label": "Kontakt"
+                    }
+                },
+                "directions": {
+                    "content": {
+                        "address": {
+                            "intro": {
+                                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                            },
+                            "title": {
+                                "label": "Adres"
+                            }
+                        },
+                        "map": {
+                            "intro": {
+                                "label": "Nasz apartament znajdziecie państwo pod poniższym adresem:"
+                            },
+                            "title": {
+                                "label": "Mapa"
+                            }
+                        },
+                        "transport": {
+                            "description": {
+                                "first": {
+                                    "label": "W przypadku przylotu samolotem lub przyjazdu pociągiem, możliwe skorzystanie jest z transferu do naszego obiektu za dodatkową opłatą."
+                                },
+                                "second": {
+                                    "label": "Więcej na ten temat znajdą państwo na stronie, do której link znajduje się poniżej."
+                                }
+                            },
+                            "title": {
+                                "label": "Transport"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Instrukcja dojazdu do Słonecznego Apartamentu w Oświęcimiu"
+                    },
+                    "title": {
+                        "label": "Dojazd"
+                    }
+                },
+                "rules": {
+                    "content": {
+                        "reservation-section": {
+                            "1st": {
+                                "label": "Rezerwacje dokonane za pomocą platform zewnętrznych, takich jak: Booking, AirBnB, Noclegowo, Vrbo oraz TripAdvisor są zarządzane zgodnie z ustaleniami i zasadami ustawionymi na tych platformach."
+                            },
+                            "2nd": {
+                                "label": "Rezerwacja bezpośrednia może zostać zawarta za pomocą telefonu, e-maila lub dostępnych kanałów komunikacyjnych takich jak messenger lub instagram."
+                            },
+                            "3rd": {
+                                "label": "W przypadku rezerwacji bezpośredniej, <u>wymagana jest zaliczka w wysokości 50% ceny całego pobytu</u>. Pozostała część kwoty <u>musi zostać opłacona nie później niż 2 tygodnie przed dniem zameldowania</u>."
+                            },
+                            "4th": {
+                                "label": "Rezerwację bezpośrednią można opłacić tylko za pomocą przelewu tradycyjnego, przelewu na telefon lub za pomocą aplikacji Revolut."
+                            },
+                            "title": {
+                                "label": "Rezerwacja"
+                            }
+                        }
+                    },
+                    "subtitle": {
+                        "label": "Informacje o zasadach panujących w naszym apartamencie"
+                    },
+                    "title": {
+                        "label": "Regulamin"
+                    }
+                },
+                "tickets": {
+                    "subtitle": {
+                        "label": "Możliwość zakupu biletów w naszym apartamencie"
+                    },
+                    "title": {
+                        "label": "Bilety"
+                    }
+                },
+                "transport": {
+                    "subtitle": {
+                        "label": "Szczegóły dotyczące naszej usługi transportowej dla naszych gości"
+                    },
+                    "title": {
+                        "label": "Transport"
+                    }
+                },
+                "trash": {
+                    "subtitle": {
+                        "label": "Informacja o wynoszeniu śmieci w naszym mieszkaniu"
+                    },
+                    "title": {
+                        "label": "Śmieci"
+                    }
+                },
+                "wifi": {
+                    "content": {
+                        "intro": {
+                            "label": "W naszym apartamencie znajdziesz najwyższą jakość połączenia internetowego,\n  zaprojektowanego z myślą o potrzebach naszych gości. Oferujemy dwa pasma\n  Wi-Fi: 2,5 GHz i 5 GHz, z imponującą prędkością do 300 Mb/s, co zapewnia\n  błyskawiczny dostęp do internetu."
+                        },
+                        "password": {
+                            "intro": {
+                                "label": "Dla Twojej wygody poniżej znajdziesz dane do logowania się do naszej sieci Wi-Fi"
+                            },
+                            "label": "Hasło",
+                            "security": {
+                                "label": "Prosimy o zachowanie poufności tych danych w celu zapewnienia bezpieczeństwa\n  sieci."
+                            },
+                            "ssid25": {
+                                "label": "Nazwa sieci 2.5GHz (SSID)"
+                            },
+                            "ssid5": {
+                                "label": "Nazwa sieci 5GHz (SSID)"
+                            }
+                        }
+                    },
+                    "locked": {
+                        "label": "Pokaż kod"
+                    },
+                    "subtitle": {
+                        "label": "Informacje o Wi-Fi w naszym apartamencie"
+                    },
+                    "title": {
+                        "label": "Wi-Fi"
+                    }
+                }
+            }
         }
-      }
+    },
+    "shared": {
+        "address": {
+            "street": {
+                "label": "ul."
+            }
+        },
+        "dialog": {
+            "button": {
+                "cancel": {
+                    "label": "Anuluj"
+                },
+                "enter": {
+                    "label": "Wejdź"
+                }
+            },
+            "password": {
+                "input": {
+                    "placeholder": {
+                        "label": "Hasło"
+                    }
+                },
+                "short-instruction": {
+                    "label": "Hasło powinno znajdować się w wiadomości w której otrzymali państwo link do tej strony."
+                },
+                "title": {
+                    "label": "Wprowadź hasło"
+                },
+                "validation": {
+                    "invalid": {
+                        "label": "Hasło jest nieprawidłowe!"
+                    },
+                    "length": {
+                        "label": "Hasło jest za krótkie (co najmniej 8 znaków)!"
+                    },
+                    "required": {
+                        "label": "Hasło jest wymagane!"
+                    }
+                }
+            }
+        }
     }
-  }
 }
