@@ -1,0 +1,190 @@
+[
+  {
+    "id": 0,
+    "sortOrder": 0,
+    "title": "obj.pages.osw.rules.reservation.title.label",
+    "items": [
+      {
+        "id": 0,
+        "sortOrder": 0,
+        "description": "obj.pages.osw.rules.reservation.rules.external-booking-rule.label"
+      },
+      {
+        "id": 1,
+        "sortOrder": 1,
+        "description": "obj.pages.osw.rules.reservation.rules.external-booking-reservation-rule.label"
+      },
+      {
+        "id": 2,
+        "sortOrder": 2,
+        "description": "obj.pages.osw.rules.reservation.rules.external-booking-advance-payment-rule.label"
+      },
+      {
+        "id": 3,
+        "sortOrder": 3,
+        "description": "obj.pages.osw.rules.reservation.rules.external-booking-payment-rule.label"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "sortOrder": 1,
+    "title": "obj.pages.osw.rules.check-in.title.label",
+    "items": [
+      {
+        "id": 5,
+        "sortOrder": 0,
+        "description": "obj.pages.osw.rules.check-in.rules.apartment-hours-rule.label"
+      },
+      {
+        "id": 6,
+        "sortOrder": 1,
+        "description": "obj.pages.osw.rules.check-in.rules.elastic-check-in-out-rule.label"
+      },
+      {
+        "id": 7,
+        "sortOrder": 2,
+        "description": "obj.pages.osw.rules.check-in.rules.extended-check-in-out-rule.label"
+      },
+      {
+        "id": 8,
+        "sortOrder": 3,
+        "description": "obj.pages.osw.rules.check-in.rules.parking-slot-rule.label"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "sortOrder": 2,
+    "title": "obj.pages.osw.rules.stay.title.label",
+    "items": [
+      {
+        "id": 9,
+        "sortOrder": 0,
+        "description": "obj.pages.osw.rules.stay.rules.regulations-acceptance-rule.label"
+      },
+      {
+        "id": 10,
+        "sortOrder": 1,
+        "description": "obj.pages.osw.rules.stay.rules.smoking-rule.label"
+      },
+      {
+        "id": 11,
+        "sortOrder": 2,
+        "description": "obj.pages.osw.rules.stay.rules.smoking-fee-rule.label"
+      },
+      {
+        "id": 12,
+        "sortOrder": 3,
+        "description": "obj.pages.osw.rules.stay.rules.night-hours-rule.label"
+      },
+      {
+        "id": 13,
+        "sortOrder": 4,
+        "description": "obj.pages.osw.rules.stay.rules.party-rule.label"
+      },
+      {
+        "id": 14,
+        "sortOrder": 5,
+        "description": "obj.pages.osw.rules.stay.rules.party-fee-rule.label"
+      },
+      {
+        "id": 15,
+        "sortOrder": 6,
+        "description": "obj.pages.osw.rules.stay.rules.animals-rule.label"
+      },
+      {
+        "id": 16,
+        "sortOrder": 7,
+        "description": "obj.pages.osw.rules.stay.rules.animals-fee-rule.label"
+      },
+      {
+        "id": 17,
+        "sortOrder": 8,
+        "description": "obj.pages.osw.rules.stay.rules.additional-guest-rule.label"
+      },
+      {
+        "id": 18,
+        "sortOrder": 9,
+        "description": "obj.pages.osw.rules.stay.rules.additional-guest-fee-rule.label"
+      },
+      {
+        "id": 19,
+        "sortOrder": 10,
+        "description": "obj.pages.osw.rules.stay.rules.additional-sheets-rule.label"
+      },
+      {
+        "id": 20,
+        "sortOrder": 11,
+        "description": "obj.pages.osw.rules.stay.rules.additional-sheets-fee-rule.label"
+      },
+      {
+        "id": 21,
+        "sortOrder": 12,
+        "description": "obj.pages.osw.rules.stay.rules.broken-regulations-kick-out-rule.label"
+      },
+      {
+        "id": 22,
+        "sortOrder": 13,
+        "description": "obj.pages.osw.rules.stay.rules.only-holidays-rule.label"
+      },
+      {
+        "id": 23,
+        "sortOrder": 14,
+        "description": "obj.pages.osw.rules.stay.rules.no-illegal-stuff-allowed.label"
+      },
+      {
+        "id": 24,
+        "sortOrder": 15,
+        "description": "obj.pages.osw.rules.stay.rules.no-business-allowed.label"
+      },
+      {
+        "id": 25,
+        "sortOrder": 16,
+        "description": "obj.pages.osw.rules.stay.rules.broken-regulations-kick-out-fees-rule.label"
+      },
+      {
+        "id": 26,
+        "sortOrder": 17,
+        "description": "obj.pages.osw.rules.stay.rules.cumulative-fees-rule.label"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "sortOrder": 3,
+    "title": "obj.pages.osw.rules.safety.title.label}",
+    "items": [
+      {
+        "id": 24,
+        "sortOrder": 0,
+        "description": "obj.pages.osw.rules.safety.rules.leaving-apartment-rule.label"
+      },
+      {
+        "id": 25,
+        "sortOrder": 1,
+        "description": "obj.pages.osw.rules.safety.rules.heating-rule.label"
+      },
+      {
+        "id": 26,
+        "sortOrder": 2,
+        "description": "obj.pages.osw.rules.safety.rules.responsibility-rule.label"
+      },
+      {
+        "id": 27,
+        "sortOrder": 3,
+        "description": "obj.pages.osw.rules.safety.rules.key-loss-rule.label"
+      },
+      {
+        "id": 28,
+        "sortOrder": 4,
+        "description": "obj.pages.osw.rules.safety.rules.log-out-rule.label"
+      },
+      {
+        "id": 29,
+        "sortOrder": 5,
+        "description": "obj.pages.osw.rules.safety.rules.lost-items-rule.label"
+      }
+    ]
+  }
+]
